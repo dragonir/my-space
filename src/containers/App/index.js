@@ -8,10 +8,11 @@ class App extends Component {
     return (
       <div className="app">
         <div className="container mt-4">
-          <Switch>
+          <Home />
+          {/* <Switch>
             <Route exact path="/" component={Home}/>
             <Route component={NotFound}/>
-          </Switch>
+          </Switch> */}
         </div>
       </div>
     )

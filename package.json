@@ -2,6 +2,7 @@
   "name": "product-comparison",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dragonir.github.io/my-space/",
   "dependencies": {
     "autoprefixer": "7.1.1",
     "babel-core": "^6.26.3",
@@ -53,7 +54,9 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

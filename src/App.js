@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.scss';
-
-import { Button } from '@material-ui/core'
+import { DenseAppBar } from './components'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+      <DenseAppBar></DenseAppBar>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -21,9 +21,6 @@ class App extends Component {
           >
             Learn React
           </a>
-          <Button variant="contained" color="primary">
-            HELLO WORLD
-          </Button>
         </header>
       </div>
     );

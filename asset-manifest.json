@@ -1,14 +1,15 @@
 {
-  "main.css": "/my-space/static/css/main.c2aaebbb.chunk.css",
-  "main.js": "/my-space/static/js/main.580d982a.chunk.js",
-  "main.js.map": "/my-space/static/js/main.580d982a.chunk.js.map",
-  "static/js/1.d2708b21.chunk.js": "/my-space/static/js/1.d2708b21.chunk.js",
-  "static/js/1.d2708b21.chunk.js.map": "/my-space/static/js/1.d2708b21.chunk.js.map",
+  "main.css": "/my-space/static/css/main.efd44c30.chunk.css",
+  "main.js": "/my-space/static/js/main.069576e9.chunk.js",
+  "main.js.map": "/my-space/static/js/main.069576e9.chunk.js.map",
+  "static/js/1.07457897.chunk.js": "/my-space/static/js/1.07457897.chunk.js",
+  "static/js/1.07457897.chunk.js.map": "/my-space/static/js/1.07457897.chunk.js.map",
   "runtime~main.js": "/my-space/static/js/runtime~main.863b6279.js",
   "runtime~main.js.map": "/my-space/static/js/runtime~main.863b6279.js.map",
+  "static/css/main.efd44c30.chunk.css.map": "/my-space/static/css/main.efd44c30.chunk.css.map",
+  "static/media/mediaCard.jpg": "/my-space/static/media/mediaCard.34dfeed2.jpg",
   "static/media/logo.svg": "/my-space/static/media/logo.5d5d9eef.svg",
-  "static/css/main.c2aaebbb.chunk.css.map": "/my-space/static/css/main.c2aaebbb.chunk.css.map",
   "index.html": "/my-space/index.html",
-  "precache-manifest.690456adca3f9365ad6fac9e175b05cc.js": "/my-space/precache-manifest.690456adca3f9365ad6fac9e175b05cc.js",
+  "precache-manifest.84b04fa94ff021a20731e548de658903.js": "/my-space/precache-manifest.84b04fa94ff021a20731e548de658903.js",
   "service-worker.js": "/my-space/service-worker.js"
 }

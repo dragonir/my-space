@@ -1,19 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.scss';
-import { DenseAppBar } from './components'
-import { MediaCard } from './components'
+import { Layout } from './containers'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <DenseAppBar></DenseAppBar>
-        <header className="App-header">
-          <MediaCard />
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        </header>
-      </div>
+      <Layout />
     );
   }
 }

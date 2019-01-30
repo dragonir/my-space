@@ -16,7 +16,7 @@ const styles = {
     marginRight: 10,
   },
   appBar: {
-    background: "#FFFC00"
+    background: "#333333"
   },
   headerTitle: {
     fontWeight: "bold"
@@ -29,10 +29,10 @@ function DenseAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static" className={classes.appBar}>
         <Toolbar variant="dense">
-          <IconButton className={classes.menuButton} color="dark" aria-label="Menu">
+          <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" color="dark" className={classes.headerTitle} >
+          <Typography variant="h6" color="inherit" className={classes.headerTitle} >
             My Space
           </Typography>
         </Toolbar>

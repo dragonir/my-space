@@ -9,14 +9,14 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-import image from '../../assets/images/components/mediaCard.jpg'
+import image from '../../assets/images/components/bart_2.gif'
 
 const styles = {
   card: {
     maxWidth: 345,
   },
   media: {
-    height: 140,
+    height: 185,
   },
 };
 
@@ -32,7 +32,7 @@ function MediaCard(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            DRAGONIR
           </Typography>
           <Typography component="p">
             Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging

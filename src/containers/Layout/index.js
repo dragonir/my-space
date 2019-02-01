@@ -19,8 +19,11 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 
+
 import "./layout.scss"
 import Home from '../Home'
+import { Link } from '@material-ui/core';
+import RouterLayout from '../../router';
 
 const drawerWidth = 240;
 
@@ -173,10 +176,20 @@ class Layout extends React.Component {
               </ListItem>
             ))}
           </List>
+          {/* <Divider />
+          <List>
+            <Link to="/about">
+            <ListItem button key="about">
+              <ListItemIcon><InboxIcon /></ListItemIcon>
+              <ListItemText primary="about" />
+            </ListItem>
+            </Link>
+          </List> */}
         </Drawer>
         <main className={classes.content}>
             <div className={classes.toolbar} />
             <Home />
+            {/* <RouterLayout /> */}
         </main>
       </div>
     );

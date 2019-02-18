@@ -18,12 +18,12 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import HomeIcon from '@material-ui/icons/Home';
 
 
 import "./layout.scss"
-import Home from '../Home'
-import { Link } from '@material-ui/core';
-import RouterLayout from '../../router';
+import { Link } from 'react-router-dom';
+import routes from '../../routes/index';
 
 const drawerWidth = 240;
 
@@ -176,20 +176,28 @@ class Layout extends React.Component {
               </ListItem>
             ))}
           </List>
-          {/* <Divider />
+          <Divider />
           <List>
-            <Link to="/about">
+            <Link to="/" className="link">
+            <ListItem button key="home">
+              <ListItemIcon><HomeIcon /></ListItemIcon>
+              <ListItemText primary="home" />
+            </ListItem>
+            </Link>
+          </List>
+          <List>
+            <Link to="/about" className="link">
             <ListItem button key="about">
               <ListItemIcon><InboxIcon /></ListItemIcon>
               <ListItemText primary="about" />
             </ListItem>
             </Link>
-          </List> */}
+          </List>
         </Drawer>
+        <Divider />
         <main className={classes.content}>
             <div className={classes.toolbar} />
-            <Home />
-            {/* <RouterLayout /> */}
+            { routes }
         </main>
       </div>
     );

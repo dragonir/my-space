@@ -193,8 +193,12 @@ class Layout extends React.Component {
             </ListItem>
             </Link>
           </List>
+          <List>
+            Table
+          </List>
         </Drawer>
         <Divider />
+       
         <main className={classes.content}>
             <div className={classes.toolbar} />
             { routes }

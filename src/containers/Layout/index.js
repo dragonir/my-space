@@ -194,7 +194,10 @@ class Layout extends React.Component {
             </Link>
           </List>
           <List>
-            <Link to='/table'>Table</Link>
+            <Link to='/table'>Tables</Link>
+          </List>
+          <List>
+            <Link to='/tabs'>Tabs</Link>
           </List>
         </Drawer>
         <Divider />

@@ -4,7 +4,8 @@ import DenseAppBar from './DenseAppBar'
 import MediaCard from './MediaCard'
 import MiniDrawer from './MiniDrawer'
 
-import Table from './Table'
+import Table from './Table/index';
+import Tabs from './Tabs/index';
 
 export {
   NotFound,
@@ -12,5 +13,6 @@ export {
   MediaCard,
   MiniDrawer,
 
-  Table
+  Table,
+  Tabs
 }

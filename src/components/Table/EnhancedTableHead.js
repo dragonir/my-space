@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -22,32 +22,30 @@ import { lighten } from '@material-ui/core/styles/colorManipulator';
 let counter = 0;
 function createData(name, calories, fat, carbs, protein) {
   counter += 1;
-  return {id: counter, name, calories, fat, carbs, protein}
+  return { id: counter, name, calories, fat, carbs, protein };
 }
 
-function desc(a, b, orderBy){
-  if(b[orderBy] < a[orderBy]){
+function desc(a, b, orderBy) {
+  if (b[orderBy] < a[orderBy]) {
     return -1;
   }
-  if(b[orderBy] > a[orderBy]){
+  if (b[orderBy] > a[orderBy]) {
     return 1;
   }
   return 0;
 }
 
-// desc 降序
-
-function stableSort(array, cmp){
+function stableSort(array, cmp) {
   const stabilizedThis = array.map((el, index) => [el, index]);
   stabilizedThis.sort((a, b) => {
     const order = cmp(a[0], b[0]);
-    if(order !== 0) return order;
+    if (order !== 0) return order;
     return a[1] - b[1];
   });
-  return stabilizedThis.map(order, orderBy)
+  return stabilizedThis.map(el => el[0]);
 }
 
-function getSorting(order, orderBy){
+function getSorting(order, orderBy) {
   return order === 'desc' ? (a, b) => desc(a, b, orderBy) : (a, b) => -desc(a, b, orderBy);
 }
 
@@ -60,18 +58,19 @@ const rows = [
 ];
 
 class EnhancedTableHead extends React.Component {
-  createSortHnadler = property => event => {
+  createSortHandler = property => event => {
     this.props.onRequestSort(event, property);
   };
 
-  render(){
-    const { onSelectAllClick, order, orderBy, numSelected, roeCount } = this.props;
+  render() {
+    const { onSelectAllClick, order, orderBy, numSelected, rowCount } = this.props;
+
     return (
       <TableHead>
         <TableRow>
           <TableCell padding="checkbox">
-            <Checkbox 
-              indeterminate={numSelected > 0 && numSelected < roeCount}
+            <Checkbox
+              indeterminate={numSelected > 0 && numSelected < rowCount}
               checked={numSelected === rowCount}
               onChange={onSelectAllClick}
             />
@@ -80,23 +79,23 @@ class EnhancedTableHead extends React.Component {
             row => (
               <TableCell
                 key={row.id}
-                align={row.numeric ? 'right': 'left'}
+                align={row.numeric ? 'right' : 'left'}
                 padding={row.disablePadding ? 'none' : 'default'}
                 sortDirection={orderBy === row.id ? order : false}
               >
-              <Tooltip
-                title="Sort"
-                placement={row.numeric ? 'bottom-end' : 'bottom-start'}
-                enterDelay={300}
-              >
-                <TableSortLabel
-                  active={orderBy === row.id}
-                  direction={order}
-                  onClick={this.createSortHnadler(row.id)}
+                <Tooltip
+                  title="Sort"
+                  placement={row.numeric ? 'bottom-end' : 'bottom-start'}
+                  enterDelay={300}
                 >
-                  {row.label}
-                </TableSortLabel>
-              </Tooltip>
+                  <TableSortLabel
+                    active={orderBy === row.id}
+                    direction={order}
+                    onClick={this.createSortHandler(row.id)}
+                  >
+                    {row.label}
+                  </TableSortLabel>
+                </Tooltip>
               </TableCell>
             ),
             this,
@@ -107,27 +106,29 @@ class EnhancedTableHead extends React.Component {
   }
 }
 
-EnhancedTableHead.PropTypes = {
+EnhancedTableHead.propTypes = {
   numSelected: PropTypes.number.isRequired,
   onRequestSort: PropTypes.func.isRequired,
   onSelectAllClick: PropTypes.func.isRequired,
   order: PropTypes.string.isRequired,
   orderBy: PropTypes.string.isRequired,
-  rowCount: PropTypes.number.isRequired
-}
-
+  rowCount: PropTypes.number.isRequired,
+};
 
 const toolbarStyles = theme => ({
   root: {
     paddingRight: theme.spacing.unit,
   },
-  highlight: theme.palette.type == 'light' ? {
-    color: theme.palette.secondary.main,
-    bckgroundColor: lighten(theme.palette.secondary.light, 0.85)
-  } : {
-    color: theme.palette.text.primary,
-    backgroundColor: theme.palette.secondary.dark,
-  },
+  highlight:
+    theme.palette.type === 'light'
+      ? {
+          color: theme.palette.secondary.main,
+          backgroundColor: lighten(theme.palette.secondary.light, 0.85),
+        }
+      : {
+          color: theme.palette.text.primary,
+          backgroundColor: theme.palette.secondary.dark,
+        },
   spacer: {
     flex: '1 1 100%',
   },
@@ -135,12 +136,13 @@ const toolbarStyles = theme => ({
     color: theme.palette.text.secondary,
   },
   title: {
-    felx: '0 0 auto',
+    flex: '0 0 auto',
   },
 });
 
 let EnhancedTableToolbar = props => {
-  const {numSelected, classes} = props;
+  const { numSelected, classes } = props;
+
   return (
     <Toolbar
       className={classNames(classes.root, {

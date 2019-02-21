@@ -199,6 +199,9 @@ class Layout extends React.Component {
           <List>
             <Link to='/tabs'>Tabs</Link>
           </List>
+          <List>
+            <Link to='/snackbar'>Snackbar</Link>
+          </List>
         </Drawer>
         <Divider />
        

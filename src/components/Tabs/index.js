@@ -2,6 +2,7 @@ import React from 'react';
 import SimpleTabs from './SimpleTabs';
 import TabsWrappedLabel from './TabsWrappedLabel';
 import DisabledTabs from './DisabledTabs';
+import FullWidthTabs from './FullWidthTabs';
 
 function Tabs(){
   return (
@@ -13,6 +14,8 @@ function Tabs(){
       <TabsWrappedLabel />
       <h2>DisabledTabs 禁用的选项</h2>
       <DisabledTabs />
+      <h2>FullWidthTabs 固定选项卡</h2>
+      <FullWidthTabs />
     </div>
   )
 }

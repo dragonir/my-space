@@ -6,6 +6,7 @@ import MiniDrawer from './MiniDrawer'
 
 import Table from './Table/index';
 import Tabs from './Tabs/index';
+import Snackbar from './Snackbar/index';
 
 export {
   NotFound,
@@ -14,5 +15,6 @@ export {
   MiniDrawer,
 
   Table,
-  Tabs
+  Tabs,
+  Snackbar,
 }

@@ -194,6 +194,9 @@ class Layout extends React.Component {
             </Link>
           </List>
           <List>
+            <Link to='/about'>About</Link>
+          </List>
+          <List>
             <Link to='/table'>Tables</Link>
           </List>
           <List>
@@ -202,9 +205,11 @@ class Layout extends React.Component {
           <List>
             <Link to='/snackbar'>Snackbar</Link>
           </List>
+          <List>
+            <Link to='/dialog'>Dialogs</Link>
+          </List>
         </Drawer>
         <Divider />
-       
         <main className={classes.content}>
             <div className={classes.toolbar} />
             { routes }

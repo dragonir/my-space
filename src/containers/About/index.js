@@ -1,11 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
+import { MediaCard } from '../../components';
 
-class About extends Component{
-  render(){
+function About(){
     return (
-      <div>About Component</div>
-    )
-  }
+        <MediaCard />
+    );
 }
 
 export default About;

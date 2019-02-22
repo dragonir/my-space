@@ -1,9 +1,7 @@
 import React from 'react';
 import { Switch, Route} from 'react-router-dom'; 
-import { Home } from '../containers'
-import { About } from '../containers'
-
-import { Table, Tabs, Snackbar } from '../components/index';
+import { Home, About } from '../containers/index'
+import { Table, Tabs, Snackbar, Dialogs } from '../components/index';
 
 export default (
   <Switch>
@@ -12,5 +10,6 @@ export default (
     <Route component={ Table } path='/table' />
     <Route component={ Tabs } path="/tabs" />
     <Route component={ Snackbar } path="/snackbar" />
+    <Route component={ Dialogs } path="/dialog" />
   </Switch>
 )

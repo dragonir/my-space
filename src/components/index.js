@@ -8,6 +8,7 @@ import Table from './Table/index';
 import Tabs from './Tabs/index';
 import Snackbar from './Snackbar/index';
 import Dialogs from './Dialogs/index';
+import Buttons from './Buttons/index';
 
 export {
   NotFound,
@@ -18,5 +19,6 @@ export {
   Table,
   Tabs,
   Snackbar,
-  Dialogs
+  Dialogs,
+  Buttons
 }

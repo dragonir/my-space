@@ -193,9 +193,9 @@ class Layout extends React.Component {
             </ListItem>
             </Link>
           </List>
-          <List>
+          {/* <List>
             <Link to='/about'>About</Link>
-          </List>
+          </List> */}
           <List>
             <Link to='/table'>Tables</Link>
           </List>
@@ -207,6 +207,9 @@ class Layout extends React.Component {
           </List>
           <List>
             <Link to='/dialog'>Dialogs</Link>
+          </List>
+          <List>
+            <Link to='/buttons'>Buttons</Link>
           </List>
         </Drawer>
         <Divider />

@@ -1,14 +1,14 @@
 {
-  "main.css": "/my-space/static/css/main.a8e1637f.chunk.css",
-  "main.js": "/my-space/static/js/main.956e0339.chunk.js",
-  "main.js.map": "/my-space/static/js/main.956e0339.chunk.js.map",
-  "static/js/1.15907c8c.chunk.js": "/my-space/static/js/1.15907c8c.chunk.js",
-  "static/js/1.15907c8c.chunk.js.map": "/my-space/static/js/1.15907c8c.chunk.js.map",
+  "main.css": "/my-space/static/css/main.d7eec52d.chunk.css",
+  "main.js": "/my-space/static/js/main.c72bfdc1.chunk.js",
+  "main.js.map": "/my-space/static/js/main.c72bfdc1.chunk.js.map",
+  "static/js/1.7e9a8b18.chunk.js": "/my-space/static/js/1.7e9a8b18.chunk.js",
+  "static/js/1.7e9a8b18.chunk.js.map": "/my-space/static/js/1.7e9a8b18.chunk.js.map",
   "runtime~main.js": "/my-space/static/js/runtime~main.863b6279.js",
   "runtime~main.js.map": "/my-space/static/js/runtime~main.863b6279.js.map",
   "static/media/bart_2.gif": "/my-space/static/media/bart_2.da13bad0.gif",
-  "static/css/main.a8e1637f.chunk.css.map": "/my-space/static/css/main.a8e1637f.chunk.css.map",
+  "static/css/main.d7eec52d.chunk.css.map": "/my-space/static/css/main.d7eec52d.chunk.css.map",
   "index.html": "/my-space/index.html",
-  "precache-manifest.078a7fd34c849d9052dcbe424657d162.js": "/my-space/precache-manifest.078a7fd34c849d9052dcbe424657d162.js",
+  "precache-manifest.0dc0af6d2327c0a25b0d0d4a17473b9c.js": "/my-space/precache-manifest.0dc0af6d2327c0a25b0d0d4a17473b9c.js",
   "service-worker.js": "/my-space/service-worker.js"
 }

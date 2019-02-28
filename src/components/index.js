@@ -9,6 +9,7 @@ import Tabs from './Tabs/index';
 import Snackbar from './Snackbar/index';
 import Dialogs from './Dialogs/index';
 import Buttons from './Buttons/index';
+import Cards from './Cards/index';
 
 export {
   NotFound,
@@ -20,5 +21,6 @@ export {
   Tabs,
   Snackbar,
   Dialogs,
-  Buttons
+  Buttons,
+  Cards
 }

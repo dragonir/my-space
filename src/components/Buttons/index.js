@@ -3,6 +3,7 @@ import ContainedButtons from './ContainedButtons';
 import TextButtons from './TextButtons';
 import OutlinedButtons from './OutlinedButtons';
 import FloatingActionButtons from './FloatingActionButtons';
+import FloatingActionButtonZoom from './FloatingActionButtonZoom';
 
 
 function Buttons () {
@@ -17,6 +18,8 @@ function Buttons () {
       <OutlinedButtons />
       <h2>浮动操作按钮 Floating Action Buttons</h2>
       <FloatingActionButtons />
+      <h2>FloatingActionButtonZoom</h2>
+      <FloatingActionButtonZoom />
     </div>
   )
 }

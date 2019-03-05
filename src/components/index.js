@@ -10,6 +10,7 @@ import Snackbar from './Snackbar/index';
 import Dialogs from './Dialogs/index';
 import Buttons from './Buttons/index';
 import Cards from './Cards/index';
+import Chips from './Chips/index';
 
 export {
   NotFound,
@@ -22,5 +23,6 @@ export {
   Snackbar,
   Dialogs,
   Buttons,
-  Cards
+  Cards,
+  Chips
 }

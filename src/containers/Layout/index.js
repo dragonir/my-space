@@ -217,6 +217,9 @@ class Layout extends React.Component {
           <List>
             <Link to='/chips'>Chips</Link>
           </List>
+          <List>
+            <Link to='/dividers'>Dividers</Link>
+          </List>
         </Drawer>
         <Divider />
         <main className={classes.content}>

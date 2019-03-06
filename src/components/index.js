@@ -1,4 +1,3 @@
-
 import NotFound from './NotFound'
 import DenseAppBar from './DenseAppBar'
 import MediaCard from './MediaCard'
@@ -11,6 +10,7 @@ import Dialogs from './Dialogs/index';
 import Buttons from './Buttons/index';
 import Cards from './Cards/index';
 import Chips from './Chips/index';
+import Dividers from './Dividers/index';
 
 export {
   NotFound,
@@ -24,5 +24,6 @@ export {
   Dialogs,
   Buttons,
   Cards,
-  Chips
+  Chips,
+  Dividers,
 }

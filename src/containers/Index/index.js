@@ -19,11 +19,11 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import HomeIcon from '@material-ui/icons/Home';
+import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 import routes from '../../routes/index';
 
 const drawerWidth = 240;
-
 const styles = theme => ({
   root: {
     display: 'flex',
@@ -35,7 +35,7 @@ const styles = theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    background: '#333333',
+    background: 'linear-gradient(to right, #11998e, #38ef7d)',
   },
   appBarShift: {
     marginLeft: drawerWidth,
@@ -51,6 +51,10 @@ const styles = theme => ({
   },
   hide: {
     display: 'none',
+  },
+  toggleZone: {
+      width: 96,
+      height: 48,
   },
   drawer: {
     width: drawerWidth,
@@ -94,11 +98,22 @@ const styles = theme => ({
     fontSize: 'calc(10px + 2vmin)',
     color:' white'
   },
+  navLink: {
+      color: '#FFFFFF',
+      marginLeft: theme.spacing.unit * 3,
+      textDecoration: 'none',
+  },
+  navBtn: {
+      height: "100%",
+      padding: '20px 10px'
+  }
 });
 
-class Layout extends React.Component {
+
+class Index extends React.Component {
   state = {
     open: false,
+    showSideBar: 'block',
   };
 
   handleDrawerOpen = () => {
@@ -109,8 +124,114 @@ class Layout extends React.Component {
     this.setState({ open: false });
   };
 
+  componentDidMount = () => {
+    this.renderSideBar()
+  };
+
+  componentDidUpdate = () => {
+    this.renderSideBar();
+  };
+
+  renderSideBar(){
+    var url = window.location.href;
+    var hash = url.substring(window.location.href.indexOf("#") + 2, url.length);
+    return hash;
+    
+  };
+
   render() {
     const { classes, theme } = this.props;
+    var showSide = this.renderSideBar();
+
+    const drawer = (
+        <div>
+            <Drawer
+            variant="permanent"
+            className={classNames(classes.drawer, classes.hideDrawer,{
+            [classes.drawerOpen]: this.state.open,
+            [classes.drawerClose]: !this.state.open,
+            })}
+            classes={{
+            paper: classNames({
+                [classes.drawerOpen]: this.state.open,
+                [classes.drawerClose]: !this.state.open,
+            }),
+            }}
+            open={this.state.open}
+             >
+            <div className={classes.toolbar}>
+            <IconButton onClick={this.handleDrawerClose}>
+                {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+            </IconButton>
+            </div>
+            <Divider />
+            <List>
+            {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+                <ListItem button key={text}>
+                <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                <ListItemText primary={text} />
+                </ListItem>
+            ))}
+            </List>
+            <Divider />
+            <List>
+            {['All mail', 'Trash', 'Spam'].map((text, index) => (
+                <ListItem button key={text}>
+                <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                <ListItemText primary={text} />
+                </ListItem>
+            ))}
+            </List>
+            <Divider />
+            <List>
+            <Link to='/table'>Tables</Link>
+            </List>
+            <List>
+            <Link to='/tabs'>Tabs</Link>
+            </List>
+            <List>
+            <Link to='/snackbar'>Snackbar</Link>
+            </List>
+            <List>
+            <Link to='/dialog'>Dialogs</Link>
+            </List>
+            <List>
+            <Link to='/buttons'>Buttons</Link>
+            </List>
+            <List>
+            <Link to='/cards'>Cards</Link>
+            </List>
+            <List>
+            <Link to='/chips'>Chips</Link>
+            </List>
+            <List>
+            <Link to='/dividers'>Dividers</Link>
+            </List>
+            <List>
+              <Link to='/progress'>Progress</Link>
+            </List>
+            <List>
+              <Link to='/selectionControls'>Selection Controls</Link>
+            </List>
+            </Drawer>
+        </div>
+    );
+
+    const drawerIcon = (
+        <div>
+             <IconButton
+              color="inherit"
+              aria-label="Open drawer"
+              onClick={this.handleDrawerOpen}
+              className={classNames(classes.menuButton, {
+                [classes.hide]: this.state.open,
+              })}
+            >
+              <MenuIcon />
+            </IconButton>
+        </div>
+    );
+
     return (
       <div className={classes.root}>
         <CssBaseline />
@@ -121,110 +242,18 @@ class Layout extends React.Component {
           })}
         >
           <Toolbar disableGutters={!this.state.open}>
-            <IconButton
-              color="inherit"
-              aria-label="Open drawer"
-              onClick={this.handleDrawerOpen}
-              className={classNames(classes.menuButton, {
-                [classes.hide]: this.state.open,
-              })}
-            >
-              <MenuIcon />
-            </IconButton>
+          <div className={classes.toggleZone}>
+            { (showSide === '' || showSide === null ) ?  drawerIcon  : ''}
+          </div>
             <Typography variant="h6" color="inherit" noWrap>
-              My Space
+              MY SPACE
             </Typography>
+            <Link to="/" className={classes.navLink} ><Button color="inherit" className={classes.navBtn} onClick={this.handleDrawerClose}>HOME</Button></Link>
+            <Link to="/about" className={classes.navLink} ><Button color="inherit" className={classes.navBtn} onClick={this.handleDrawerClose}>ABOUT</Button></Link>
+            <Link to="/work" className={classes.navLink} ><Button color="inherit" className={classes.navBtn} onClick={this.handleDrawerClose}>WORK</Button></Link>
           </Toolbar>
         </AppBar>
-        <Drawer
-          variant="permanent"
-          className={classNames(classes.drawer, {
-            [classes.drawerOpen]: this.state.open,
-            [classes.drawerClose]: !this.state.open,
-          })}
-          classes={{
-            paper: classNames({
-              [classes.drawerOpen]: this.state.open,
-              [classes.drawerClose]: !this.state.open,
-            }),
-          }}
-          open={this.state.open}
-        >
-          <div className={classes.toolbar}>
-            <IconButton onClick={this.handleDrawerClose}>
-              {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
-            </IconButton>
-          </div>
-          <Divider />
-          <List>
-            {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List>
-          <Divider />
-          <List>
-            {['All mail', 'Trash', 'Spam'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List>
-          <Divider />
-          <List>
-            <Link to="/" className="link">
-            <ListItem button key="home">
-              <ListItemIcon><HomeIcon /></ListItemIcon>
-              <ListItemText primary="home" />
-            </ListItem>
-            </Link>
-          </List>
-          <List>
-            <Link to="/about" className="link">
-            <ListItem button key="about">
-              <ListItemIcon><InboxIcon /></ListItemIcon>
-              <ListItemText primary="about" />
-            </ListItem>
-            </Link>
-          </List>
-          <List>
-            <Link to='/work'>Work</Link>
-          </List>
-          <List>
-            <Link to='/table'>Tables</Link>
-          </List>
-          <List>
-            <Link to='/tabs'>Tabs</Link>
-          </List>
-          <List>
-            <Link to='/snackbar'>Snackbar</Link>
-          </List>
-          <List>
-            <Link to='/dialog'>Dialogs</Link>
-          </List>
-          <List>
-            <Link to='/buttons'>Buttons</Link>
-          </List>
-          <List>
-            <Link to='/cards'>Cards</Link>
-          </List>
-          <List>
-            <Link to='/chips'>Chips</Link>
-          </List>
-          <List>
-            <Link to='/dividers'>Dividers</Link>
-          </List>
-          <List>
-            <Link to='/progress'>Progress</Link>
-          </List>
-          <List>
-            <Link to='/selectionControls'>Selection Controls</Link>
-          </List>
-        </Drawer>
-        <Divider />
+        { (showSide === '' || showSide === null ) ?  drawer  : ''}
         <main className={classes.content}>
             <div className={classes.toolbar} />
             { routes }
@@ -234,9 +263,9 @@ class Layout extends React.Component {
   }
 }
 
-Layout.propTypes = {
+Index.propTypes = {
   classes: PropTypes.object.isRequired,
   theme: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles, { withTheme: true })(Layout);
+export default withStyles(styles, { withTheme: true })(Index);

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './App.scss';
-import { Layout } from './containers'
+import routes from './routes/index';
+import { Index } from './containers/index';
 
 class App extends Component {
   render() {
     return (
-      <Layout />
+      <Index />
     );
   }
 }

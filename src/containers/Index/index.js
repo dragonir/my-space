@@ -135,8 +135,9 @@ class Index extends React.Component {
   renderSideBar(){
     var url = window.location.href;
     var hash = url.substring(window.location.href.indexOf("#") + 2, url.length);
-    return hash;
-    
+    // return hash;
+    if(hash === "about" || hash === "work") return false;
+    return true;
   };
 
   render() {
@@ -205,7 +206,10 @@ class Index extends React.Component {
             <Link to='/chips'>Chips</Link>
             </List>
             <List>
-            <Link to='/dividers'>Dividers</Link>
+              <Link to='/dividers'>Dividers</Link>
+            </List>
+            <List>
+              <Link to='/lists'>Lists</Link>
             </List>
             <List>
               <Link to='/progress'>Progress</Link>
@@ -243,7 +247,7 @@ class Index extends React.Component {
         >
           <Toolbar disableGutters={!this.state.open}>
           <div className={classes.toggleZone}>
-            { (showSide === '' || showSide === null ) ?  drawerIcon  : ''}
+            { showSide ?  drawerIcon  : ''}
           </div>
             <Typography variant="h6" color="inherit" noWrap>
               MY SPACE
@@ -253,7 +257,7 @@ class Index extends React.Component {
             <Link to="/work" className={classes.navLink} ><Button color="inherit" className={classes.navBtn} onClick={this.handleDrawerClose}>WORK</Button></Link>
           </Toolbar>
         </AppBar>
-        { (showSide === '' || showSide === null ) ?  drawer  : ''}
+        { showSide ?  drawer  : ''}
         <main className={classes.content}>
             <div className={classes.toolbar} />
             { routes }

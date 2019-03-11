@@ -11,6 +11,7 @@ import Buttons from './Buttons/index';
 import Cards from './Cards/index';
 import Chips from './Chips/index';
 import Dividers from './Dividers/index';
+import Lists from './Lists/index';
 import Progress from './Progress/index';
 import SelectionControls from './SelectionControls/index';
 
@@ -27,6 +28,7 @@ export {
   Buttons,
   Cards,
   Chips,
+  Lists,
   Dividers,
   Progress,
   SelectionControls,

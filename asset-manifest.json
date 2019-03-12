@@ -1,15 +1,15 @@
 {
   "main.css": "/my-space/static/css/main.ecbd91e1.chunk.css",
-  "main.js": "/my-space/static/js/main.5ef82feb.chunk.js",
-  "main.js.map": "/my-space/static/js/main.5ef82feb.chunk.js.map",
-  "static/js/1.f10ca589.chunk.js": "/my-space/static/js/1.f10ca589.chunk.js",
-  "static/js/1.f10ca589.chunk.js.map": "/my-space/static/js/1.f10ca589.chunk.js.map",
+  "main.js": "/my-space/static/js/main.ef886f11.chunk.js",
+  "main.js.map": "/my-space/static/js/main.ef886f11.chunk.js.map",
+  "static/js/1.3859e90d.chunk.js": "/my-space/static/js/1.3859e90d.chunk.js",
+  "static/js/1.3859e90d.chunk.js.map": "/my-space/static/js/1.3859e90d.chunk.js.map",
   "runtime~main.js": "/my-space/static/js/runtime~main.863b6279.js",
   "runtime~main.js.map": "/my-space/static/js/runtime~main.863b6279.js.map",
   "static/css/main.ecbd91e1.chunk.css.map": "/my-space/static/css/main.ecbd91e1.chunk.css.map",
   "static/media/bart_2.gif": "/my-space/static/media/bart_2.da13bad0.gif",
   "static/media/paella.jpg": "/my-space/static/media/paella.50f32ef6.jpg",
   "index.html": "/my-space/index.html",
-  "precache-manifest.6db91b5083061e8369d2075391bc531e.js": "/my-space/precache-manifest.6db91b5083061e8369d2075391bc531e.js",
+  "precache-manifest.8f05f56ca74b473409c27e00a235afc0.js": "/my-space/precache-manifest.8f05f56ca74b473409c27e00a235afc0.js",
   "service-worker.js": "/my-space/service-worker.js"
 }

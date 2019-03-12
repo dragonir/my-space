@@ -3,6 +3,8 @@ import DenseAppBar from './DenseAppBar'
 import MediaCard from './MediaCard'
 import MiniDrawer from './MiniDrawer'
 
+
+import AppBar from './AppBar/index';
 import Table from './Table/index';
 import Tabs from './Tabs/index';
 import Snackbar from './Snackbar/index';
@@ -20,6 +22,8 @@ export {
   DenseAppBar,
   MediaCard,
   MiniDrawer,
+
+  AppBar,
 
   Table,
   Tabs,

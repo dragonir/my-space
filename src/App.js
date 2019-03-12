@@ -6,7 +6,7 @@ import { Index } from './containers/index';
 class App extends Component {
   render() {
     return (
-      <Index />
+      <Index data-routes = {routes} />
     );
   }
 }

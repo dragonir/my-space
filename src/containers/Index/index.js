@@ -18,7 +18,6 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-import HomeIcon from '@material-ui/icons/Home';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 import routes from '../../routes/index';
@@ -185,7 +184,10 @@ class Index extends React.Component {
             </List>
             <Divider />
             <List>
-            <Link to='/table'>Tables</Link>
+              <Link to='/appbar'>App Bar</Link>
+            </List>
+            <List>
+              <Link to='/table'>Tables</Link>
             </List>
             <List>
             <Link to='/tabs'>Tabs</Link>

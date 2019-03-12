@@ -1,13 +1,15 @@
 import React from 'react';
 import { Switch, Route} from 'react-router-dom'; 
 import { Home, About, Work } from '../containers/index'
-import { Table, Tabs, Snackbar, Dialogs, Buttons, Cards, Chips, Dividers, Lists, Progress, SelectionControls } from '../components/index';
+import { AppBar, Table, Tabs, Snackbar, Dialogs, Buttons, Cards, Chips, Dividers, Lists, Progress, SelectionControls } from '../components/index';
 
 export default (
   <Switch>
     <Route component={ Home } path="/" exact />
     <Route component={ About } path="/about" />
     <Route component= { Work } path="/work" />
+
+    <Route component={ AppBar } path="/appbar" />
 
     <Route component={ Table } path='/table' />
     <Route component={ Tabs } path="/tabs" />

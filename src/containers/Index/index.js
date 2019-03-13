@@ -187,6 +187,9 @@ class Index extends React.Component {
               <Link to='/appbar'>App Bar</Link>
             </List>
             <List>
+              <Link to='/avatars'>Avatars</Link>
+            </List>
+            <List>
               <Link to='/table'>Tables</Link>
             </List>
             <List>

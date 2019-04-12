@@ -6,6 +6,7 @@ import MiniDrawer from './MiniDrawer'
 
 import AppBar from './AppBar/index';
 import Avatars from './Avatars/index';
+import Badges from './Badges/index';
 import ExpansionPanels from './ExpansionPanels/index';
 import Table from './Table/index';
 import Tabs from './Tabs/index';
@@ -27,6 +28,7 @@ export {
 
   AppBar,
   Avatars,
+  Badges,
   ExpansionPanels,
   Table,
   Tabs,

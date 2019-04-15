@@ -193,6 +193,9 @@ class Index extends React.Component {
               <Link to='/badges'>Badges</Link>
             </List>
             <List>
+              <Link to='/bottomnavigation'>Bottom Navigation</Link>
+            </List>
+            <List>
               <Link to='/expansionpabels'>Expansion Pabels</Link>
             </List>
             <List>

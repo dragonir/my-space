@@ -52,8 +52,8 @@ const styles = theme => ({
     display: 'none',
   },
   toggleZone: {
-      width: 96,
-      height: 48,
+    width: 96,
+    height: 48,
   },
   drawer: {
     width: drawerWidth,
@@ -95,16 +95,16 @@ const styles = theme => ({
     alignItems: 'center',
     justifyContent: 'center',
     fontSize: 'calc(10px + 2vmin)',
-    color:' white'
+    color: ' white'
   },
   navLink: {
-      color: '#FFFFFF',
-      marginLeft: theme.spacing.unit * 3,
-      textDecoration: 'none',
+    color: '#FFFFFF',
+    marginLeft: theme.spacing.unit * 3,
+    textDecoration: 'none',
   },
   navBtn: {
-      height: "100%",
-      padding: '20px 10px'
+    height: "100%",
+    padding: '20px 10px'
   }
 });
 
@@ -131,150 +131,159 @@ class Index extends React.Component {
     this.renderSideBar();
   };
 
-  renderSideBar(){
+  renderSideBar() {
     var url = window.location.href;
     var hash = url.substring(window.location.href.indexOf("#") + 2, url.length);
-    // return hash;
-    if(hash === "about" || hash === "work") return false;
+    if (hash === "about" || hash === "work" || hash === "") return false;
+    return true;
+  };
+
+  renderNavBar() {
+    if (window.location.hash === "#/") return false;
     return true;
   };
 
   render() {
     const { classes, theme } = this.props;
     var showSide = this.renderSideBar();
-
+    var showNav = this.renderNavBar();
     const drawer = (
-        <div>
-            <Drawer
-            variant="permanent"
-            className={classNames(classes.drawer, classes.hideDrawer,{
+      <div>
+        <Drawer
+          variant="permanent"
+          className={classNames(classes.drawer, classes.hideDrawer, {
             [classes.drawerOpen]: this.state.open,
             [classes.drawerClose]: !this.state.open,
-            })}
-            classes={{
+          })}
+          classes={{
             paper: classNames({
-                [classes.drawerOpen]: this.state.open,
-                [classes.drawerClose]: !this.state.open,
+              [classes.drawerOpen]: this.state.open,
+              [classes.drawerClose]: !this.state.open,
             }),
-            }}
-            open={this.state.open}
-             >
-            <div className={classes.toolbar}>
+          }}
+          open={this.state.open}
+        >
+          <div className={classes.toolbar}>
             <IconButton onClick={this.handleDrawerClose}>
-                {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+              {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
             </IconButton>
-            </div>
-            <Divider />
-            <List>
+          </div>
+          <Divider />
+          <List>
             {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                <ListItem button key={text}>
+              <ListItem button key={text}>
                 <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
                 <ListItemText primary={text} />
-                </ListItem>
+              </ListItem>
             ))}
-            </List>
-            <Divider />
-            <List>
+          </List>
+          <Divider />
+          <List>
             {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                <ListItem button key={text}>
+              <ListItem button key={text}>
                 <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
                 <ListItemText primary={text} />
-                </ListItem>
+              </ListItem>
             ))}
-            </List>
-            <Divider />
-            <List>
-              <Link to='/appbar'>App Bar</Link>
-            </List>
-            <List>
-              <Link to='/avatars'>Avatars</Link>
-            </List>
-            <List>
-              <Link to='/badges'>Badges</Link>
-            </List>
-            <List>
-              <Link to='/bottomnavigation'>Bottom Navigation</Link>
-            </List>
-            <List>
-              <Link to='/expansionpabels'>Expansion Pabels</Link>
-            </List>
-            <List>
-              <Link to='/table'>Tables</Link>
-            </List>
-            <List>
+          </List>
+          <Divider />
+          <List>
+            <Link to='/appbar'>App Bar</Link>
+          </List>
+          <List>
+            <Link to='/autocomplete'>Autocomplete</Link>
+          </List>
+          <List>
+            <Link to='/avatars'>Avatars</Link>
+          </List>
+          <List>
+            <Link to='/badges'>Badges</Link>
+          </List>
+          <List>
+            <Link to='/bottomnavigation'>Bottom Navigation</Link>
+          </List>
+          <List>
+            <Link to='/expansionpabels'>Expansion Pabels</Link>
+          </List>
+          <List>
+            <Link to='/table'>Tables</Link>
+          </List>
+          <List>
             <Link to='/tabs'>Tabs</Link>
-            </List>
-            <List>
+          </List>
+          <List>
             <Link to='/snackbar'>Snackbar</Link>
-            </List>
-            <List>
+          </List>
+          <List>
             <Link to='/dialog'>Dialogs</Link>
-            </List>
-            <List>
+          </List>
+          <List>
             <Link to='/buttons'>Buttons</Link>
-            </List>
-            <List>
+          </List>
+          <List>
             <Link to='/cards'>Cards</Link>
-            </List>
-            <List>
+          </List>
+          <List>
             <Link to='/chips'>Chips</Link>
-            </List>
-            <List>
-              <Link to='/dividers'>Dividers</Link>
-            </List>
-            <List>
-              <Link to='/lists'>Lists</Link>
-            </List>
-            <List>
-              <Link to='/progress'>Progress</Link>
-            </List>
-            <List>
-              <Link to='/selectionControls'>Selection Controls</Link>
-            </List>
-            </Drawer>
-        </div>
+          </List>
+          <List>
+            <Link to='/dividers'>Dividers</Link>
+          </List>
+          <List>
+            <Link to='/lists'>Lists</Link>
+          </List>
+          <List>
+            <Link to='/progress'>Progress</Link>
+          </List>
+          <List>
+            <Link to='/selectionControls'>Selection Controls</Link>
+          </List>
+        </Drawer>
+      </div>
     );
-
     const drawerIcon = (
-        <div>
-             <IconButton
-              color="inherit"
-              aria-label="Open drawer"
-              onClick={this.handleDrawerOpen}
-              className={classNames(classes.menuButton, {
-                [classes.hide]: this.state.open,
-              })}
-            >
-              <MenuIcon />
-            </IconButton>
-        </div>
+      <div>
+        <IconButton
+          color="inherit"
+          aria-label="Open drawer"
+          onClick={this.handleDrawerOpen}
+          className={classNames(classes.menuButton, {
+            [classes.hide]: this.state.open,
+          })}
+        >
+          <MenuIcon />
+        </IconButton>
+      </div>
     );
-
+    const nav = (
+      <AppBar
+        position="fixed"
+        className={classNames(classes.appBar, {
+          [classes.appBarShift]: this.state.open,
+        })}
+      >
+        <Toolbar disableGutters={!this.state.open}>
+          <div className={classes.toggleZone}>
+            {showSide ? drawerIcon : ''}
+          </div>
+          <Typography variant="h6" color="inherit" noWrap>
+            MY SPACE
+        </Typography>
+          <Link to="/" className={classes.navLink} ><Button color="inherit" className={classes.navBtn} onClick={this.handleDrawerClose}>HOME</Button></Link>
+          <Link to="/material" className={classes.navLink} ><Button color="inherit" className={classes.navBtn} onClick={this.handleDrawerClose}>Material</Button></Link>
+          <Link to="/about" className={classes.navLink} ><Button color="inherit" className={classes.navBtn} onClick={this.handleDrawerClose}>ABOUT</Button></Link>
+          <Link to="/work" className={classes.navLink} ><Button color="inherit" className={classes.navBtn} onClick={this.handleDrawerClose}>WORK</Button></Link>
+        </Toolbar>
+      </AppBar>
+    );
     return (
       <div className={classes.root}>
         <CssBaseline />
-        <AppBar
-          position="fixed"
-          className={classNames(classes.appBar, {
-            [classes.appBarShift]: this.state.open,
-          })}
-        >
-          <Toolbar disableGutters={!this.state.open}>
-          <div className={classes.toggleZone}>
-            { showSide ?  drawerIcon  : ''}
-          </div>
-            <Typography variant="h6" color="inherit" noWrap>
-              MY SPACE
-            </Typography>
-            <Link to="/" className={classes.navLink} ><Button color="inherit" className={classes.navBtn} onClick={this.handleDrawerClose}>HOME</Button></Link>
-            <Link to="/about" className={classes.navLink} ><Button color="inherit" className={classes.navBtn} onClick={this.handleDrawerClose}>ABOUT</Button></Link>
-            <Link to="/work" className={classes.navLink} ><Button color="inherit" className={classes.navBtn} onClick={this.handleDrawerClose}>WORK</Button></Link>
-          </Toolbar>
-        </AppBar>
-        { showSide ?  drawer  : ''}
+        {showNav ? nav : ''}
+        {showSide ? drawer : ''}
         <main className={classes.content}>
-            <div className={classes.toolbar} />
-            { routes }
+          <div className={classes.toolbar} />
+          {routes}
         </main>
       </div>
     );

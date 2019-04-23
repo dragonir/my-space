@@ -5,6 +5,7 @@ import MiniDrawer from './MiniDrawer'
 
 
 import AppBar from './AppBar/index';
+import Autocomplete from './Autocomplete/index';
 import Avatars from './Avatars/index';
 import Badges from './Badges/index';
 import ExpansionPanels from './ExpansionPanels/index';
@@ -27,6 +28,7 @@ export {
   MiniDrawer,
 
   AppBar,
+  Autocomplete,
   Avatars,
   Badges,
   ExpansionPanels,

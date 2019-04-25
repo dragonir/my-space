@@ -87,7 +87,7 @@ const styles = theme => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing.unit * 3,
+    // padding: theme.spacing.unit * 3,
     backgroundColor: '#F2F2F2',
     minHeight: '100vh',
     display: 'flex',
@@ -95,7 +95,7 @@ const styles = theme => ({
     alignItems: 'center',
     justifyContent: 'center',
     fontSize: 'calc(10px + 2vmin)',
-    color: ' white'
+    color: ' white',
   },
   navLink: {
     color: '#FFFFFF',
@@ -281,10 +281,10 @@ class Index extends React.Component {
         <CssBaseline />
         {showNav ? nav : ''}
         {showSide ? drawer : ''}
-        <main className={classes.content}>
-          <div className={classes.toolbar} />
+        <div className={classes.content}>
+          {/* <div className={classes.toolbar} /> */}
           {routes}
-        </main>
+        </div>
       </div>
     );
   }

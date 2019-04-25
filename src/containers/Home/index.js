@@ -3,18 +3,12 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import { Button } from '@material-ui/core';
 import './home.scss';
 
-const SEL = 'custom-section';
-const SECTION_SEL = `.${SEL}`;
-
 // NOTE: if using fullpage extensions/plugins put them here and pass it as props
 const pluginWrapper = () => {
   /**
    * require('fullpage.js/vendors/scrolloverflow'); // Optional. When using scrollOverflow:true
    */
 };
-
-const originalColors = ['#282C34', '#FF5F45', '#0798EC'];
-
 
 // class Home extends React.Component {
 //   state = {
@@ -132,30 +126,37 @@ class MySection extends React.Component {
   render() {
     return (
       <div className="section">
-        <h3>{this.props.content}</h3>
+        <h3 className="section_title">{this.props.content}</h3>
       </div>
     );
   }
 }
-
-const anchors = ["firstPage", "secondPage", "thirdPage"];
+class SectionOne extends React.Component {
+  render() {
+    return (
+      <div className="section section_one">
+        <h3 className="section_title">{this.props.title}</h3>
+        <a className="enter_anchor" href="#about"><Button variant="contained" className="enter_btn">ENTER</Button></a>
+      </div>
+    )
+  }
+}
 
 function Home(props) {
-
+  const anchors = ["firstPage", "secondPage", "thirdPage", 'fourthPage'];
   return (
     <ReactFullpage
-    // anchors={anchors}
     navigation
     navigationTooltips={anchors}
     sectionsColor={["#282c34", "#ff5f45", "#0798ec"]}
     onLeave={(origin, destination, direction) => {
-      console.log("onLeave event", { origin, destination, direction });
+      // console.log("onLeave event", { origin, destination, direction });
     }}
     render={({ state, fullpageApi }) => {
-      console.log("render prop change", state, fullpageApi); // eslint-disable-line no-console
-
+      // console.log("render prop change", state, fullpageApi); // eslint-disable-line no-console
       return (
         <div>
+          <SectionOne title={"WELCOME TO MY SPACE!"} />
           <MySection content={"Slide down!"} />
           <MySection content={"Keep going!"} />
           <MySection content={"Slide up!"} />

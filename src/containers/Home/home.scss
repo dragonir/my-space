@@ -1,24 +1,24 @@
-// body {
-//   font-family: arial, helvetica;
-// }
+.section {
+  .section_title {
+    font-size: 2em;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 700;
+  }
+  &.section_one {
+    background: #00F260;
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);
+    background: linear-gradient(to right, #0575E6, #00F260);
+    .enter_anchor {
+      text-decoration: none;
+      color: #FFFFFF;
+      .enter_btn {
+        font-size: 1em;
+      }
+    }
+  }
+}
 
-// h3 {
-//   font-size: 5em;
-//   text-align: center;
-//   color: #fff;
-//   font-weight: 700;
-// }
-
-// #section1 {
-//   color: #fff;
-// }
-
-// .fp-section {
-//   text-align: center;
-// }
-// button {
-//   position: fixed;
-//   top: 20px;
-//   left: 20px;
-//   z-index: 8;
-// }
+.fp-section {
+  text-align: center;
+}

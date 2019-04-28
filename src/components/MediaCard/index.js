@@ -9,14 +9,13 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-import image from '../../assets/images/components/bart_2.gif'
-
 const styles = {
   card: {
-    maxWidth: 345,
+    maxWidth: 550,
+    margin: 'auto'
   },
   media: {
-    height: 185,
+    height: 300,
   },
 };
 
@@ -27,16 +26,15 @@ function MediaCard(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={image}
+          image={props.image}
           title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            WANGBIN
+            {props.title}
           </Typography>
           <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            {props.info}
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -44,7 +42,7 @@ function MediaCard(props) {
         <Button size="small" color="primary">
           Share
         </Button>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" href={props.learnMore}>
           Learn More
         </Button>
       </CardActions>

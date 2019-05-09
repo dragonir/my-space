@@ -206,6 +206,9 @@ class Index extends React.Component {
             <Link to='/expansionpabels'>Expansion Pabels</Link>
           </List>
           <List>
+            <Link to="/gridlist">Grid List</Link>
+          </List>
+          <List>
             <Link to='/table'>Tables</Link>
           </List>
           <List>

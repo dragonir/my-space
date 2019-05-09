@@ -9,6 +9,7 @@ import Autocomplete from './Autocomplete/index';
 import Avatars from './Avatars/index';
 import Badges from './Badges/index';
 import ExpansionPanels from './ExpansionPanels/index';
+import GridList from './GridList/index';
 import Table from './Table/index';
 import Tabs from './Tabs/index';
 import Snackbar from './Snackbar/index';
@@ -32,6 +33,7 @@ export {
   Avatars,
   Badges,
   ExpansionPanels,
+  GridList,
   Table,
   Tabs,
   Snackbar,

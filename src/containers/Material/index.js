@@ -1,5 +1,4 @@
 import React from 'react';
-import { MediaCard } from '../../components';
 
 const Material = (props) => {
   return (

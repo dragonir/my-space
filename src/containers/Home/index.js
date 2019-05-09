@@ -27,6 +27,18 @@ class SectionOne extends React.Component {
     )
   }
 }
+
+class SectionTwo extends React.Component {
+  render() {
+    return (
+      <div className="section section_two">
+        <h3 className="section_title">MY WORK</h3>
+      </div>
+    )
+  }
+}
+
+
 function Home(props) {
   const anchors = ["firstPage", "secondPage", "thirdPage", 'fourthPage'];
   return (
@@ -42,7 +54,8 @@ function Home(props) {
       return (
         <div>
           <SectionOne />
-          <MySection content={"Slide down!"} />
+          <SectionTwo />
+          {/* <MySection content={"Slide down!"} /> */}
           <MySection content={"Keep going!"} />
           <MySection content={"Slide up!"} />
         </div>

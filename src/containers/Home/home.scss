@@ -14,9 +14,6 @@
       color: #FFFFFF;
       .enter_btn {
         font-size: .75em;
-        // background: #C6FFDD;
-        // background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
-        // background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
         background: #FDFC47;
         background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);
         background: linear-gradient(to right, #24FE41, #FDFC47);
@@ -29,6 +26,11 @@
         }
       }
     }
+  }
+  &.section_two {
+    background: #F09819;
+    background: -webkit-linear-gradient(to right, #EDDE5D, #F09819);
+    background: linear-gradient(to right, #EDDE5D, #F09819);
   }
 }
 .fp-section {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route} from 'react-router-dom'; 
 import { Home, About, Work } from '../containers/index'
-import { AppBar, Avatars, Badges, ExpansionPanels, Table, Tabs, Snackbar, Dialogs, Buttons, Cards, Chips, Dividers, Lists, Progress, SelectionControls, Autocomplete } from '../components/index';
+import { AppBar, Avatars, Badges, ExpansionPanels, Table, Tabs, Snackbar, Dialogs, Buttons, Cards, Chips, Dividers, Lists, Progress, SelectionControls, Autocomplete, GridList } from '../components/index';
 import BottomNavigation from '../components/BottomNavigation';
 import Material from '../containers/Material';
 
@@ -18,6 +18,7 @@ export default (
     <Route component={ Badges } path="/badges" />
     <Route component={ BottomNavigation } path="/bottomnavigation" />
     <Route component={ ExpansionPanels } path="/expansionpabels" />
+    <Route component={GridList} path="/gridlist" />
 
     <Route component={ Table } path='/table' />
     <Route component={ Tabs } path="/tabs" />

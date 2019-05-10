@@ -2,7 +2,9 @@ import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import './home.scss';
 import MediaCard from '../../components/MediaCard';
-import mediaCardImg from '../../assets/images/components/800.gif'
+import mediaCardImg from '../../assets/images/components/800.gif';
+
+import HomePageGridList from '../../components/GridList/HomePageGridList';
 class MySection extends React.Component {
   render() {
     return (
@@ -32,7 +34,19 @@ class SectionTwo extends React.Component {
   render() {
     return (
       <div className="section section_two">
-        <h3 className="section_title">MY WORK</h3>
+        <h3 className="section_title section_two_title">PREVIOUS WORK</h3>
+        <HomePageGridList />
+      </div>
+    )
+  }
+}
+
+class SectionThree extends React.Component {
+  render () {
+    return (
+      <div className="section section_three">
+        {/* <h3>section three</h3> */}
+
       </div>
     )
   }
@@ -55,8 +69,9 @@ function Home(props) {
         <div>
           <SectionOne />
           <SectionTwo />
+          <SectionThree />
           {/* <MySection content={"Slide down!"} /> */}
-          <MySection content={"Keep going!"} />
+          {/* <MySection content={"Keep going!"} /> */}
           <MySection content={"Slide up!"} />
         </div>
       );

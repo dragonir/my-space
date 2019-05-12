@@ -1,14 +1,14 @@
 .section {
   .section_title {
-    font-size: 2em;
+    font-size: 2.25em;
     text-align: center;
-    color: #FFFFFF;
+    color: #2D2D2D;
     font-weight: 700;
   }
   &.section_one {
-    background: #00F260;
-    background: -webkit-linear-gradient(to right, #0575E6, #00F260);
-    background: linear-gradient(to right, #0575E6, #00F260);
+    .section_title {
+      letter-spacing: .1em;
+    }
     .enter_anchor {
       text-decoration: none;
       color: #FFFFFF;
@@ -28,14 +28,11 @@
     }
   }
   &.section_two {
-    background: #00c6ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     .section_two_title {
-      margin: 10px auto;
+      margin: .5em auto 0;
       text-align: left;
-      letter-spacing: .5em;
-      color: #FFFFFF;
+      letter-spacing: .25em;
+      padding: 0 1.5em;
     }
   }
   &.section_three {

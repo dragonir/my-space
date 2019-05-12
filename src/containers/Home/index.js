@@ -3,6 +3,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import './home.scss';
 import MediaCard from '../../components/MediaCard';
 import mediaCardImg from '../../assets/images/components/800.gif';
+import homeImg from '../../assets/images/components/home.png';
 
 import HomePageGridList from '../../components/GridList/HomePageGridList';
 class MySection extends React.Component {
@@ -18,10 +19,12 @@ class SectionOne extends React.Component {
   render() {
     return (
       <div className="section section_one">
-        <h3 className="section_title">Lizards are a widespread group</h3>
+        <h3 className="section_title">EVERY MAN IS HIS OWN WORST ENEMY.</h3>
         <MediaCard 
-          image={mediaCardImg} 
-          title={"My Space"}
+          image={homeImg} 
+          title={"Once upon a time ..."}
+          maxWidth="35em"
+          height="38em"
           info={"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"}
           learnMore={"#about"}
         />
@@ -45,8 +48,7 @@ class SectionThree extends React.Component {
   render () {
     return (
       <div className="section section_three">
-        {/* <h3>section three</h3> */}
-
+        <h3>MY BLOG</h3>
       </div>
     )
   }
@@ -59,7 +61,7 @@ function Home(props) {
     <ReactFullpage
     navigation
     navigationTooltips={anchors}
-    sectionsColor={["#FFFC00", "#ff5f45", "#0798ec", "#03c03c"]}
+    sectionsColor={["#FFFFFF", "#FFFFFF", "#0798ec", "#03c03c"]}
     onLeave={(origin, destination, direction) => {
       // console.log("onLeave event", { origin, destination, direction });
     }}
@@ -72,7 +74,7 @@ function Home(props) {
           <SectionThree />
           {/* <MySection content={"Slide down!"} /> */}
           {/* <MySection content={"Keep going!"} /> */}
-          <MySection content={"Slide up!"} />
+          <MySection content={"RESUME"} />
         </div>
       );
     }}

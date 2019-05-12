@@ -8,42 +8,47 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { Link } from '@material-ui/core';
 
 const styles = {
   card: {
-    maxWidth: 550,
+    maxWidth: 750,
     margin: 'auto'
   },
   media: {
-    height: 300,
+    height: 350,
   },
+  info: {
+    padding: 0,
+  },
+  btn: {
+    width: '100%',
+    color: '#CCCCCC',
+    padding: 0,
+    letterSpacing: '.25em',
+  }
 };
 
 function MediaCard(props) {
   const { classes } = props;
   return (
-    <Card className={classes.card}>
+    <Card className={classes.card} style={{maxWidth: props.maxWidth}}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
           image={props.image}
           title="Contemplative Reptile"
+          style={{height: props.height}}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {props.title}
-          </Typography>
-          <Typography component="p">
+          <Typography component="p" className={classes.info}>
             {props.info}
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary" href={props.learnMore}>
-          Learn More
+      <CardActions style={{position: 'relative', textAlign: 'right'}}>
+        <Button size="small" color="primary" href={props.learnMore} className={classes.btn}>
+          Click to learn More
         </Button>
       </CardActions>
     </Card>

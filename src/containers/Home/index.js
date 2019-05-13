@@ -2,9 +2,8 @@ import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import './home.scss';
 import MediaCard from '../../components/MediaCard';
-import mediaCardImg from '../../assets/images/components/800.gif';
+// import mediaCardImg from '../../assets/images/components/800.gif';
 import homeImg from '../../assets/images/components/home.png';
-
 import HomePageGridList from '../../components/GridList/HomePageGridList';
 class MySection extends React.Component {
   render() {

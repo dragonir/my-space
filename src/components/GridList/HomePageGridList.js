@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import GridListTileBar from '@material-ui/core/GridListTileBar';
-import IconButton from '@material-ui/core/IconButton';
-import StarBorderIcon from '@material-ui/icons/StarBorder';
+// import GridList from '@material-ui/core/GridList';
+// import GridListTile from '@material-ui/core/GridListTile';
+// import GridListTileBar from '@material-ui/core/GridListTileBar';
+// import IconButton from '@material-ui/core/IconButton';
+// import StarBorderIcon from '@material-ui/icons/StarBorder';
 import tileData from './HomePageGridListtileData';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -14,6 +14,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+
+import "./HomePageGridList.scss";
 
 const styles = theme => ({
   root: {
@@ -50,54 +52,46 @@ const styles = theme => ({
     width: '100%',
     color: '#CCCCCC',
     letterSpacing: '.25em',
-  }
+  },
 });
 
-function HomePageGridList(props) {
-  const { classes } = props;
-  return (
-    <div className={classes.root}>
-    {tileData.map(tile => (
-      <Card className={classes.card}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image={tile.img}
-            title="Contemplative Reptile"
-          />
-          <CardContent>
-            <Typography component="p" className={classes.info}>
-              {tile.title}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions style={{position: 'relative', textAlign: 'right'}}>
-          <Button size="small" color="primary" href={props.learnMore} className={classes.btn}>
-            preview
-          </Button>
-        </CardActions>
-      </Card>
-    ))}
-      {/* <GridList cellHeight={300} spaceing={1} className={classes.gridList}>
+class HomePageGridList extends React.Component {
+  state = {
+    active: false,
+  };
+  handleMouseEnter = () => {
+    this.setState({
+      active: true
+    });
+  };
+  render() {
+    const { classes } = this.props;
+    return (
+      <div className={classes.root}>
         {tileData.map(tile => (
-          <GridListTile key={tile.img} >
-            <img src={tile.img} alt={tile.title} />
-            <GridListTileBar
-              title={tile.title}
-              titlePosition="top"
-              actionIcon={
-                <IconButton className={classes.icon}>
-                  <StarBorderIcon />
-                </IconButton>
-              }
-              actionPosition="left"
-              className={classes.titleBar}
-            />
-          </GridListTile>
+          <Card className={classes.card}>
+            <CardActionArea className="gray" onMouseEnter={this.handleMouseEnter}>
+              <CardMedia
+                className={classes.media}
+                image={tile.img}
+                title="Contemplative Reptile"
+              />
+              <CardContent>
+                <Typography component="p" className={classes.info}>
+                  {tile.title}
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions style={{position: 'relative', textAlign: 'right'}}>
+              <Button size="small" color="primary" href={this.props.learnMore} className={classes.btn}>
+                preview
+              </Button>
+            </CardActions>
+          </Card>
         ))}
-      </GridList> */}
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 HomePageGridList.propTypes = {

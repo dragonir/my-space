@@ -2,18 +2,10 @@ import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import './home.scss';
 import MediaCard from '../../components/MediaCard';
-// import mediaCardImg from '../../assets/images/components/800.gif';
 import homeImg from '../../assets/images/components/home.png';
 import HomePageGridList from '../../components/GridList/HomePageGridList';
-class MySection extends React.Component {
-  render() {
-    return (
-      <div className="section">
-        <h3 className="section_title">{this.props.content}</h3>
-      </div>
-    );
-  }
-}
+import HomepageThreeList from '../../components/HomepageCompoments/HomepageThreeList';
+
 class SectionOne extends React.Component {
   render() {
     return (
@@ -31,7 +23,6 @@ class SectionOne extends React.Component {
     )
   }
 }
-
 class SectionTwo extends React.Component {
   render() {
     return (
@@ -42,17 +33,25 @@ class SectionTwo extends React.Component {
     )
   }
 }
-
 class SectionThree extends React.Component {
   render () {
     return (
       <div className="section section_three">
-        <h3>MY BLOG</h3>
+        <h3 className="section_title section_three_title">PRACTICE NOTES</h3>
+        <HomepageThreeList />
       </div>
     )
   }
 }
-
+class SectionFour extends React.Component {
+  render () {
+    return (
+      <div className="section section_four">
+        <h3 className="section_title section_four_title">ACKNOWLEDGE</h3>
+      </div>
+    )
+  }
+}
 
 function Home(props) {
   const anchors = ["firstPage", "secondPage", "thirdPage", 'fourthPage'];
@@ -60,7 +59,7 @@ function Home(props) {
     <ReactFullpage
     navigation
     navigationTooltips={anchors}
-    sectionsColor={["#FFFFFF", "#FFFFFF", "#0798ec", "#03c03c"]}
+    sectionsColor={["#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF"]}
     onLeave={(origin, destination, direction) => {
       // console.log("onLeave event", { origin, destination, direction });
     }}
@@ -71,9 +70,7 @@ function Home(props) {
           <SectionOne />
           <SectionTwo />
           <SectionThree />
-          {/* <MySection content={"Slide down!"} /> */}
-          {/* <MySection content={"Keep going!"} /> */}
-          <MySection content={"RESUME"} />
+          <SectionFour />
         </div>
       );
     }}

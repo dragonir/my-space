@@ -1,9 +1,9 @@
 {
-  "main.css": "/my-space/static/css/main.1f066be3.chunk.css",
-  "main.js": "/my-space/static/js/main.cd16ec4d.chunk.js",
-  "main.js.map": "/my-space/static/js/main.cd16ec4d.chunk.js.map",
-  "static/js/1.0a7f601b.chunk.js": "/my-space/static/js/1.0a7f601b.chunk.js",
-  "static/js/1.0a7f601b.chunk.js.map": "/my-space/static/js/1.0a7f601b.chunk.js.map",
+  "main.css": "/my-space/static/css/main.fc53c2ef.chunk.css",
+  "main.js": "/my-space/static/js/main.8fb06610.chunk.js",
+  "main.js.map": "/my-space/static/js/main.8fb06610.chunk.js.map",
+  "static/js/1.2c096b5b.chunk.js": "/my-space/static/js/1.2c096b5b.chunk.js",
+  "static/js/1.2c096b5b.chunk.js.map": "/my-space/static/js/1.2c096b5b.chunk.js.map",
   "runtime~main.js": "/my-space/static/js/runtime~main.863b6279.js",
   "runtime~main.js.map": "/my-space/static/js/runtime~main.863b6279.js.map",
   "static/media/team_final.jpg": "/my-space/static/media/team_final.a388958e.jpg",
@@ -13,8 +13,8 @@
   "static/media/home.png": "/my-space/static/media/home.d90af582.png",
   "static/media/paella.jpg": "/my-space/static/media/paella.50f32ef6.jpg",
   "static/media/ruby2.png": "/my-space/static/media/ruby2.e6b276ae.png",
-  "static/css/main.1f066be3.chunk.css.map": "/my-space/static/css/main.1f066be3.chunk.css.map",
+  "static/css/main.fc53c2ef.chunk.css.map": "/my-space/static/css/main.fc53c2ef.chunk.css.map",
   "index.html": "/my-space/index.html",
-  "precache-manifest.36cab2a879b9af4736282b79e105ff08.js": "/my-space/precache-manifest.36cab2a879b9af4736282b79e105ff08.js",
+  "precache-manifest.99b298b3799539b22c50d0acfe834c5e.js": "/my-space/precache-manifest.99b298b3799539b22c50d0acfe834c5e.js",
   "service-worker.js": "/my-space/service-worker.js"
 }

@@ -5,7 +5,7 @@ import MediaCard from '../../components/MediaCard';
 import homeImg from '../../assets/images/components/home.png';
 import HomePageGridList from '../../components/GridList/HomePageGridList';
 import HomepageThreeList from '../../components/HomepageCompoments/HomepageThreeList';
-
+import LearnMore from '../../components/HomepageCompoments/LearnMore';
 class SectionOne extends React.Component {
   render() {
     return (
@@ -29,6 +29,7 @@ class SectionTwo extends React.Component {
       <div className="section section_two">
         <h3 className="section_title section_two_title">PREVIOUS WORK</h3>
         <HomePageGridList />
+        <LearnMore route="#work" />
       </div>
     )
   }
@@ -39,6 +40,7 @@ class SectionThree extends React.Component {
       <div className="section section_three">
         <h3 className="section_title section_three_title">PRACTICE NOTES</h3>
         <HomepageThreeList />
+        <LearnMore route="#blog" />
       </div>
     )
   }
@@ -48,6 +50,7 @@ class SectionFour extends React.Component {
     return (
       <div className="section section_four">
         <h3 className="section_title section_four_title">ACKNOWLEDGE</h3>
+        <LearnMore route="#about" />
       </div>
     )
   }

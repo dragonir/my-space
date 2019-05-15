@@ -22,7 +22,7 @@ function HomepageThreeList(props) {
     <div className={classes.root}>
       <List component="nav">
         {blogListData.map(blog => (
-          <div>
+          <div key={blog.id}>
              <ListItem>
               <Avatar>
                 <ImageIcon />

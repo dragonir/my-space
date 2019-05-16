@@ -1,9 +1,9 @@
 {
-  "main.css": "/my-space/static/css/main.71a3d9f2.chunk.css",
-  "main.js": "/my-space/static/js/main.f4883073.chunk.js",
-  "main.js.map": "/my-space/static/js/main.f4883073.chunk.js.map",
-  "static/js/1.20ca2bfb.chunk.js": "/my-space/static/js/1.20ca2bfb.chunk.js",
-  "static/js/1.20ca2bfb.chunk.js.map": "/my-space/static/js/1.20ca2bfb.chunk.js.map",
+  "main.css": "/my-space/static/css/main.e2c4e1dc.chunk.css",
+  "main.js": "/my-space/static/js/main.1801f122.chunk.js",
+  "main.js.map": "/my-space/static/js/main.1801f122.chunk.js.map",
+  "static/js/1.b6c4e8db.chunk.js": "/my-space/static/js/1.b6c4e8db.chunk.js",
+  "static/js/1.b6c4e8db.chunk.js.map": "/my-space/static/js/1.b6c4e8db.chunk.js.map",
   "runtime~main.js": "/my-space/static/js/runtime~main.863b6279.js",
   "runtime~main.js.map": "/my-space/static/js/runtime~main.863b6279.js.map",
   "static/media/team_final.jpg": "/my-space/static/media/team_final.a388958e.jpg",
@@ -14,8 +14,8 @@
   "static/media/logo.png": "/my-space/static/media/logo.e6b276ae.png",
   "static/media/paella.jpg": "/my-space/static/media/paella.50f32ef6.jpg",
   "static/media/ruby2.png": "/my-space/static/media/ruby2.e6b276ae.png",
-  "static/css/main.71a3d9f2.chunk.css.map": "/my-space/static/css/main.71a3d9f2.chunk.css.map",
+  "static/css/main.e2c4e1dc.chunk.css.map": "/my-space/static/css/main.e2c4e1dc.chunk.css.map",
   "index.html": "/my-space/index.html",
-  "precache-manifest.f7f0dedb10a73658858de0cc4f0c638f.js": "/my-space/precache-manifest.f7f0dedb10a73658858de0cc4f0c638f.js",
+  "precache-manifest.f7dc3706402e683d8b20b63c6b0fceb2.js": "/my-space/precache-manifest.f7dc3706402e683d8b20b63c6b0fceb2.js",
   "service-worker.js": "/my-space/service-worker.js"
 }

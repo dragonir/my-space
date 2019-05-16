@@ -22,6 +22,8 @@ import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 import routes from '../../routes/index';
 
+import logo from '../../assets/images/components/logo.png';
+
 const drawerWidth = 240;
 const styles = theme => ({
   root: {
@@ -87,7 +89,6 @@ const styles = theme => ({
   },
   content: {
     flexGrow: 1,
-    // padding: theme.spacing.unit * 3,
     backgroundColor: '#F2F2F2',
     minHeight: '100vh',
     display: 'flex',
@@ -105,7 +106,12 @@ const styles = theme => ({
   navBtn: {
     height: "100%",
     padding: '20px 10px'
-  }
+  },
+  logo: {
+    height: theme.spacing.unit * 6,
+    position: 'relative',
+    top: '5px',
+  },
 });
 
 
@@ -134,7 +140,7 @@ class Index extends React.Component {
   renderSideBar() {
     var url = window.location.href;
     var hash = url.substring(window.location.href.indexOf("#") + 2, url.length);
-    if (hash === "about" || hash === "work" || hash === "") return false;
+    if (hash === "about" || hash === "work" || hash === "" || hash === "blog" || hash.indexOf("blogdetail") !== -1 ) return false;
     return true;
   };
 
@@ -270,12 +276,13 @@ class Index extends React.Component {
             {showSide ? drawerIcon : ''}
           </div>
           <Typography variant="h6" color="inherit" noWrap>
-            MY SPACE
-        </Typography>
+            <img className={classes.logo} src={logo} alt="logo" />
+          </Typography>
           <Link to="/" className={classes.navLink} ><Button color="inherit" className={classes.navBtn} onClick={this.handleDrawerClose}>HOME</Button></Link>
           <Link to="/material" className={classes.navLink} ><Button color="inherit" className={classes.navBtn} onClick={this.handleDrawerClose}>Material</Button></Link>
-          <Link to="/about" className={classes.navLink} ><Button color="inherit" className={classes.navBtn} onClick={this.handleDrawerClose}>ABOUT</Button></Link>
           <Link to="/work" className={classes.navLink} ><Button color="inherit" className={classes.navBtn} onClick={this.handleDrawerClose}>WORK</Button></Link>
+          <Link to="/blog" className={classes.navLink} ><Button color="inherit" className={classes.navBtn} onClick={this.handleDrawerClose}>BLOG</Button></Link>
+          <Link to="/about" className={classes.navLink} ><Button color="inherit" className={classes.navBtn} onClick={this.handleDrawerClose}>ABOUT</Button></Link>
         </Toolbar>
       </AppBar>
     );
@@ -285,7 +292,6 @@ class Index extends React.Component {
         {showNav ? nav : ''}
         {showSide ? drawer : ''}
         <div className={classes.content}>
-          {/* <div className={classes.toolbar} /> */}
           {routes}
         </div>
       </div>

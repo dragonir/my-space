@@ -2,7 +2,7 @@
   "name": "my-space",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dragonir.github.io/my-space",
+  "homepage": "https://dragonir.github.io",
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.14",
     "@material-ui/core": "^3.9.1",

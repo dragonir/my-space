@@ -11,7 +11,7 @@ class BlogDetail extends Component {
   }
 
   componentDidMount() {
-    return axios.get(`http://localhost:3005/students/${this.props.match.params.id}`).then( results => {
+    return axios.get(`http://localhost:3005/blogdetail/${this.props.match.params.id}`).then( results => {
       this.setState({
         studentInfo: results.data
       });

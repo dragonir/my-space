@@ -2,8 +2,6 @@ import NotFound from './NotFound'
 import DenseAppBar from './DenseAppBar'
 import MediaCard from './MediaCard'
 import MiniDrawer from './MiniDrawer'
-
-
 import AppBar from './AppBar/index';
 import Autocomplete from './Autocomplete/index';
 import Avatars from './Avatars/index';

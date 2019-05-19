@@ -36,7 +36,8 @@ const styles = theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    background: 'linear-gradient(to right, #11998e, #38ef7d)',
+    // background: 'linear-gradient(to right, #11998e, #38ef7d)',
+    background: '#2D2D2D',
   },
   appBarShift: {
     marginLeft: drawerWidth,

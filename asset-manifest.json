@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.e2c4e1dc.chunk.css",
-  "main.js": "/static/js/main.1801adce.chunk.js",
-  "main.js.map": "/static/js/main.1801adce.chunk.js.map",
+  "main.js": "/static/js/main.27885444.chunk.js",
+  "main.js.map": "/static/js/main.27885444.chunk.js.map",
   "static/js/1.b6c4e8db.chunk.js": "/static/js/1.b6c4e8db.chunk.js",
   "static/js/1.b6c4e8db.chunk.js.map": "/static/js/1.b6c4e8db.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -11,11 +11,11 @@
   "static/media/pink_cloud.png": "/static/media/pink_cloud.6c534e5e.png",
   "static/media/bart.jpg": "/static/media/bart.a1f784fb.jpg",
   "static/media/home.png": "/static/media/home.d90af582.png",
-  "static/media/logo.png": "/static/media/logo.e6b276ae.png",
+  "static/media/logo.png": "/static/media/logo.5eaab751.png",
   "static/media/paella.jpg": "/static/media/paella.50f32ef6.jpg",
   "static/media/ruby2.png": "/static/media/ruby2.e6b276ae.png",
   "static/css/main.e2c4e1dc.chunk.css.map": "/static/css/main.e2c4e1dc.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.dddc26235a44621e00e9f736a8f13cbe.js": "/precache-manifest.dddc26235a44621e00e9f736a8f13cbe.js",
+  "precache-manifest.52da14f2a047c68bc2a64275acbd9817.js": "/precache-manifest.52da14f2a047c68bc2a64275acbd9817.js",
   "service-worker.js": "/service-worker.js"
 }

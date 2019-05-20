@@ -6,6 +6,7 @@ import homeImg from '../../assets/images/components/home.png';
 import HomePageGridList from '../../components/GridList/HomePageGridList';
 import HomepageThreeList from '../../components/HomepageCompoments/HomepageThreeList';
 import LearnMore from '../../components/HomepageCompoments/LearnMore';
+
 class SectionOne extends React.Component {
   render() {
     return (

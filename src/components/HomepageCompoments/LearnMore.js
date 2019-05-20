@@ -11,10 +11,11 @@ const styles = theme => ({
     position: 'absolute',
     bottom: theme.spacing.unit * 2,
     right: theme.spacing.unit * 10,
-    background: '#2D2D2D',
+    background: '#03C03C',
     color: '#FFFFFF',
     '&:hover': {
       background: '#03C03C',
+      opacity: '0.8',
     },
   },
 });

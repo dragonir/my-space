@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
-import './home.scss';
 import MediaCard from '../../components/MediaCard';
 import homeImg from '../../assets/images/components/home.png';
 import HomePageGridList from '../../components/GridList/HomePageGridList';
 import HomepageThreeList from '../../components/HomepageCompoments/HomepageThreeList';
 import LearnMore from '../../components/HomepageCompoments/LearnMore';
+import './home.scss';
+import './home.styl';
 
 class SectionOne extends React.Component {
   render() {

@@ -66,7 +66,7 @@ function SimpleTable(props) {
     )
 }
 
-SimpleTable.PropTypes = {
+SimpleTable.propTypes = {
     classes: PropTypes.object.isRequired,
 }
 

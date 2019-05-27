@@ -59,7 +59,7 @@ function SimpleBadge(props) {
   );
 }
 
-SimpleBadge.PropTypes = {
+SimpleBadge.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 

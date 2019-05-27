@@ -41,7 +41,7 @@ class SimpleBottomNavagation extends React.Component {
   }
 }
 
-SimpleBottomNavagation.proptypes = {
+SimpleBottomNavagation.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 

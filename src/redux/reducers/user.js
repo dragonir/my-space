@@ -1,4 +1,4 @@
-import { UPDATE_USER_INFO } from '../common/constant'
+import { UPDATE_USER_INFO } from '../../common/constant'
 
 const initialState = {
   info: ''

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './mailLayout.styl';
+import './mainLayout.styl';
 
 export default class extends Component {
   state = {

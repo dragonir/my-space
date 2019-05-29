@@ -1,4 +1,4 @@
-import { CHANGE_PAGE_COLOR, CHANGE_LOADING_STATE } from '../common/constant'
+import { CHANGE_PAGE_COLOR, CHANGE_LOADING_STATE } from '../../common/constant'
 
 const initialState = {
   isDark: false,

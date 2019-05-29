@@ -1,4 +1,4 @@
-import Component from './Article.jsx'
+import Component from './Post.jsx'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 

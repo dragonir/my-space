@@ -1,12 +1,9 @@
-import Component from './LinkSection.jsx'
+import Component from './UserSection.jsx'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
 function updateUserInfo(info) {
   return { type: 'UPDATE_USER_INFO', info }
-}
-function changePageColor() {
-  return { type: 'CHANGE_PAGE_COLOR' }
 }
 
 function mapStateToProps(state) {
@@ -17,7 +14,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ updateUserInfo, changePageColor }, dispatch)
+  return bindActionCreators({ updateUserInfo }, dispatch)
 }
 
 export default connect(

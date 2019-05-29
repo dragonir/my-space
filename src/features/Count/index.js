@@ -1,22 +1,21 @@
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import Count from './Count.jsx';
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import Count from './Count.jsx'
 
 function plusOne() {
-  return { type: 'PLUS' };
+  return { type: 'PLUS' }
 }
 
 function mapStateToProps(state) {
   return {
-    count: state.plus.count,
-  };
+    count: state.plus.count
+  }
 }
-
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ plusOne }, dispatch);
+  return bindActionCreators({ plusOne }, dispatch)
 }
 
-export default connect (
+export default connect(
   mapStateToProps,
-  mapDispatchToProps,
+  mapDispatchToProps
 )(Count)

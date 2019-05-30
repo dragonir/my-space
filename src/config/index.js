@@ -30,8 +30,8 @@ const config = {
   repo: 'BLOG_ISSUE',
 
   // 请申请一个clientID
-  clientID: '',
-  clientSecret: '',
+  clientID: 'c11664f8134b71a780cf',
+  clientSecret: 'b16bff925f6d3c42a265d0bfb95f65fe31240291',
   /**
    * 在本博客显示的其他issue创建者
    * 项目所有者（组织仓库的话为所有组织成员）及COLLABORATOR默认会显示

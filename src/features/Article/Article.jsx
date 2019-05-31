@@ -3,10 +3,8 @@ import { getIssue } from '../../utils/github'
 import Markdown from 'react-markdown'
 import { Link } from 'react-router-dom'
 import dayjs from 'dayjs'
-
 import _config from '../../config'
-
-import './article.styl'
+import './article.scss'
 
 export default class extends Component {
   state = {

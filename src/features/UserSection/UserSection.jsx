@@ -5,7 +5,7 @@ import SectionItem from '../../components/SectionItem'
 import { getUser } from '../../utils/github'
 import scrollAni from './scrollAni'
 
-import './userSection.styl'
+import './userSection.scss'
 
 import _config from '../../config'
 

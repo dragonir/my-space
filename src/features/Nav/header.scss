@@ -48,7 +48,7 @@
   .phone-pull-down {
     display: block !important;
     position: fixed;
-    size: 50px;
+    @include size(50px);
     top: 0;
     right: 0;
     box-sizing: border-box;

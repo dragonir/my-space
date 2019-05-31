@@ -2,5 +2,6 @@
 
 @mixin size($arguments) {
   width: $arguments;
+  height: $arguments;
   // height: $arguments[1] ? arguments[i] : arguments[0]
 } 

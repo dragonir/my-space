@@ -1,0 +1,75 @@
+@import '../../utils/utils.scss';
+@import '~github-markdown-css/github-markdown.css';
+.articel-container {
+  padding: 20px;
+  .con-info {
+    margin-bottom: 40px;
+    text-align: center;
+    .title {
+      padding-bottom: 5px;
+    }
+    .info {
+      color: $color3;
+      opacity: .9;
+      .info-label {
+        color: $color2;
+        background: $white4;
+        padding: 3px 6px;
+        margin: 4px 5px;
+        display: inline-block;
+        border-radius: 5px;
+        &:hover {
+          background: $color3;
+          color: #FFFFFF;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .markdown-body {
+    img {
+      display: block;
+    }
+    P {
+      white-space: pre-wrap !important;
+      line-height: 1.66em;
+    }
+  }
+}
+.bp3-dark {
+  .con-info .info {
+    color: $white5;
+    .info-label {
+      background: $bg2;
+      color: $gray4;
+      &:hover {
+        color: $color2;
+        background: $white4;
+      }
+    }
+  }
+  .markdown-body {
+    color: $white4;
+    pre {
+      background-color: $bg2;
+      &:hover {
+        background: $white5 !important;
+        color: $black3;
+        code {
+          background: $white5;
+        }
+      }
+    }
+    blockquote {
+      color: $gray4;
+    }
+    code {
+      background: $bg2;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .articel-container {
+    padding: 10px;
+  }
+}

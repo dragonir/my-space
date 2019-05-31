@@ -1,0 +1,17 @@
+@import '../../utils/utils.scss';
+.not-found {
+  width: 100vw;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20vh 0;
+  text-align: center;
+  font-size: 2.5vh;
+  color: $gray4;
+  div {
+    margin: 20px auto;
+  }
+  .not-f-icon {
+    width: 40vw;
+    padding-bottom: 3vw;
+  }
+}

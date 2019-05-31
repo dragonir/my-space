@@ -7,7 +7,7 @@
     padding-left: 5px;
     .bp3-icon {
       color: $white5;
-      size: .8em;
+      @include size(.8em);
       margin-right: 5px;
       vertical-align: top;
       height: 0;

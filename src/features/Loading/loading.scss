@@ -1,0 +1,39 @@
+@import '../../utils/utils.scss';
+
+#loading-cover {
+  height: 100vh;
+  width: 100vw;
+  background: $white2;
+  position: fixed;
+  z-index: 101;
+  opacity: 1;
+  transition: all .3s ease;
+  overflow: hidden;
+  &.loading-hide {
+    transform: translate(0, 100vh);
+  }
+  .loading-ani {
+    height: 20vw;
+    width: 16vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -8vw;
+    margin-top: -10vw;
+    &>div {
+      background: $gray3;
+      border-radius: 5px;
+      width: 1.2vw;
+      height: 10vw;
+      margin: 0 1vw;
+    }
+  }
+}
+.bp3-darl {
+  #loading-cover {
+    background: $bg3;
+    .loading-ani>div {
+      background: $white5;
+    }
+  }
+}

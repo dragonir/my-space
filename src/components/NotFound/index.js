@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import pageConfig from '../../common/pageConfApi';
 import icon from '../../assets/img/404.svg';
-import './sectionItem.styl';
+import './sectionItem.scss';
 
 class NotFound extends Component {
   render() {

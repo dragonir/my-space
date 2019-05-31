@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Gitalk from 'gitalk';
 import _config from '../../config';
 import 'gitalk/dist/gitalk.css';
-import './gitalk.styl';
+import './gitalk.scss';
 
 export default class extends Component {
   render() {

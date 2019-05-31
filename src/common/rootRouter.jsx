@@ -9,7 +9,7 @@ import labelRoute from '../routes/label'
 import Footer from '../features/Footer'
 import NetEaseMusic from '../components/NetEaseMusic'
 import _config from '../config'
-import './global.styl'
+import './global.scss'
 
 const Router = process.env.ROUTE_MODE === 'hash' ? HashRouter : BrowserRouter
 export default connect(state => {

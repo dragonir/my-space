@@ -1,0 +1,25 @@
+@import '../../utils/utils.scss';
+#netease-music {
+  position: fixed;
+  border-radius: 5px;
+  overflow: hidden;
+  top: 50px;
+  right: 0px;
+  box-sizing: border-box;
+  padding: 10px;
+  z-index: 11;
+  transform: all .3s;
+}
+@media screen and (max-width: 1720px) {
+  #netease-music {
+    right: -251px !important;
+    &:hover {
+      right: 0px !important;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  #netease-music {
+    display: none;
+  }
+}

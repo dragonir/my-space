@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import './blankSection.styl'
+import './blankSection.scss'
 
 import _config from '../../config'
 

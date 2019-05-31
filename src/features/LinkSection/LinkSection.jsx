@@ -5,7 +5,7 @@ import { getUser } from '../../utils/github'
 import BlankSection from './BlankSection.jsx'
 import LabelSection from './LabelSection.jsx'
 
-import './linkSection.styl'
+import './linkSection.scss'
 
 import _config from '../../config'
 

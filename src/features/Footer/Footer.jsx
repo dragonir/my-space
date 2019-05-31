@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import _config from '../../config'
 
-import './footer.styl'
+import './footer.scss'
 
 export default class Count extends Component {
   render() {

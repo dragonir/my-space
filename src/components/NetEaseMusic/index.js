@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './netEaseMusic.styl';
+import './netEaseMusic.scss';
 
 export default class extends Component {
   render() {

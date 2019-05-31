@@ -1,0 +1,6 @@
+@import '../config/index.scss';
+
+@mixin size($arguments) {
+  width: $arguments;
+  // height: $arguments[1] ? arguments[i] : arguments[0]
+} 

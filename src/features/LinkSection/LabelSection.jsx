@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { InputGroup } from '@blueprintjs/core'
 import { listLabels } from '../../utils/github'
 
-import './labelSection.styl'
+import './labelSection.scss'
 
 export default class extends React.PureComponent {
   state = {

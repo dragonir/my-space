@@ -1,0 +1,40 @@
+@import '../utils/utils.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  transition:  background .3s ease;
+}
+.body {
+  overflow-x: hidden;
+}
+#content-root {
+  background: #ECECEC;
+  min-height: 100vh;
+  &.bp3-dark {
+    background: #5C7080;
+  }
+}
+
+.kill-ie {
+  font-size: 40PX;
+  z-index: 1000;
+  position: fixed;
+}
+span.padding-line {
+  padding: 0 .6em;
+  &::after {
+    content: '|';
+  }
+}
+hr {
+  border-bottom-width: 0;
+  border-top-width: 0;
+  border-bottom: 1px solid $white4;
+}
+@media screen and (max-width: 800px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+}

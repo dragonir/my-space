@@ -106,6 +106,7 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "sw-precache-webpack-plugin": "^0.11.5",
+    "typescript": "^3.5.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.32.2",
     "webpack-dev-server": "^3.4.1",

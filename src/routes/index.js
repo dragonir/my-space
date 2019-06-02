@@ -7,6 +7,8 @@ import Material from '../containers/Material';
 import Blog from '../containers/Blog';
 import BlogDetail from '../containers/Blog/BlogDetail';
 
+// import RootRouter from '../common/RootRouter.jsx';
+
 export default (
   <Switch>
     <Route component={ Home } path="/" exact />

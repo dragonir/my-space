@@ -1,11 +1,25 @@
 import React, { Component } from 'react';
+import RootRouter from '../../common/RootRouter.jsx';
+
+import configureStore from '../../common/configureStore';
+import reducer from '../../redux/reducers';
+import _config from '../../config';
+import { Provider } from 'react-redux';
+
+
+
+
+const store = configureStore(reducer);
+const { title, titleSuffix } = _config;
+document.title = title ? `${title + (titleSuffix ? ` - ${titleSuffix}` : '')}` : document.title;
+
 
 class Blog extends Component {
   render () {
     return (
-      <div>
-        <h1>BLOG</h1>
-      </div>
+      <Provider store={store}>
+<RootRouter />
+</Provider>
     )
   }
 }

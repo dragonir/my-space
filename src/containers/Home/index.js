@@ -64,6 +64,7 @@ function Home(props) {
     navigation
     navigationTooltips={anchors}
     sectionsColor={["#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF"]}
+    licenseKey = {"OPEN-SOURCE-GPLV3-LICENSE"}
     onLeave={(origin, destination, direction) => {
       // console.log("onLeave event", { origin, destination, direction });
     }}

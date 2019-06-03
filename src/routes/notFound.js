@@ -1,6 +1,6 @@
 import React from 'react'
 
-import NotFound from '../components/NotFound'
+import NotFound from '../components/BlogComponents/NotFound'
 
 import _config from '../config'
 

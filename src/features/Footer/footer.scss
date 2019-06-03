@@ -5,8 +5,8 @@ footer {
   box-sizing: border-box;
   text-align: center;
   color: $gray4;
-  padding-bottom: 10px;
-  font-size: 13px;
+  padding-bottom: 15px;
+  font-size: 14px;
   overflow: hidden;
   p {
     .span-item::after {
@@ -17,6 +17,6 @@ footer {
     }
   }
   a {
-    color: $gray1;
+    color: $gray2;
   }
 }

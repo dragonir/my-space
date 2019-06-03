@@ -7,7 +7,7 @@ import articleRoute from '../routes/article'
 import notFoundRoute from '../routes/notFound'
 import labelRoute from '../routes/label'
 import Footer from '../features/Footer'
-import NetEaseMusic from '../components/NetEaseMusic'
+import NetEaseMusic from '../components/BlogComponents/NetEaseMusic'
 import _config from '../config'
 import './global.scss'
 

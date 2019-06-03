@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from '@blueprintjs/core'
-import SectionItem from '../../components/SectionItem'
+import SectionItem from '../../components/BlogComponents/SectionItem'
 import { getUser } from '../../utils/github'
 import scrollAni from './scrollAni'
-
-import './userSection.scss'
-
 import _config from '../../config'
+import './userSection.scss'
 
 export default class extends Component {
   state = {
@@ -16,7 +14,6 @@ export default class extends Component {
   render() {
     const { avatar_url, name, login } = this.props.userInfo
     const { description } = _config
-
     return (
       <SectionItem>
         {avatar_url && (
@@ -39,7 +36,6 @@ export default class extends Component {
       </SectionItem>
     )
   }
-
   async componentWillMount() {
     let userInfo = (await getUser(_config.user)).data
     this.setState({

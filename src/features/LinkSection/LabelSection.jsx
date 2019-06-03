@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionItem from '../../components/SectionItem'
+import SectionItem from '../../components/BlogComponents/SectionItem'
 import { Link } from 'react-router-dom'
 import { InputGroup } from '@blueprintjs/core'
 import { listLabels } from '../../utils/github'

@@ -2,22 +2,19 @@ import pageConfApi from '../common/pageConfApi'
 import pageConf from './pageConf'
 
 const config = {
-  title: 'TRICELL的博客',
-
-  titleSuffix: 'Blogsue',
+  title: 'TRICELL',
+  titleSuffix: '',
 
   // 界面右边，Github头像下的标语
   // 你可以写自己的座右铭
-  description: '副标题',
+  description: 'descript',
 
   // 界面右边，github头像下的链接按钮
-  userLinks: [
-    {
-      title: 'GitHub',
-      icon: 'user',
-      url: 'https://github.com/coderming'
-    }
-  ],
+  userLinks: [{
+    title: 'GitHub',
+    icon: 'user',
+    url: 'https://github.com/dragonir'
+  }],
   /**
    * 仓库如果在用户下，填 users
    * 如果在组织下，填 orgs
@@ -59,10 +56,9 @@ const config = {
    * 链接有两种属性，一种是url，一种是to
    * 前者对应直接刷新跳转链接，后者对应react-router的Link标签链接（不会触发页面刷新，不能指向其他域名）
    */
-  navItem: [
-    {
+  navItem: [{
       name: 'Github',
-      url: 'https://github.com/xxx',
+      url: 'https://github.com/dragonir',
       icon: 'person'
     },
     {
@@ -75,23 +71,19 @@ const config = {
   /**
    * Github 用户配置项
    */
-  linkSections: [
-    {
-      title: '友情链接',
-      linkList: [
-        {
-          name: 'CoderMing的个人博客',
-          href: 'https://coderming.com/'
-        }
-      ]
-    }
-  ],
+  linkSections: [{
+    title: '友情链接',
+    linkList: [{
+      name: 'TRICELL.FUN',
+      href: 'https://tricell.fun'
+    }]
+  }],
   /**
    * 右侧sections的空白处
    * 注意！此处是直接插入html字段，目的是为了支持更高的用户自定义度（例如使用a标签
    * 请勿插入危险的标签
    */
-  blankSections: ['Write with ❤️ by xxx'],
+  blankSections: ['Write with by dragonir'],
 
   footers: [
     '本博客系统由 <a href="http://www.reactjs.org">React.js</a> 驱动',
@@ -102,9 +94,7 @@ const config = {
    * 如果你的文件将会经常变动，或者是在同一域名下有其它项目在运行，请填false
    */
   isUseServiceWorker: false,
-
   pageConf,
-
   pageConfApi
 }
 

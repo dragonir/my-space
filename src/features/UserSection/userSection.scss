@@ -3,7 +3,7 @@
   .user-avator {
     border-radius: 50%;
     border: 5px solid rgba($white5, .5);
-    @include size(120px);
+    @include size(110px);
     display: block;
     margin: 20px auto 10px;
   }
@@ -11,6 +11,7 @@
     text-align: center;
     color: $color1;
     padding-bottom: 5px;
+    font-size: 18px;
   }
   .user-link {
     text-align: center;

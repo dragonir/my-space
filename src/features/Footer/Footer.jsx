@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-
 import _config from '../../config'
-
 import './footer.scss'
 
 export default class Count extends Component {
@@ -17,7 +15,7 @@ export default class Count extends Component {
             ))}
         </p>
         <p className="footer-item">
-          Powered by <a href="https://github.com/CoderMing/blogsue">Blogsue</a>
+          Powered by <a href="https://github.com/dragonir">dragonir</a>
         </p>
       </footer>
     )

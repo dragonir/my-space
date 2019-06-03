@@ -1,4 +1,4 @@
-import NotFound from './NotFound'
+// import NotFound from './NotFound'
 import DenseAppBar from './DenseAppBar'
 import MediaCard from './MediaCard'
 import MiniDrawer from './MiniDrawer'
@@ -21,7 +21,7 @@ import Progress from './Progress/index';
 import SelectionControls from './SelectionControls/index';
 
 export {
-  NotFound,
+  // NotFound,
   DenseAppBar,
   MediaCard,
   MiniDrawer,

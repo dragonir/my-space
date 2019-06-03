@@ -1,9 +1,9 @@
 import React from 'react'
 
-import SectionItem from '../components/SectionItem'
-import MainLayout from '../components/MainLayout'
+import SectionItem from '../components/BlogComponents/SectionItem'
+import MainLayout from '../components/BlogComponents/MainLayout'
+import Gitalk from '../components/BlogComponents/Gitalk'
 import Article from '../features/Article'
-import Gitalk from '../components/Gitalk'
 import UserSection from '../features/UserSection'
 import LinkSection from '../features/LinkSection'
 import Loading from '../features/Loading'

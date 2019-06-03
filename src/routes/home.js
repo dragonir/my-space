@@ -1,12 +1,10 @@
 import React from 'react'
-
-import SectionItem from '../components/SectionItem'
-import MainLayout from '../components/MainLayout'
+import SectionItem from '../components/BlogComponents/SectionItem'
+import MainLayout from '../components/BlogComponents/MainLayout'
 import UserSection from '../features/UserSection'
 import LinkSection from '../features/LinkSection'
 import Post from '../features/Post'
 import Loading from '../features/Loading'
-
 import _config from '../config'
 
 export default class extends React.Component {

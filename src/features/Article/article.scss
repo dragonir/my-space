@@ -1,16 +1,18 @@
 @import '../../utils/utils.scss';
 @import '~github-markdown-css/github-markdown.css';
-.articel-container {
+.article-container {
   padding: 20px;
   .con-info {
     margin-bottom: 40px;
     text-align: center;
     .title {
       padding-bottom: 5px;
+      font-size: .8em;
     }
     .info {
       color: $color3;
       opacity: .9;
+      font-size: .5em;
       .info-label {
         color: $color2;
         background: $white4;
@@ -30,9 +32,19 @@
     img {
       display: block;
     }
+    h1 {
+      font-size: 26px;
+    }
     P {
       white-space: pre-wrap !important;
       line-height: 1.66em;
+      text-align: justify;
+      text-align-last: left;
+      text-indent: 2em;
+    }
+    h1, h2, h3, h4, h5, h6, pre, code {
+      text-align: justify;
+      text-align-last: left;
     }
   }
 }

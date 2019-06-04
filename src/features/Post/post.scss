@@ -25,18 +25,26 @@
       background: $white2;
       cursor: pointer;
     }
-    h3 {
+    .post-title {
+      font-size: .75em;
       line-height: 2em;
       color: $black4;
+      text-align: left;
     }
     .item-info {
       color: $color3;
+      text-align: center;
+      font-size: .5em;
     }
     .item-body {
       color: $gray1;
       padding: 8px 0;
       white-space: pre-line;
       overflow: hidden;
+      font-size: .6em;
+      text-align: justify;
+      text-align-last: left;
+      text-indent: 2em;
     }
     .item-labels {
       margin: 7px 0;
@@ -45,6 +53,7 @@
         border-radius: 4px;
         background: $white4;
         margin-right: 10px;
+        font-size: .5em;
       }
     }
   }

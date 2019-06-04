@@ -32,7 +32,7 @@ export default class extends Component {
           issueList.map((el, index) => (
             <Link to={`/article/${el.number}`} key={index}>
               <div className="post-item">
-                <h3>
+                <h3 className="post-title">
                   <big>{el.title}</big>
                 </h3>
                 <div className="item-info">

@@ -7,8 +7,6 @@ import Material from '../containers/Material';
 import Blog from '../containers/Blog';
 import BlogDetail from '../containers/Blog/BlogDetail';
 
-// import RootRouter from '../common/RootRouter.jsx';
-
 export default (
   <Switch>
     <Route component={ Home } path="/" exact />
@@ -17,7 +15,6 @@ export default (
     <Route component={ Material } path="/material" />
     <Route component={ Blog } path="/blog" />
     <Route component={ BlogDetail } path="/blogdetail/:id" />
-
     <Route component={ AppBar } path="/appbar" />
     <Route component={ Autocomplete } path="/autocomplete" />
     <Route component={ Avatars } path="/avatars" />
@@ -25,7 +22,6 @@ export default (
     <Route component={ BottomNavigation } path="/bottomnavigation" />
     <Route component={ ExpansionPanels } path="/expansionpabels" />
     <Route component={GridList} path="/gridlist" />
-
     <Route component={ Table } path='/table' />
     <Route component={ Tabs } path="/tabs" />
     <Route component={ Snackbar } path="/snackbar" />

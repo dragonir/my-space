@@ -11,15 +11,16 @@ class SectionOne extends React.Component {
   render() {
     return (
       <div className="section section_one">
-        <h3 className="section_title">EVERY MAN IS HIS OWN WORST ENEMY.</h3>
-        <MediaCard 
+        <h3 className="section_title">CALM DOWN</h3>
+        {/* <MediaCard 
           image={homeImg} 
           title={"Once upon a time ..."}
           maxWidth="35em"
           height="38em"
           info={"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"}
           learnMore={"#about"}
-        />
+        /> */}
+        <a href="#blog">ENTER</a>
       </div>
     )
   }

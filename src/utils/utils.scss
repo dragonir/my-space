@@ -4,3 +4,31 @@
   width: $arguments;
   height: $arguments;
 } 
+@mixin absolute($arguments) {
+  position: absolute;
+  margin: $arguments;
+}
+@mixin relative($arguments) {
+  position: relative;
+  margin: $arguments;
+}
+@mixin fixed($arguments) {
+  position: fixed;
+  margin: $arguments;
+}
+@mixin middleAbsolute($height, $width) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -($height / 2);
+  margin-left: -($width / 2);
+} 
+@mixin line-center($height) {
+  line-height: $height;
+  text-align: center;
+}
+@mixin textFlow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

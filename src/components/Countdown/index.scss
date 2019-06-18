@@ -1,0 +1,29 @@
+.time_zone {
+  border: 1px dashed #03C03C;
+  text-align: right;
+  margin: 30px auto 0;
+  padding: 10px;
+  .current_time {
+    font-size: 18px;
+    letter-spacing: .5em;
+    color: #03C03C;
+  }
+  .countdown_time {
+    font-size: 20px;
+    letter-spacing: .5em;
+    color: #03C03C;
+    em {
+      text-decoration: none;
+      font-style: normal;
+    }
+  }
+  &:hover {
+    background: rgba(3, 192, 60, .1);
+    cursor: crosshair;
+    .countdown_time {
+      em {
+        color: #FFFFFF;
+      }
+    }
+  }
+}

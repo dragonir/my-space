@@ -8,6 +8,8 @@ import LearnMore from '../../components/HomepageCompoments/LearnMore';
 import './home.scss';
 
 import moon from '../../assets/images/components/home/moon.png';
+import Countdown from '../../components/Countdown/index';
+import Count from '../../features/Footer/Footer';
 
 class SectionOne extends React.Component {
   render() {
@@ -27,6 +29,7 @@ class SectionOne extends React.Component {
           <div className="intro">
             <p className="text">The HTML5 test score is an indication of how well your browser supports the HTML5 standard and related specifications. Find out which parts of HTML5 are supported by your browser today and compare the results with other browsers.</p>
             <p><a className="enter_btn" href="#blog">ENTER</a></p>
+            <Countdown />
           </div>
         </div>
       </div>

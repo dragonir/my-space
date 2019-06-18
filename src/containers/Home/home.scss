@@ -6,8 +6,16 @@
     font-weight: 700;
   }
   &.section_one {
+    background: #000000;
     .section_title {
-      letter-spacing: .1em;
+      letter-spacing: .5em;
+      color: #FFFFFF;
+      // text-shadow: 1px 1px 1px #03C03C, 2px 2px 2px #03c03c, 3px 3px #03C03C, 4px 4px 4px #03C03C, 5px 5px 5px #03C03C;
+      margin-bottom: 30px;
+      text-align: right;
+      padding: 0 10%;
+      position: relative;
+      right: -30px;
     }
     .enter_anchor {
       text-decoration: none;
@@ -23,6 +31,40 @@
         transition: all .3s ease-in-out;
         &:hover {
           opacity: .75;
+        }
+      }
+    }
+    .moon_container {
+      text-align: left;
+      padding: 0 10%;
+      height: 60vh;
+      display: flex;
+      justify-content: space-between;
+      .moon {
+        height: 100%;
+        width: auto;
+        animation: moon 100s linear infinite;
+      }
+      .intro {
+        text-align: right;
+        .text {
+          font-size: .75em;
+          color: #03C03C;
+          line-height: 2;
+          text-align: justify;
+          text-align-last: left;
+          padding-left: 250px;
+        }
+        .enter_btn {
+          text-decoration: none;
+          color: #03C03C;
+          border: 1px solid #03c03c;
+          display: inline-block;
+          padding: 10px 45px;
+          margin: 45px auto 0;
+          &:hover {
+            background: rgba(3, 192, 60, .1);
+          }
         }
       }
     }
@@ -50,4 +92,14 @@
 }
 .fp-section {
   text-align: center;
+}
+
+
+@keyframes moon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

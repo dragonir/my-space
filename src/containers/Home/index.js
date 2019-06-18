@@ -7,11 +7,13 @@ import HomepageThreeList from '../../components/HomepageCompoments/HomepageThree
 import LearnMore from '../../components/HomepageCompoments/LearnMore';
 import './home.scss';
 
+import moon from '../../assets/images/components/home/moon.png';
+
 class SectionOne extends React.Component {
   render() {
     return (
       <div className="section section_one">
-        <h3 className="section_title">CALM DOWN</h3>
+        <h3 className="section_title">TRICELL</h3>
         {/* <MediaCard 
           image={homeImg} 
           title={"Once upon a time ..."}
@@ -20,7 +22,13 @@ class SectionOne extends React.Component {
           info={"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"}
           learnMore={"#about"}
         /> */}
-        <a href="#blog">ENTER</a>
+        <div className="moon_container">
+          <img className="moon" src={moon} />
+          <div className="intro">
+            <p className="text">The HTML5 test score is an indication of how well your browser supports the HTML5 standard and related specifications. Find out which parts of HTML5 are supported by your browser today and compare the results with other browsers.</p>
+            <p><a className="enter_btn" href="#blog">ENTER</a></p>
+          </div>
+        </div>
       </div>
     )
   }
@@ -64,7 +72,7 @@ function Home(props) {
     <ReactFullpage
     navigation
     navigationTooltips={anchors}
-    sectionsColor={["#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF"]}
+    sectionsColor={["#000000", "#FFFFFF", "#FFFFFF", "#FFFFFF"]}
     licenseKey = {"OPEN-SOURCE-GPLV3-LICENSE"}
     onLeave={(origin, destination, direction) => {
       // console.log("onLeave event", { origin, destination, direction });

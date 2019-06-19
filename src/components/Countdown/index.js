@@ -1,11 +1,9 @@
 import React from 'react';
 import './index.scss';
-
 class Countdown extends React.Component {
   state = {
     date: new Date()
   }
-
   componentDidMount = () => {
     var that = this;
     this.timer = setInterval(function () {
@@ -14,7 +12,6 @@ class Countdown extends React.Component {
       })
     }, 1000)
   }
-
   getDuration = my_time => {
     var days = my_time / 1000 / 60 / 60 / 24;
     var daysRound = Math.floor(days);
@@ -26,18 +23,15 @@ class Countdown extends React.Component {
     var time = hoursRound + ':' + minutesRound + ':' + seconds;
     return time;
   }
-
   calculateCountDown = () => {
     var end = new Date(Date.parse(this.state.date.getFullYear() + this.state.date.getMonth() + this.state.date.getDate() + " 18:25:00".replace(/-/g, "/"))).getTime();
     var now = this.state.date.getTime();
     var rest = end - now;
     return this.getDuration(rest);
   }
-
   componentWillUnmount = () => {
     clearInterval(this.timer);
   }
-
   render() {
     return (
       <div className="time_zone">

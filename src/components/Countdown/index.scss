@@ -3,18 +3,23 @@
   text-align: right;
   margin: 30px auto 0;
   padding: 10px;
+  width: fit-content;
+  float: right;
   .current_time {
+    font-size: 16px;
+    letter-spacing: .5em;
+    color: #03C03C;
+    font-family: digital;
+  }
+  .countdown_time {
     font-size: 18px;
     letter-spacing: .5em;
     color: #03C03C;
-  }
-  .countdown_time {
-    font-size: 20px;
-    letter-spacing: .5em;
-    color: #03C03C;
+    font-family: digital;
     em {
       text-decoration: none;
       font-style: normal;
+      font-family: inherit;
     }
   }
   &:hover {

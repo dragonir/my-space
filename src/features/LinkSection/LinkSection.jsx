@@ -26,7 +26,7 @@ export default class extends Component {
                 return (
                   <div className="link-sec-item" key={index}>
                     <Icon icon="link" />
-                    <a target="_blank" href={el.href}>
+                    <a target="_blank" rel="noopener noreferrer" href={el.href}>
                       {el.name}
                     </a>
                   </div>

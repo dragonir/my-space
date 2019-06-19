@@ -4,18 +4,19 @@
     text-align: center;
     color: #2D2D2D;
     font-weight: 700;
+    font-family: air;
+    text-shadow: 1px 1px 1px #03C03C, 2px 2px 2px #03c03c, 3px 3px 3px #03C03C, 4px 4px 4px #999999, 5px 5px 5px #999999;
   }
   &.section_one {
-    background: #000000;
     .section_title {
-      letter-spacing: .5em;
+      letter-spacing: .65em;
       color: #FFFFFF;
-      // text-shadow: 1px 1px 1px #03C03C, 2px 2px 2px #03c03c, 3px 3px #03C03C, 4px 4px 4px #03C03C, 5px 5px 5px #03C03C;
       margin-bottom: 30px;
       text-align: right;
       padding: 0 10%;
       position: relative;
       right: -30px;
+      text-shadow: none;
     }
     .enter_anchor {
       text-decoration: none;
@@ -43,7 +44,12 @@
       .moon {
         height: 100%;
         width: auto;
-        animation: moon 100s linear infinite;
+        animation: moon 150s linear infinite;
+        cursor: grab;
+        &:hover {
+          animation-play-state: paused;
+          -webkit-animation-play-state: paused;
+        }
       }
       .intro {
         text-align: right;
@@ -54,6 +60,7 @@
           text-align: justify;
           text-align-last: left;
           padding-left: 250px;
+          font-family: air;
         }
         .enter_btn {
           text-decoration: none;
@@ -62,6 +69,7 @@
           display: inline-block;
           padding: 10px 45px;
           margin: 45px auto 0;
+          font-family: digital;
           &:hover {
             background: rgba(3, 192, 60, .1);
           }
@@ -93,7 +101,6 @@
 .fp-section {
   text-align: center;
 }
-
 
 @keyframes moon {
   from {

@@ -37,12 +37,20 @@
       text-decoration-color: inherit;
     }
   }
+  .nav-title {
+    text-decoration: none;
+    font-weight: 700;
+    color: $black2 !important;
+  }
 }
 #content-root.bp3-dark {
   .url-qr {
     background: $bg3 !important;
     border-color: $bg2 !important;
     box-shadow: 0px 0px 20px $bg1 !important;
+  }
+  .nav-title {
+    color: $white2 !important;
   }
 }
 @media screen and (max-width: 800px) {
@@ -67,7 +75,7 @@
     .bp3-align-right {
       float: none !important;
       height: auto !important;
-      padding:  0 0 5px;
+      padding: 0 0 5px;
       overflow: hidden;
       display: none !important;
       &.show-list {

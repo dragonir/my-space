@@ -35,16 +35,19 @@
       color: $color3;
       text-align: center;
       font-size: .5em;
+      margin: 10px auto;
     }
     .item-body {
       color: $gray1;
       padding: 8px 0;
       white-space: pre-line;
       overflow: hidden;
-      font-size: .6em;
+      font-size: .5em;
       text-align: justify;
       text-align-last: left;
+      word-break: break-all;
       text-indent: 2em;
+      line-height: 1.5;
     }
     .item-labels {
       margin: 7px 0;
@@ -82,6 +85,9 @@
     }
     h3 {
       color: $white3;
+    }
+    .post-title {
+      color: $white2;
     }
     .item-info {
       color: $white5;

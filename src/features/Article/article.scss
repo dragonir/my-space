@@ -6,7 +6,7 @@
     margin-bottom: 40px;
     text-align: center;
     .title {
-      padding-bottom: 5px;
+      padding-bottom: 10px;
       font-size: .8em;
     }
     .info {
@@ -42,7 +42,14 @@
       text-align-last: left;
       text-indent: 2em;
     }
-    h1, h2, h3, h4, h5, h6, pre, code {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    pre,
+    code {
       text-align: justify;
       text-align-last: left;
     }

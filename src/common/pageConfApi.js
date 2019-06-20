@@ -14,7 +14,6 @@ setObjItem(confKey, {
 
 export default {
   get: () => getObjItem(confKey),
-
   set: obj =>
     setObjItem(confKey, {
       ...getObjItem(confKey),

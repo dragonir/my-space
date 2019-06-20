@@ -7,7 +7,7 @@ const config = {
 
   // 界面右边，Github头像下的标语
   // 你可以写自己的座右铭
-  description: 'descript',
+  description: 'nothin',
 
   // 界面右边，github头像下的链接按钮
   userLinks: [{

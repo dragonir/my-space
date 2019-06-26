@@ -1,18 +1,17 @@
 .time_zone {
-  border: 1px dashed #03C03C;
+  border: 2px dashed #03C03C;
   text-align: right;
-  margin: 30px auto 0;
+  margin: 30px 0;
   padding: 10px;
   width: fit-content;
-  float: right;
   .current_time {
-    font-size: 16px;
+    font-size: .65em;
     letter-spacing: .5em;
     color: #03C03C;
     font-family: digital;
   }
   .countdown_time {
-    font-size: 18px;
+    font-size: .65em;
     letter-spacing: .5em;
     color: #03C03C;
     font-family: digital;

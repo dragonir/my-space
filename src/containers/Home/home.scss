@@ -8,6 +8,10 @@
     text-shadow: 1px 1px 1px #03C03C, 2px 2px 2px #03c03c, 3px 3px 3px #03C03C, 4px 4px 4px #999999, 5px 5px 5px #999999;
   }
   &.section_one {
+    // background: #5f2c82;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to top, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to top, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     .enter_anchor {
       text-decoration: none;
       color: #FFFFFF;
@@ -148,14 +152,44 @@
     }
   }
   &.section_three {
-    // background: #12c2e9;  /* fallback for old browsers */
-    // background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-    // background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     .section_title {
       margin: 0 auto;
       text-align: right;
       letter-spacing: .25em;
       padding: 0 1.5em;
+    }
+  }
+  &.section_four {
+    background: url("../../assets/images/components/home/contact.png") no-repeat right;
+    background-size: auto 100%;
+    .section_title {
+      margin: 0 auto;
+      text-align: center;
+      letter-spacing: .25em;
+      padding: 0 1.5em;
+      text-shadow: 1px 1px 1px #E2468F, 2px 2px 2px #E2468F, 3px 3px 3px #E2468F, 4px 4px 4px #E2468F, 5px 5px 5px #999999;
+    }
+    .resume_btn {
+      display: inline-block;
+      height: 3em;
+      width: 16em;
+      background: #E2468F;
+      border: none;
+      outline: none;
+      border-radius: 5em;
+      font-size: 1em;
+      color: #FFFFFF;
+      font-family: air;
+      box-shadow: 1px 1px 20px rgba(0, 0, 0, .2);
+      margin: 2em auto;
+      transition: all .25s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, .5);
+      }
     }
   }
 }

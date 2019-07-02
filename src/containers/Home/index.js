@@ -7,6 +7,7 @@ import HomepageThreeList from '../../components/HomepageCompoments/HomepageThree
 import LearnMore from '../../components/HomepageCompoments/LearnMore';
 import moon from '../../assets/images/components/home/moon.png';
 import Countdown from '../../components/Countdown/index';
+import NameCard from '../../components/NameCard/index.js';
 import './home.scss';
 
 class SectionOne extends React.Component {
@@ -64,8 +65,9 @@ class SectionFour extends React.Component {
   render () {
     return (
       <div className="section section_four">
-        <h3 className="section_title section_four_title">ACKNOWLEDGE</h3>
-        <LearnMore route="#about" />
+        <h3 className="section_title section_four_title">CONTACT</h3>
+        <NameCard />
+        <button className="resume_btn">CHECK MY RESUME!</button>
       </div>
     )
   }

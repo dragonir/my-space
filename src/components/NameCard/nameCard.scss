@@ -1,8 +1,28 @@
 .name_card {
+  margin: 2em auto;
   p {
     color: #2D2D2D;
+    font-size: .75em;
+    cursor: pointer;
+    transition: all .25s ease-in;
     label {
-
+      display: inline-block;
+      text-align: right;
+      background: #F5F5F5;
+      border-radius: 2em;
+      padding: .2em 1em;
+      margin-right: .5em;
+      color: #666666;
+      line-height: 1.2;
+      transition: all .25s ease-in;
+      cursor: pointer;
+    }
+    &:hover {
+      color: #E2468F;
+      label {
+        background: #E2468F;
+        color: #FFFFFF;
+      }
     }
   }
 }

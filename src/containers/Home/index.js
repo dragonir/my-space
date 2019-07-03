@@ -45,7 +45,7 @@ class SectionTwo extends React.Component {
       <div className="section section_two">
         <h3 className="section_title section_two_title">PREVIOUS WORK</h3>
         <HomePageGridList />
-        <LearnMore route="#work" />
+        {/* <LearnMore route="#work" /> */}
       </div>
     )
   }
@@ -79,7 +79,7 @@ function Home(props) {
     <ReactFullpage
     navigation
     navigationTooltips={anchors}
-    sectionsColor={["#000000", "#FFFFFF", "#FFFFFF", "#FFFFFF"]}
+    sectionsColor={["#1B2021", "#FFFFFF", "#FFFFFF", "#FFFFFF"]}
     licenseKey = {"OPEN-SOURCE-GPLV3-LICENSE"}
     onLeave={(origin, destination, direction) => {
       // console.log("onLeave event", { origin, destination, direction });

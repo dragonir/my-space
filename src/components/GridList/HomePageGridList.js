@@ -17,7 +17,7 @@ const styles = theme => ({
     flexWrap: 'wrap',
     justifyContent: 'space-around',
     overflow: 'hidden',
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: 'transparent',
     padding: '1em 2.5em',
   },
   gridList: {
@@ -33,8 +33,8 @@ const styles = theme => ({
     color: 'white',
   },
   card: {
-    width: '24%',
-    margin: '1.25em auto'
+    width: '22%',
+    margin: '1.5em auto'
   },
   media: {
     height: 150,
@@ -44,7 +44,7 @@ const styles = theme => ({
   },
   btn: {
     width: '100%',
-    color: '#CCCCCC',
+    color: '#2D2D2D',
     letterSpacing: '.25em',
   },
 });

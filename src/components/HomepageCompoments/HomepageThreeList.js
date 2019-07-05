@@ -11,8 +11,9 @@ import { Divider } from '@material-ui/core';
 
 const styles = theme => ({
   root: {
-    backgroundColor: theme.palette.background.paper,
-    margin: '0 2em',
+    backgroundColor: 'transparent',
+    margin: '0 1em',
+    padding: '0 5%',
   },
 });
 

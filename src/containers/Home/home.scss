@@ -11,6 +11,8 @@
     // background: #5f2c82;  /* fallback for old browsers */
     // background: -webkit-linear-gradient(to top, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
     // background: linear-gradient(to top, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // background: #262C3A url("../../assets/images/components/home/bg2.jpg") no-repeat center;
+    background-size: 100% auto;
     .enter_anchor {
       text-decoration: none;
       color: #FFFFFF;
@@ -42,7 +44,7 @@
         left: 0;
         right: 0;
         margin: 2.5% auto;
-        opacity: .75;
+        // opacity: .75;
         cursor: grab;
         &:hover {
           animation-play-state: paused;
@@ -167,8 +169,8 @@
     }
   }
   &.section_four {
-    background: url("../../assets/images/components/home/contact.png") no-repeat right;
-    background-size: auto 100%;
+    background: #262C3A url("../../assets/images/components/home/ukiuo-e.png") no-repeat left bottom;
+    background-size: auto 65%;
     .section_title {
       margin: 0 auto;
       text-align: center;

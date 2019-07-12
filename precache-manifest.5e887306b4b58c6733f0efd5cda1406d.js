@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc9996cd76cf4198d33e1db58b05d15a",
+    "revision": "a5fb95734de9504baf4f14dd23126e5f",
     "url": "/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.2a2ca87b.chunk.css"
   },
   {
-    "revision": "612e07671c3da040fefe",
-    "url": "/static/css/main.f6ae5cf8.chunk.css"
+    "revision": "329929e68b787e6fd441",
+    "url": "/static/css/main.82aa7142.chunk.css"
   },
   {
     "revision": "d3ff93628960cd3748f6",
     "url": "/static/js/2.56a6fc2b.chunk.js"
   },
   {
-    "revision": "612e07671c3da040fefe",
+    "revision": "329929e68b787e6fd441",
     "url": "/static/js/main.dbc5bd79.chunk.js"
   },
   {
@@ -38,10 +38,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a1f784fb7a46a13b90164457b0773f4d",
     "url": "/static/media/bart.a1f784fb.jpg"
-  },
-  {
-    "revision": "3ec65a46958885f286cc25a71e80762f",
-    "url": "/static/media/contact.3ec65a46.png"
   },
   {
     "revision": "3bd0bac4cdb843a6f1d7a207d20872b0",
@@ -102,5 +98,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a388958ec50eff81cf5842fc1aaf3c42",
     "url": "/static/media/team_final.a388958e.jpg"
+  },
+  {
+    "revision": "ff6e84799a45350a5138149e59b81187",
+    "url": "/static/media/ukiuo-e.ff6e8479.png"
   }
 ]);

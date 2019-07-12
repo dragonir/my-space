@@ -79,7 +79,7 @@ function Home(props) {
     <ReactFullpage
     navigation
     navigationTooltips={anchors}
-    sectionsColor={["#262C3A", "#FFFFFF", "#FFFFFF", "#FFFFFF"]}
+    sectionsColor={["#262C3A", "#FFFFFF", "#FFFFFF", "#DAD4BA"]}
     licenseKey = {"OPEN-SOURCE-GPLV3-LICENSE"}
     onLeave={(origin, destination, direction) => {
       // console.log("onLeave event", { origin, destination, direction });

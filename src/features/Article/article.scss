@@ -6,8 +6,8 @@
     margin-bottom: 40px;
     text-align: center;
     .title {
-      padding-bottom: 10px;
-      font-size: .8em;
+      padding: 10px 0 25px;
+      font-size: 1em;
     }
     .info {
       color: $color3;
@@ -41,6 +41,9 @@
       text-align: justify;
       text-align-last: left;
       text-indent: 2em;
+    }
+    ul li {
+      text-align: left;
     }
     h1,
     h2,

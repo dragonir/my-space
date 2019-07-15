@@ -12,7 +12,6 @@ export default class extends Component {
   }
   render() {
     const { body, title, user, createTime, labels } = this.state.issueData
-
     return (
       <div className="article-container">
         <div className="con-info">
@@ -64,9 +63,7 @@ export default class extends Component {
           updateTime: dayjs(res.data.updated_at)
         }
       })
-      window.document.title =
-        res.data.title + (_config.titleSuffix ? ` - ${_config.titleSuffix}` : '')
-
+      window.document.title = res.data.title + (_config.titleSuffix ? ` - ${_config.titleSuffix}` : '')
       this.props.changeLoadingState(false)
     } catch (e) {
       window.location.pathname = '/404'

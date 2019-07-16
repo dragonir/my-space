@@ -4,11 +4,8 @@ import pageConf from './pageConf'
 const config = {
   title: 'TRICELL',
   titleSuffix: '',
-
   // 界面右边，Github头像下的标语
-  // 你可以写自己的座右铭
   description: 'nothin',
-
   // 界面右边，github头像下的链接按钮
   userLinks: [{
     title: 'GitHub',
@@ -41,7 +38,7 @@ const config = {
    * 因版权限制，许多歌都用不成，这个没有好的解决办法
    * 不会自动播放，这样影响用户体验
    */
-  netEaseMusicID: '1711024',
+  netEaseMusicID: '864639840',
   /**
    * Gitalk 配置项
    * 请不要填写 owner，repo，clientID，clientSecret 字段
@@ -59,15 +56,9 @@ const config = {
   navItem: [{
       name: 'Github',
       url: 'https://github.com/dragonir',
-      icon: 'person'
-    },
-    {
-      name: 'ZHIHU',
-      icon: 'user',
-      url: 'https://www.zhihu.com/people/xxx/activities'
+      icon: 'home'
     }
   ],
-
   /**
    * Github 用户配置项
    */
@@ -83,7 +74,7 @@ const config = {
    * 注意！此处是直接插入html字段，目的是为了支持更高的用户自定义度（例如使用a标签
    * 请勿插入危险的标签
    */
-  blankSections: ['Write with by dragonir'],
+  blankSections: ['Powered by dragonir'],
 
   footers: [
     '本博客系统由 <a href="http://www.reactjs.org">React.js</a> 驱动',

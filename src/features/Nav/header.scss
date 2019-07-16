@@ -3,7 +3,6 @@
   position: fixed;
   width: 100vw;
   z-index: 100;
-  top: 64px;
   .phone-pull-down {
     display: none;
   }
@@ -37,10 +36,9 @@
       text-decoration-color: inherit;
     }
   }
-  .nav-title {
+  .nav_title a {
+    font-family: air !important;
     text-decoration: none;
-    font-weight: 700;
-    color: $black2 !important;
   }
 }
 #content-root.bp3-dark {
@@ -49,10 +47,8 @@
     border-color: $bg2 !important;
     box-shadow: 0px 0px 20px $bg1 !important;
   }
-  .nav-title {
-    color: $white2 !important;
-  }
 }
+
 @media screen and (max-width: 800px) {
   .phone-pull-down {
     display: block !important;

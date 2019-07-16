@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './App.scss';
-import routes from './routes/index';
-import { Index } from './containers/index';
+// import { Index } from './containers/index';
+import RootRouter from './routes/rootRouter.jsx';
+
 
 class App extends Component {
   render() {
     return (
-      <Index data-routes = {routes} />
+      <RootRouter />
     );
   }
 }

@@ -3,16 +3,15 @@
   position: fixed;
   border-radius: 5px;
   overflow: hidden;
-  top: 120px;
+  top: 50px;
   right: 0px;
   box-sizing: border-box;
-  padding: 10px;
   z-index: 11;
-  transform: all .3s;
+  transform: all .25s;
 }
 @media screen and (max-width: 1720px) {
   #netease-music {
-    right: -251px !important;
+    right: -240px !important;
     &:hover {
       right: 0px !important;
     }

@@ -4,6 +4,7 @@ import SectionItem from '../../components/BlogComponents/SectionItem'
 import { getUser } from '../../utils/github'
 import BlankSection from './BlankSection.jsx'
 import LabelSection from './LabelSection.jsx'
+import AppSection from './AppSection.jsx'
 
 import './linkSection.scss'
 
@@ -18,6 +19,7 @@ export default class extends Component {
     return (
       <React.Fragment>
         <LabelSection />
+        <AppSection />
         {linkSections.map((el, index) => (
           <SectionItem key={index}>
             <div className="link-sec">

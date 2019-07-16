@@ -15,7 +15,7 @@ export default class extends Component {
   render() {
     const { issueList } = this.state
     const getShortcut = str => {
-      let plainParagraphArr = removeMd(str.substring(0, 600)).split('\n')
+      let plainParagraphArr = removeMd(str.substring(0, 750)).split('\n')
       let plainPostInfo = plainParagraphArr.join(' ')
       return plainPostInfo.length < 150 ? plainPostInfo : `${plainPostInfo.substring(0, 150)}......`
     }

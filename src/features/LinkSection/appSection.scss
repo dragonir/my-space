@@ -1,0 +1,23 @@
+@import '../../utils/utils.scss';
+.label-sec-item {
+  color: $color2;
+  background: $white4;
+  padding: 3px 6px;
+  margin: 4px 5px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: all .3s;
+  font-size: .5em;
+  &:hover {
+    background: $color3;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}
+.label-sec-title {
+  margin-bottom: 12px;
+  font-size: .75em;
+  color: $black2;
+  text-align: center;
+}
+

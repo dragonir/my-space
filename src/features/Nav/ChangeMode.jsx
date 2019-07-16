@@ -1,6 +1,5 @@
 import React from 'react'
 import { Button } from '@blueprintjs/core'
-
 import _config from '../../config'
 
 export default class ChangeMode extends React.Component {

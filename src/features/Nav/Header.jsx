@@ -3,18 +3,21 @@ import { Link } from 'react-router-dom'
 import { Navbar, Button } from '@blueprintjs/core'
 import QRCode from 'qrcode.react'
 import ChangeMode from './ConnectChangeMode'
+
 import uptDownIcon from '../../assets/img/put-down.svg'
+
 import _config from '../../config'
 
 export default class extends Component {
   state = {
     isPullDown: false
   }
+
   render() {
     const { navItem } = _config
     const { isPullDown } = this.state
     return (
-      <div id="header-container" className="bp3-dark">
+      <div id="header-container" className="">
         <Navbar>
           <div id="nav-content">
             <img
@@ -24,8 +27,8 @@ export default class extends Component {
               onClick={this.phonePullDown}
             />
             <Navbar.Group align="left" className={`nav-content ${isPullDown ? 'show-list' : ''}`}>
-              <Navbar.Heading>
-                <Link to="/" onClick={this.hideNav} className="nav-title">
+              <Navbar.Heading className="nav_title">
+                <Link to="/" onClick={this.hideNav}>
                   {_config.title}
                 </Link>
               </Navbar.Heading>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import RootRouter from '../../common/rootRouter.jsx';
+import RootRouter from '../../routes/rootRouter.jsx';
 import configureStore from '../../common/configureStore';
 import reducer from '../../redux/reducers';
 import _config from '../../config';

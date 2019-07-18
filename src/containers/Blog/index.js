@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import RootRouter from '../../routes/rootRouter.jsx';
 import configureStore from '../../common/configureStore';
 import reducer from '../../redux/reducers';
 import _config from '../../config';
@@ -13,7 +12,6 @@ class Blog extends Component {
   render () {
     return (
       <Provider store={store}>
-        <RootRouter />
       </Provider>
     );
   }

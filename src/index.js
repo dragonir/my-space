@@ -13,16 +13,6 @@ const store = configureStore(reducer);
 const { title, titleSuffix } = _config;
 document.title = title ? `${title + (titleSuffix ? ` - ${titleSuffix}` : '')}` : document.title;
 
-// class Blog extends Component {
-//   render () {
-//     return (
-//       <Provider store={store}>
-//         <RootRouter />
-//       </Provider>
-//     );
-//   }
-// }
-
 ReactDOM.render(
   <Provider store={store}>
     <App />

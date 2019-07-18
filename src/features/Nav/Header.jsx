@@ -3,16 +3,13 @@ import { Link } from 'react-router-dom'
 import { Navbar, Button } from '@blueprintjs/core'
 import QRCode from 'qrcode.react'
 import ChangeMode from './ConnectChangeMode'
-
 import uptDownIcon from '../../assets/img/put-down.svg'
-
 import _config from '../../config'
 
 export default class extends Component {
   state = {
     isPullDown: false
   }
-
   render() {
     const { navItem } = _config
     const { isPullDown } = this.state
@@ -81,13 +78,11 @@ export default class extends Component {
       </div>
     )
   }
-
   phonePullDown = () => {
     this.setState({
       isPullDown: !this.state.isPullDown
     })
   }
-
   hideNav = () => {
     this.setState({
       isPullDown: false

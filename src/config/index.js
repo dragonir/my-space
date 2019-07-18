@@ -2,10 +2,10 @@ import pageConfApi from '../common/pageConfApi'
 import pageConf from './pageConf'
 
 const config = {
-  title: 'TRICELL',
-  titleSuffix: '',
+  title: 'HOME',
+  titleSuffix: 'TRICELL',
   // 界面右边，Github头像下的标语
-  description: 'nothin',
+  description: 'hello world',
   // 界面右边，github头像下的链接按钮
   userLinks: [{
     title: 'GitHub',
@@ -88,5 +88,4 @@ const config = {
   pageConf,
   pageConfApi
 }
-
 export default config

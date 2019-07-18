@@ -6,10 +6,20 @@ import BottomNavigation from '../components/BottomNavigation';
 import Material from '../containers/Material';
 import Blog from '../containers/Blog';
 import BlogDetail from '../containers/Blog/BlogDetail';
+import homeRoute from '../routes/home'
+import articleRoute from '../routes/article'
+import notFoundRoute from '../routes/notFound'
+import labelRoute from '../routes/label'
 
 export default (
   <Switch>
-    <Route component={ Home } path="/" exact />
+    <Route exact path="/" component={homeRoute} />
+    <Route path="/label/:label/:page" component={labelRoute} />
+    <Route path="/label/:label" component={labelRoute} />
+    <Route path="/post/:page" component={homeRoute} />
+    <Route path="/article/:id" component={articleRoute} />
+    <Route component={notFoundRoute}  />
+    <Route component={ Home } path="/home"  />
     <Route component={ About } path="/about" />
     <Route component= { Work } path="/work" />
     <Route component={ Material } path="/material" />

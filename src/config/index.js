@@ -2,10 +2,10 @@ import pageConfApi from '../common/pageConfApi'
 import pageConf from './pageConf'
 
 const config = {
-  title: 'HOME',
+  title: 'TRICELL',
   titleSuffix: 'TRICELL',
   // 界面右边，Github头像下的标语
-  description: 'hello world',
+  description: 'Hello World',
   // 界面右边，github头像下的链接按钮
   userLinks: [{
     title: 'GitHub',
@@ -74,11 +74,11 @@ const config = {
    * 注意！此处是直接插入html字段，目的是为了支持更高的用户自定义度（例如使用a标签
    * 请勿插入危险的标签
    */
-  blankSections: ['Powered by dragonir'],
+  blankSections: [''],
 
   footers: [
-    '本博客系统由 <a href="http://www.reactjs.org">React.js</a> 驱动',
-    '评论系统由 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 驱动'
+    // '本博客系统由 <a href="http://www.reactjs.org">React.js</a> 驱动',
+    // '本博客评论系统由 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 驱动'
   ],
   /**
    * 是否使用serviceWorker缓存文件

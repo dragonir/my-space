@@ -22,7 +22,6 @@ const config = {
    */
   user: 'dragonir',
   repo: 'BLOG_ISSUE',
-
   // 请申请一个clientID
   clientID: 'c11664f8134b71a780cf',
   clientSecret: 'b16bff925f6d3c42a265d0bfb95f65fe31240291',
@@ -75,7 +74,6 @@ const config = {
    * 请勿插入危险的标签
    */
   blankSections: [''],
-
   footers: [
     // '本博客系统由 <a href="http://www.reactjs.org">React.js</a> 驱动',
     // '本博客评论系统由 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 驱动'

@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
 import { Icon } from '@blueprintjs/core'
-import SectionItem from '../../components/BlogComponents/SectionItem'
 import { getUser } from '../../utils/github'
+import SectionItem from '../../components/BlogComponents/SectionItem'
 import BlankSection from './BlankSection.jsx'
 import LabelSection from './LabelSection.jsx'
 import AppSection from './AppSection.jsx'
-
-import './linkSection.scss'
-
 import _config from '../../config'
+import './linkSection.scss'
 
 export default class extends Component {
   state = {
@@ -41,7 +39,6 @@ export default class extends Component {
       </React.Fragment>
     )
   }
-
   async componentWillMount() {
     let userInfo = (await getUser(_config.user)).data
     this.setState({

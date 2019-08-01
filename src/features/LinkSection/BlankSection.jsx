@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-
-import './blankSection.scss'
-
 import _config from '../../config'
+import './blankSection.scss'
 
 export default class extends Component {
   state = {

@@ -26,6 +26,17 @@
   .bp3-fill {
     margin: 15px auto 0;
     max-width: 220px;
+    background: $themeColor;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    &:hover {
+      background: #2d2d2d;
+      .bp3-button-text {
+        text-decoration: none;
+        font-style: none;
+      }
+    }
   }
   .change-mode-btn {
     margin-top: 20px;
@@ -40,6 +51,9 @@
   }
   .user-avator {
     border-color: rgba($bg4, .5);
+  }
+  .bp3-fill {
+    background: $black4;
   }
 }
 @media screen and (max-width: 800px) {

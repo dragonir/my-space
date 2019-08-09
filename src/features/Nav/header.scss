@@ -3,6 +3,20 @@
   position: fixed;
   width: 100vw;
   z-index: 100;
+  .bp3-navbar {
+    background: $themeBg;
+    opacity: 1;
+    .change-mode-btn {
+      background: #000000;
+      color: #FFFFFF;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      .bp3-icon-moon {
+        color: #FFFFFF;
+      }
+    }
+  }
   .phone-pull-down {
     display: none;
   }
@@ -42,13 +56,24 @@
   }
 }
 #content-root.bp3-dark {
-  .url-qr {
-    background: $bg3 !important;
-    border-color: $bg2 !important;
-    box-shadow: 0px 0px 20px $bg1 !important;
-  }
+  #header-container {
+    .bp3-navbar {
+      background: $black3;
+      .change-mode-btn {
+        background: #FFFFFF;
+        color: #000000;
+        .bp3-icon-flash {
+          color: #000000;
+        }
+      }
+    }
+    .url-qr {
+      background: $bg3 !important;
+      border-color: $bg2 !important;
+      box-shadow: 0px 0px 20px $bg1 !important;
+    }
+  } 
 }
-
 @media screen and (max-width: 800px) {
   .phone-pull-down {
     display: block !important;

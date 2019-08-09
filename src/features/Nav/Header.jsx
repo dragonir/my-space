@@ -14,7 +14,7 @@ export default class extends Component {
     const { navItem } = _config
     const { isPullDown } = this.state
     return (
-      <div id="header-container" className="">
+      <div id="header-container">
         <Navbar>
           <div id="nav-content">
             <img

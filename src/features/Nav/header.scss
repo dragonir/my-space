@@ -3,16 +3,21 @@
   position: fixed;
   width: 100vw;
   z-index: 100;
+  opacity: 1;
   .bp3-navbar {
     background: $themeBg;
-    opacity: 1;
+    box-shadow: 0 1px 20px rgba($color: #000000, $alpha: .2);
     .change-mode-btn {
       background: #000000;
       color: #FFFFFF;
       outline: none;
       border: none;
       border-radius: 5px;
-      .bp3-icon-moon {
+      
+    }
+    .bp3-button .bp3-icon {
+      color: #000000;
+      &.bp3-icon-moon {
         color: #FFFFFF;
       }
     }
@@ -45,6 +50,7 @@
   margin: 0 auto;
   a {
     color: inherit !important;
+    text-decoration: none;
     &:hover {
       color: inherit;
       text-decoration-color: inherit;
@@ -62,7 +68,10 @@
       .change-mode-btn {
         background: #FFFFFF;
         color: #000000;
-        .bp3-icon-flash {
+      }
+      .bp3-button .bp3-icon {
+        color: #FFFFFF;
+        &.bp3-icon-flash {
           color: #000000;
         }
       }

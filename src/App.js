@@ -23,7 +23,7 @@ export default connect(state => {
           <Router>
             <div className={isDark ? 'bp3-dark' : ''} id="content-root">
               <Nav />
-              {routes}
+              { routes }
               <Footer />
             </div>
           </Router>

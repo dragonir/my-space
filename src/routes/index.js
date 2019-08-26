@@ -13,15 +13,14 @@ import labelRoute from '../routes/label'
 
 export default (
   <Switch>
-    <Route exact path="/" component={homeRoute} />
-    <Route path="/label/:label/:page" component={labelRoute} />
-    <Route path="/label/:label" component={labelRoute} />
-    <Route path="/post/:page" component={homeRoute} />
-    <Route path="/article/:id" component={articleRoute} />
-    <Route component={notFoundRoute}  />
-    <Route component={ Home } path="/home"  />
+    <Route component={ homeRoute } exact path="/"  />
+    <Route component={ labelRoute } path="/label/:label/:page" />
+    <Route component={ labelRoute } path="/label/:label" />
+    <Route component={ homeRoute } path="/post/:page" />
+    <Route component={ articleRoute } path="/article/:id" />
+    <Route component={ Home } path="/home" />
     <Route component={ About } path="/about" />
-    <Route component= { Work } path="/work" />
+    <Route component={ Work } path="/work" />
     <Route component={ Material } path="/material" />
     <Route component={ Blog } path="/blog" />
     <Route component={ BlogDetail } path="/blogdetail/:id" />
@@ -43,5 +42,6 @@ export default (
     <Route component={ Lists } path="/lists" />
     <Route component={ Progress } path="/progress" />
     <Route component={ SelectionControls } path="/selectionControls" />
+    <Route component={ notFoundRoute }  />
   </Switch>
 )

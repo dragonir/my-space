@@ -1,5 +1,8 @@
 @import '../../utils/utils.scss';
 .user-sec-container {
+  a {
+    text-decoration: none;
+  }
   .user-avator {
     border-radius: 50%;
     border: 5px solid rgba($white5, .5);

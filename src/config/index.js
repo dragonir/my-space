@@ -56,6 +56,10 @@ const config = {
       name: 'Github',
       url: 'https://github.com/dragonir',
       icon: 'home'
+    }, {
+      name: 'About',
+      url: '/#/about',
+      icon: 'people'
     }
   ],
   /**

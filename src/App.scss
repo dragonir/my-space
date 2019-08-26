@@ -32,7 +32,6 @@
     transform: rotate(360deg);
   }
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -43,7 +42,7 @@
   overflow-x: hidden;
 }
 #content-root {
-  background: #ECECEC;
+  background: #F8F8F8;
   min-height: 100vh;
   &.bp3-dark {
     background: #5C7080;

@@ -53,13 +53,17 @@ const config = {
    * 前者对应直接刷新跳转链接，后者对应react-router的Link标签链接（不会触发页面刷新，不能指向其他域名）
    */
   navItem: [{
-      name: 'Github',
-      url: 'https://github.com/dragonir',
-      icon: 'home'
+      name: 'Home',
+      url: '/#/',
+      icon: 'doughnut-chart'
+    }, {
+      name: 'Blog',
+      url: '/#/post',
+      icon: 'social-media'
     }, {
       name: 'About',
       url: '/#/about',
-      icon: 'people'
+      icon: 'selection'
     }
   ],
   /**

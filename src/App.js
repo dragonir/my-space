@@ -14,17 +14,25 @@ export default connect(state => {
   }
 })(
   class extends React.Component {
+    renderNavBar() {
+      if (window.location.hash === "#/") return true;
+      return false;
+    };
+
     render() {
       const { netEaseMusicID } = _config
       const { isDark } = this.props
+      const NAV = <Nav />
+      const FOOTER = <Footer />
+      // const isIndex = this.renderNavBar();
       return (
         <React.Fragment>
           {netEaseMusicID && <NetEaseMusic id={netEaseMusicID} />}
           <Router>
             <div className={isDark ? 'bp3-dark' : ''} id="content-root">
-              <Nav />
+              { NAV }
               { routes }
-              <Footer />
+              { FOOTER }
             </div>
           </Router>
         </React.Fragment>

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b1d276e3dd59181e06971aa5b6f60d92",
+    "revision": "649e50778ef713b50b6c88c4fee87ea8",
     "url": "/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.97b8fe30.chunk.css"
   },
   {
-    "revision": "a00b9623101ff0de5061",
-    "url": "/static/css/main.053f42f5.chunk.css"
+    "revision": "fee2236200e51984bd13",
+    "url": "/static/css/main.9303a0b9.chunk.css"
   },
   {
     "revision": "5c5a4fe1ac66b73e9daa",
     "url": "/static/js/2.ab7fad5e.chunk.js"
   },
   {
-    "revision": "a00b9623101ff0de5061",
-    "url": "/static/js/main.38f3d21a.chunk.js"
+    "revision": "fee2236200e51984bd13",
+    "url": "/static/js/main.2f6f7ad7.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -32,12 +32,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/DS-DIGI.63f874d1.TTF"
   },
   {
+    "revision": "7a1bb209bcc7737dece23b04a524fc0c",
+    "url": "/static/media/_moon.7a1bb209.png"
+  },
+  {
     "revision": "1243ed3466eba463ea8b1e2f627ce35c",
     "url": "/static/media/air.1243ed34.ttf"
   },
   {
     "revision": "a1f784fb7a46a13b90164457b0773f4d",
     "url": "/static/media/bart.a1f784fb.jpg"
+  },
+  {
+    "revision": "cf148b992a09d2b58c83f63db93068da",
+    "url": "/static/media/contact.cf148b99.png"
   },
   {
     "revision": "3bd0bac4cdb843a6f1d7a207d20872b0",
@@ -76,10 +84,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/logo.5eaab751.png"
   },
   {
-    "revision": "98f00091d0779ed6359d051df5357b34",
-    "url": "/static/media/moon.98f00091.png"
-  },
-  {
     "revision": "50f32ef6f0bbf82de00a706852f810db",
     "url": "/static/media/paella.50f32ef6.jpg"
   },
@@ -98,9 +102,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a388958ec50eff81cf5842fc1aaf3c42",
     "url": "/static/media/team_final.a388958e.jpg"
-  },
-  {
-    "revision": "ff6e84799a45350a5138149e59b81187",
-    "url": "/static/media/ukiuo-e.ff6e8479.png"
   }
 ]);

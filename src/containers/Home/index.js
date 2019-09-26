@@ -5,7 +5,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import HomePageGridList from '../../components/GridList/HomePageGridList';
 import HomepageThreeList from '../../components/HomepageCompoments/HomepageThreeList';
 import LearnMore from '../../components/HomepageCompoments/LearnMore';
-import moon from '../../assets/images/components/home/moon.png';
+import moon from '../../assets/images/components/home/_moon.png';
 import Countdown from '../../components/Countdown/index';
 import NameCard from '../../components/NameCard/index.js';
 import './home.scss';
@@ -26,7 +26,7 @@ class SectionOne extends React.Component {
           <img className="moon" src={moon} alt="moon" />
           <h3 className="section_title">TRICELL.<br/>FUN</h3>
           <div className="intro">
-            <p className="text">The HTML5 test score is an indication of how well your browser supports the HTML5 standard and related specifications. Find out which parts of HTML5 are supported by your browser today and compare the results with other browsers.</p>
+            <p className="text">WE ONLY LIVE ONCE.</p>
             <p className="enter_zone">
               <a className="enter_btn" href="#blog">ENTER
               <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>

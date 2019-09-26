@@ -12,6 +12,7 @@
     // background: -webkit-linear-gradient(to top, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
     // background: linear-gradient(to top, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     // background: #262C3A url("../../assets/images/components/home/ukiuo-e.png") no-repeat left bottom;
+    background: #000000 !important;
     background-size: 60% auto;
     .enter_anchor {
       text-decoration: none;
@@ -37,13 +38,13 @@
       overflow: hidden;
       box-sizing: border-box;
       .moon {
-        height: 90%;
+        height: 80%;
         width: auto;
         animation: moon 1000s linear infinite;
         position: absolute;
         left: 0;
         right: 0;
-        margin: 2.5% auto;
+        margin: 8% auto 0;
         cursor: grab;
         &:hover {
           animation-play-state: paused;
@@ -55,7 +56,7 @@
         color: #FFFFFF;
         margin-bottom: 30px;
         text-align: left;
-        padding: 5% 5%;
+        padding: 10% 5% 5%;
         position: relative;
         text-shadow: none;
         font-size: 3em;
@@ -65,9 +66,9 @@
         z-index: 10;
         padding: 45px 5%;
         .text {
-          font-size: .65em;
+          font-size: 3.5em;
           color: #FFFC00;
-          line-height: 2.5;
+          line-height: 2;
           text-align: right;
           font-family: air;
           display: none;
@@ -86,6 +87,7 @@
             text-align: center;
             letter-spacing: .25em;
             background: rgba(62, 74, 51, .5);
+            font-size: 1.5em;
             &:hover {
               background: rgba(90, 102, 53, .5);
               color: #FFFFFF;
@@ -168,7 +170,7 @@
     }
   }
   &.section_four {
-    background: #262C3A url("../../assets/images/components/home/ukiuo-e.png") no-repeat left bottom;
+    background: #262C3A url("../../assets/images/components/home/contact.png") no-repeat right bottom;
     background-size: auto 65%;
     .section_title {
       margin: 0 auto;

@@ -5,7 +5,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import HomePageGridList from '../../components/GridList/HomePageGridList';
 import HomepageThreeList from '../../components/HomepageCompoments/HomepageThreeList';
 import LearnMore from '../../components/HomepageCompoments/LearnMore';
-import moon from '../../assets/images/components/home/_moon.png';
+import moon from '../../assets/images/components/home/the_moon.png';
 import Countdown from '../../components/Countdown/index';
 import NameCard from '../../components/NameCard/index.js';
 import './home.scss';
@@ -22,13 +22,16 @@ class SectionOne extends React.Component {
           info={"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"}
           learnMore={"#about"}
         /> */}
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
         <div className="moon_container">
           <img className="moon" src={moon} alt="moon" />
           <h3 className="section_title">TRICELL.<br/>FUN</h3>
           <div className="intro">
             <p className="text">WE ONLY LIVE ONCE.</p>
             <p className="enter_zone">
-              <a className="enter_btn" href="#blog">ENTER
+              <a className="enter_btn" href="#post">ENTER
               <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
               </a>
             </p>
@@ -79,7 +82,7 @@ function Home(props) {
     <ReactFullpage
     navigation
     navigationTooltips={anchors}
-    sectionsColor={["#262C3A", "#FFFFFF", "#FFFFFF", "#DAD4BA"]}
+    sectionsColor={["#262C3A", "#FFFFFF", "#FFFFFF", "#FFFFFF"]}
     licenseKey = {"OPEN-SOURCE-GPLV3-LICENSE"}
     onLeave={(origin, destination, direction) => {
       // console.log("onLeave event", { origin, destination, direction });

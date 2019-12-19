@@ -3,8 +3,8 @@ import { BrowserRouter, HashRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 import Nav from './features/Nav'
 import Footer from './features/Footer'
-import NetEaseMusic from './components/BlogComponents/NetEaseMusic'
-import _config from './config'
+// import NetEaseMusic from './components/BlogComponents/NetEaseMusic'
+// import _config from './config'
 import './App.scss';
 import routes from './routes/index.js';
 const Router = process.env.ROUTE_MODE === 'hash' ? BrowserRouter : HashRouter
@@ -20,14 +20,14 @@ export default connect(state => {
     };
 
     render() {
-      const { netEaseMusicID } = _config
+      // const { netEaseMusicID } = _config
       const { isDark } = this.props
       const NAV = <Nav />
       const FOOTER = <Footer />
       // const isIndex = this.renderNavBar();
       return (
         <React.Fragment>
-          {netEaseMusicID && <NetEaseMusic id={netEaseMusicID} />}
+          {/* {netEaseMusicID && <NetEaseMusic id={netEaseMusicID} />} */}
           <Router>
             <div className={isDark ? 'bp3-dark' : ''} id="content-root">
               { NAV }

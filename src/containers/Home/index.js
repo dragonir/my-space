@@ -5,8 +5,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import HomePageGridList from '../../components/GridList/HomePageGridList';
 import HomepageThreeList from '../../components/HomepageCompoments/HomepageThreeList';
 import LearnMore from '../../components/HomepageCompoments/LearnMore';
-import moon from '../../assets/images/components/home/the_moon.png';
-import Countdown from '../../components/Countdown/index';
+// import moon from '../../assets/images/components/home/the_moon.png';
 import NameCard from '../../components/NameCard/index.js';
 import './home.scss';
 
@@ -14,19 +13,11 @@ class SectionOne extends React.Component {
   render() {
     return (
       <div className="section section_one">
-        {/* <MediaCard 
-          image={homeImg} 
-          title={"Once upon a time ..."}
-          maxWidth="35em"
-          height="38em"
-          info={"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"}
-          learnMore={"#about"}
-        /> */}
         <div id='stars'></div>
         <div id='stars2'></div>
         <div id='stars3'></div>
         <div className="moon_container">
-          <img className="moon" src={moon} alt="moon" />
+          {/* <img className="moon" src={moon} alt="moon" /> */}
           <h3 className="section_title">TRICELL.<br/>FUN</h3>
           <div className="intro">
             <p className="text">WE ONLY LIVE ONCE.</p>
@@ -35,7 +26,6 @@ class SectionOne extends React.Component {
               <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
               </a>
             </p>
-            <Countdown />
           </div>
         </div>
       </div>
@@ -55,11 +45,76 @@ class SectionTwo extends React.Component {
 }
 class SectionThree extends React.Component {
   render () {
+    const posts = [
+      {
+        id: 0,
+        title: 'util.js',
+        descript: 'Util.js 是对常用函数的封装，方便在实际项目中使用，主要内容包含：数组类、浏览器类、日期类、函数类、数学类、媒体类、节点类、对象类、字符串类、类型检测类、正则表达式类等内容。',
+        icon: 'icon1',
+        link: '#article/29'
+      },
+      {
+        id: 1,
+        title: 'css3动画控制的暂停与运行',
+        descript: '面对浏览器日益蓬勃的发展，web端技术也越来越多的被使用在移动开发中，为了提高用户体验， 作为前端工程师的我们要设计各式各样的交互效果',
+        icon: 'icon2',
+        link: '#article/27'
+      },
+      {
+        id: 2,
+        title: 'EventUtil.js',
+        descript: '跨浏览器事件处理程序封装',
+        icon: 'icon3',
+        link: '#article/28'
+      },
+      {
+        id: 3,
+        title: '函数防抖和节流',
+        descript: '函数防抖与节流是很相似的概念，但它们的应用场景不太一样。',
+        icon: 'icon2',
+        link: '#article/21'
+      },
+      {
+        id: 4,
+        title: '使用watermark.js实现照片动态添加模板和二维码',
+        descript: '最近开发了一个动态给上传图片添加模板边框和动态添加二维码的VUE项目，其中添加模板和二维码功能通过watermark.js实现',
+        icon: 'icon2',
+        link: '#article/34'
+      },
+      {
+        id: 5,
+        title: 'HTML兼容IE浏览器写法',
+        descript: '考虑到国内浏览器还是ie6比较多，所以把顺序排列了下，然后只针对非ie6,7,8进行判断',
+        icon: 'icon2',
+        link: '#article/12'
+      },
+      {
+        id: 6,
+        title: 'IE 兼容透明度',
+        descript: '低版本IE下不支持rgba()的表示方法，怎么办？',
+        icon: 'icon2',
+        link: '#article/12'
+      },
+      {
+        id: 7,
+        title: 'a标签属性 noopener noreferrer',
+        descript: '当你浏览一个页面点击一个a标签连接,跳转到另一个页面时，在新打开的页面（baidu）中可以通过 window.opener获取到源页面的部分控制权',
+        icon: 'icon2',
+        link: '#article/10'
+      },
+      {
+        id: 8,
+        title: 'git 常用指令',
+        descript: 'git branch 查看本地所有分支, git status 查看当前状态 ',
+        icon: 'icon2',
+        link: '#article/10'
+      },
+    ]
     return (
       <div className="section section_three">
         <h3 className="section_title section_three_title">PRACTICE NOTES</h3>
-        <HomepageThreeList />
-        <LearnMore route="#blog" />
+        <HomepageThreeList posts={posts} />
+        <LearnMore route="#post" />
       </div>
     )
   }

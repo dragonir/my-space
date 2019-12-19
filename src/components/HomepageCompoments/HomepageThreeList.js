@@ -6,7 +6,6 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
 import ImageIcon from '@material-ui/icons/Image';
-import blogListData from './HomepageThreeListData';
 import { Divider } from '@material-ui/core';
 
 const styles = theme => ({
@@ -15,20 +14,34 @@ const styles = theme => ({
     margin: '0 1em',
     padding: '0 5%',
   },
+  post_link: {
+    textDecoration: 'none',
+    fontStyle: 'normal',
+    '&:hover': {
+      fontStyle: 'normal',
+      textDecoration: 'none',
+    }
+  },
+  avatar: {
+    marginRight: '2rem',
+    background: '#FFFC00',
+    boxShadow: '1px 1px 10px rgba(0, 0, 0, .25)'
+  }
 });
-
 function HomepageThreeList(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
       <List component="nav">
-        {blogListData.map(blog => (
-          <div key={blog.id}>
+        {props.posts.map(post => (
+          <div key={post.id}>
              <ListItem>
-              <Avatar>
+              <Avatar className={classes.avatar}>
                 <ImageIcon />
               </Avatar>
-              <ListItemText primary={blog.title} secondary={blog.descript} />
+              <a href={post.link} className={classes.post_link}>
+                <ListItemText primary={post.title} secondary={post.descript} />
+              </a>
             </ListItem>
             <Divider />
           </div>

@@ -10,12 +10,12 @@
     text-shadow: 1px 1px 1px #FFFC00, 2px 2px 2px #FFFC00, 3px 3px 3px #FFFC00, 4px 4px 4px #999999, 5px 5px 5px #999999;
   }
   &.section_one {
-    // background: #5f2c82;  /* fallback for old browsers */
-    // background: -webkit-linear-gradient(to top, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
-    // background: linear-gradient(to top, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    // background: #262C3A url("../../assets/images/components/home/ukiuo-e.png") no-repeat left bottom;
-    background: #000000 !important;
-    background-size: 60% auto;
+    background: #5f2c82;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #262C3A url("../../assets/images/components/home/ukiuo-e.png") no-repeat left bottom;
+    // background: #000000 !important;
+    // background-size: 60% auto;
     .enter_anchor {
       text-decoration: none;
       color: #FFFFFF;
@@ -76,11 +76,11 @@
           display: none;
         }
         .enter_zone {
-          text-align: left;
+          text-align: right;
           .enter_btn {
             text-decoration: none;
-            color: #C6C8CB;
-            border: 2px solid #C6C8CB;
+            color: #FFFC00;
+            border: 2px solid #FFFC00;
             display: inline-block;
             padding: 15px 65px;
             font-family: digital;
@@ -99,7 +99,7 @@
               display: inline-block;
               height: 2px;
               width: 8px;
-              background: #FFFFFF;
+              background: #FFFC00;
               position: absolute;
               &:nth-of-type(1) {
                 top: -2px;
@@ -161,9 +161,7 @@
     }
   }
   &.section_three {
-    background: #B9B9B9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #B9B9B9, #FFFFFF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #B9B9B9, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FFFFFF;
     .section_title {
       margin: 0 auto .5em;
       text-align: right;

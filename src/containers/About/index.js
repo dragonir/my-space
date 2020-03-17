@@ -1,13 +1,12 @@
 import React from 'react';
-import Thirty from '../../components/30s/index.js';
-
-import "./style.scss";
+// import Thirty from '../../components/30s/index.js';
+import "./about.styl";
 
 const About = () => {
     return (
         <div className="about">
             <h1>About</h1>
-            <Thirty />
+            {/* <Thirty /> */}
         </div>
     )
 }

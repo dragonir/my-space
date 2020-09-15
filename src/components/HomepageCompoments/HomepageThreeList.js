@@ -24,7 +24,6 @@ const styles = theme => ({
   },
   avatar: {
     marginRight: '2rem',
-    background: '#FFFC00',
     boxShadow: '1px 1px 10px rgba(0, 0, 0, .25)'
   }
 });

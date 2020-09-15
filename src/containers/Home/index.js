@@ -6,7 +6,6 @@ import HomePageGridList from '../../components/GridList/HomePageGridList';
 import HomepageThreeList from '../../components/HomepageCompoments/HomepageThreeList';
 import LearnMore from '../../components/HomepageCompoments/LearnMore';
 // import moon from '../../assets/images/components/home/the_moon.png';
-import NameCard from '../../components/NameCard/index.js';
 import './home.scss';
 
 class SectionOne extends React.Component {
@@ -124,7 +123,6 @@ class SectionFour extends React.Component {
     return (
       <div className="section section_four">
         <h3 className="section_title section_four_title">CONTACT</h3>
-        <NameCard />
         <button className="resume_btn">CHECK MY RESUME!</button>
       </div>
     )
@@ -137,7 +135,7 @@ function Home(props) {
     <ReactFullpage
     navigation
     navigationTooltips={anchors}
-    sectionsColor={["#262C3A", "#FFFFFF", "#FFFFFF", "#FFFFFF"]}
+    sectionsColor={['#FFFFFF', "#FFFFFF", "#FFFFFF", "#FFFFFF"]}
     licenseKey = {"OPEN-SOURCE-GPLV3-LICENSE"}
     onLeave={(origin, destination, direction) => {
       // console.log("onLeave event", { origin, destination, direction });

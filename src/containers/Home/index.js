@@ -17,7 +17,7 @@ class SectionOne extends React.Component {
         <div id='stars3'></div>
         <div className="moon_container">
           {/* <img className="moon" src={moon} alt="moon" /> */}
-          <h3 className="section_title">TRICELL.<br/>FUN</h3>
+          {/* <h3 className="section_title">TRICELL FUN</h3> */}
           <div className="intro">
             <p className="text">WE ONLY LIVE ONCE.</p>
             <p className="enter_zone">

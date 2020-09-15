@@ -11,10 +11,10 @@ const styles = theme => ({
     position: 'absolute',
     bottom: theme.spacing.unit * 2,
     right: theme.spacing.unit * 10,
-    background: '#03C03C',
-    color: '#FFFFFF',
+    background: '#FFFC00',
+    color: '#000000',
     '&:hover': {
-      background: '#03C03C',
+      background: '#FFFC00',
       opacity: '0.8',
     },
   },
@@ -25,7 +25,7 @@ function LearnMore(props) {
   return (
     <div>
       <Link href={props.route}>
-        <Tooltip title="LEARN MORE" aria-label="LEARN MORE">
+        <Tooltip title="了解更多" aria-label="LEARN MORE">
             <Fab color="default" className={classes.absolute}>
               <KeyboardArrowRight />
             </Fab>

@@ -156,6 +156,7 @@
   &.section_four {
     background: #262C3A url("../../assets/images/components/home/contact.png") no-repeat right bottom;
     background-size: auto 65%;
+    position: relative;
     .section_title {
       font-size: 48px;
       margin: 0 auto;
@@ -183,6 +184,12 @@
       &:hover {
         box-shadow: 1px 1px 20px rgba(0, 0, 0, .5);
       }
+    }
+    .counter_zone {
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      bottom: 36px;
     }
   }
 }

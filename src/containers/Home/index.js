@@ -124,6 +124,9 @@ class SectionFour extends React.Component {
       <div className="section section_four">
         <h3 className="section_title section_four_title">CONTACT</h3>
         <button className="resume_btn">CHECK MY RESUME!</button>
+        <div class="counter_zone">
+          <a href="https://info.flagcounter.com/Ym1k"><img src="https://s05.flagcounter.com/count2/Ym1k/bg_FFFFFF/txt_2D2D2D/border_FFFFFF/columns_4/maxflags_20/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0" /></a>
+        </div>
       </div>
     )
   }

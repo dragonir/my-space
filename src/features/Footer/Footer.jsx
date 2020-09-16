@@ -15,7 +15,7 @@ export default class Count extends Component {
             ))}
         </p>
         <p className="footer-item">
-          Powered by <a href="https://github.com/dragonir">WANGBIN &copy; 2019</a>
+          Powered by <a href="https://github.com/dragonir">WANGBIN &copy; 2020</a>
         </p>
       </footer>
     )

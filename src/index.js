@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-// import * as serviceWorker from './serviceWorker';
 import registerServiceWorker from './common/registerServiceWorker'
 import configureStore from './common/configureStore';
 import reducer from './redux/reducers';

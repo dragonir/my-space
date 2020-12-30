@@ -53,15 +53,15 @@ const config = {
    * 前者对应直接刷新跳转链接，后者对应react-router的Link标签链接（不会触发页面刷新，不能指向其他域名）
    */
   navItem: [{
-      name: 'Home',
+      name: 'HOME',
       url: '/#/',
       icon: 'doughnut-chart'
     }, {
-      name: 'Blog',
+      name: 'BLOG',
       url: '/#/post',
       icon: 'social-media'
     }, {
-      name: 'About',
+      name: 'ABOUT',
       url: '/#/about',
       icon: 'selection'
     }
@@ -70,7 +70,7 @@ const config = {
    * Github 用户配置项
    */
   linkSections: [{
-    title: '友情链接',
+    title: 'links',
     linkList: [{
       name: 'TRICELL.FUN',
       href: 'https://tricell.fun'

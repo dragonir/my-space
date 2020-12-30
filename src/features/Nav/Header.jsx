@@ -62,7 +62,7 @@ export default class extends Component {
                 <Button
                   className="bp3-minimal qr-button mobile-hidden"
                   rightIcon="caret-down"
-                  text="本页二维码">
+                  text="Scan">
                   <QRCode
                     className="url-qr"
                     value={window.location.href}

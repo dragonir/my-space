@@ -10,7 +10,7 @@
     text-shadow: 1px 1px 1px #FFFC00, 2px 2px 2px #FFFC00, 3px 3px 3px #FFFC00, 4px 4px 4px #999999, 5px 5px 5px #999999;
   }
   &.section_one {
-    background: url("../../assets/images/home/bottom_bg.png") no-repeat center bottom;
+    background: url("../../assets/images/home/bg.webp") no-repeat center bottom;
     background-size: contain;
     .moon_container {
       text-align: left;
@@ -132,31 +132,19 @@
     }
   }
   &.section_two {
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #000000, #B9B9B9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #000000, #B9B9B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     .section_two_title {
       margin: .5em auto 0;
       text-align: left;
       letter-spacing: .25em;
       padding: 0 5%;
-      color: #FFFFFF;
+      color: #000000;
       text-shadow: none;
     }
   }
   &.section_three {
-    background: #FFFFFF;
-    .section_title {
-      margin: 0 auto .5em;
-      text-align: right;
-      letter-spacing: .25em;
-      padding: 0 1.5em;
-    }
-  }
-  &.section_four {
-    background: #262C3A url("../../assets/images/components/home/contact.png") no-repeat right bottom;
-    background-size: auto 65%;
     position: relative;
+    background: url("../../assets/images/home/bottom_bg.png") no-repeat center bottom;
+    background-size: contain;
     .section_title {
       font-size: 48px;
       margin: 0 auto;

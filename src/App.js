@@ -5,7 +5,6 @@ import Nav from './features/Nav'
 import Footer from './features/Footer'
 // import NetEaseMusic from './components/BlogComponents/NetEaseMusic'
 // import _config from './config'
-import './App.scss';
 import routes from './routes/index.js';
 const Router = process.env.ROUTE_MODE === 'hash' ? BrowserRouter : HashRouter
 export default connect(state => {
@@ -18,7 +17,6 @@ export default connect(state => {
       if (window.location.hash === "#/") return true;
       return false;
     };
-
     render() {
       // const { netEaseMusicID } = _config
       const { isDark } = this.props

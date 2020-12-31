@@ -62,13 +62,13 @@ class About extends React.Component {
                                 <MoreVertIcon />
                             </IconButton>
                         }
-                        title="关于"
+                        title="About"
                         subheader="March 18, 2020"
                         />
                         <CardMedia
                             className={classes.media}
                             image={mediaCardImage}
-                            title="关于"
+                            title="About"
                         />
                         <CardContent>
                         <Typography component="p">

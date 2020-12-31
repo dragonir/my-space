@@ -17,10 +17,10 @@ const styles = theme => ({
     justifyContent: 'space-around',
     overflow: 'hidden',
     backgroundColor: 'transparent',
-    padding: '1em 2.5em',
+    padding: '1em 4em',
   },
   gridList: {
-    width: '80%',
+    width: '60%',
     height: 'calc(100vh - 100px)',
     transform: 'translateZ(0)',
   },
@@ -32,8 +32,9 @@ const styles = theme => ({
     color: 'white',
   },
   card: {
-    width: '22%',
-    margin: '1.5em auto'
+    width: '25%',
+    margin: '1.5em 2em',
+    // boxShadow: 'none'
   },
   media: {
     height: 150,

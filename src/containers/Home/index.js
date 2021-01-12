@@ -1,4 +1,4 @@
-import './home.scss';
+import './home.styl';
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import HomePageGridList from '../../components/GridList/HomePageGridList';
@@ -11,16 +11,6 @@ class SectionOne extends React.Component {
         <div id='stars2'></div>
         <div id='stars3'></div>
         <i className="banner"></i>
-        <div className="moon_container">
-          <div className="intro">
-            <p className="text">WE ONLY LIVE ONCE.</p>
-            <p className="enter_zone">
-              <a className="enter_btn" href="#post">ENTER
-              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-              </a>
-            </p>
-          </div>
-        </div>
       </div>
     )
   }

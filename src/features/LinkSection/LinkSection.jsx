@@ -6,7 +6,7 @@ import BlankSection from './BlankSection.jsx'
 import LabelSection from './LabelSection.jsx'
 import AppSection from './AppSection.jsx'
 import _config from '../../config'
-import './linkSection.scss'
+import './linkSection.styl'
 
 export default class extends Component {
   state = {

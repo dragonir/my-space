@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-import './loading.scss'
-import './loadingKeyFrames.scss'
+import './loading.styl'
+import './loadingKeyFrames.styl'
 
 export default class extends Component {
   state = {

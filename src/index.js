@@ -6,7 +6,7 @@ import configureStore from './common/configureStore';
 import reducer from './redux/reducers';
 import _config from './config';
 import { Provider } from 'react-redux';
-import './index.scss';
+import './index.styl';
 
 const store = configureStore(reducer);
 const { title, titleSuffix } = _config;

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { Button } from '@blueprintjs/core'
 import removeMd from 'remove-markdown'
 
-import './post.scss'
+import './post.styl'
 
 export default class extends Component {
   state = {

@@ -1,4 +1,4 @@
-@import '../../utils/utils.scss';
+@import '../../utils/utils.styl';
 .label-sec-item {
   color: $color2;
   background: $white4;
@@ -18,6 +18,17 @@
   margin-bottom: 12px;
   font-size: .75em;
   color: $black2;
-  text-align: center;
 }
-
+.label-sec-input {
+  margin-bottom: 15px;
+}
+.bp3-dark {
+  .label-sec-item {
+    background: $bg2;
+    color: $gray4;
+    &hover {
+      color: $color2;
+      background: $white4;
+    }
+  }
+}

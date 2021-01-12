@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import _config from '../../config'
-import './footer.scss'
+import './footer.styl'
 
 export default class Count extends Component {
   render() {

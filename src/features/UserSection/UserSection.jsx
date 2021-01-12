@@ -5,7 +5,7 @@ import SectionItem from '../../components/BlogComponents/SectionItem'
 import { getUser } from '../../utils/github'
 import scrollAni from './scrollAni'
 import _config from '../../config'
-import './userSection.scss'
+import './userSection.styl'
 
 export default class extends Component {
   state = {

@@ -1,6 +1,6 @@
 import React from 'react'
 import SectionItem from '../../components/BlogComponents/SectionItem'
-import './appSection.scss'
+import './appSection.styl'
 
 export default class extends React.PureComponent {
   state = {

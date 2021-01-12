@@ -1,5 +1,4 @@
 import pageConfApi from '../common/pageConfApi'
-import pageConf from './pageConf'
 
 const config = {
   title: 'TRICELL',
@@ -37,7 +36,7 @@ const config = {
    * 因版权限制，许多歌都用不成，这个没有好的解决办法
    * 不会自动播放，这样影响用户体验
    */
-  netEaseMusicID: '864639840',
+  netEaseMusicID: '1472921626',
   /**
    * Gitalk 配置项
    * 请不要填写 owner，repo，clientID，clientSecret 字段
@@ -91,7 +90,9 @@ const config = {
    * 如果你的文件将会经常变动，或者是在同一域名下有其它项目在运行，请填false
    */
   isUseServiceWorker: false,
-  pageConf,
+  // 默认的展示格式
+  // 为true，则默认是夜间模式
+  isDarkMode: false,
   pageConfApi
 }
 export default config

@@ -4,7 +4,7 @@ import Markdown from 'react-markdown'
 import { Link } from 'react-router-dom'
 import dayjs from 'dayjs'
 import _config from '../../config'
-import './article.scss'
+import './article.styl'
 
 export default class extends Component {
   state = {

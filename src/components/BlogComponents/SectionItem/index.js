@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './sectionItem.scss';
+import './sectionItem.styl';
 
 export default class extends Component {
   render() {

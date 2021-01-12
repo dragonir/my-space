@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './mainLayout.scss';
+import './mainLayout.styl';
 
 export default class extends Component {
   state = {

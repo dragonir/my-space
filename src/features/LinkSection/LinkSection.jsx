@@ -40,7 +40,7 @@ export default class extends Component {
     )
   }
   async componentWillMount() {
-    let userInfo = (await getUser(_config.user)).data
+    let userInfo = (await getUser(_config.userId)).data
     this.setState({
       userInfo
     })

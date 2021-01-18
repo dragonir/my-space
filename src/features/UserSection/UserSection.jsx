@@ -19,7 +19,7 @@ export default class extends Component {
         {avatar_url && (
           <div className="user-sec-container" ref={scrollAni}>
             <Link to="/">
-              <img className="user-avator" alt="avator" src={avatar_url} />
+              {/* <img className="user-avator" alt="avator" src={avatar_url} /> */}
             </Link>
             <h2 className="user-name">{name || login}</h2>
             <p className="user-desc">{description}</p>
@@ -37,7 +37,7 @@ export default class extends Component {
     )
   }
   async componentWillMount() {
-    let userInfo = (await getUser(_config.user)).data
+    let userInfo = (await getUser(_config.userId)).data
     this.setState({
       userInfo
     })

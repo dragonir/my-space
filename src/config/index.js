@@ -20,6 +20,7 @@ const config = {
    * issue 仓库所在地
    */
   user: 'dragonir',
+  userId: '21058931',
   repo: 'BLOG_ISSUE',
   // 请申请一个clientID
   clientID: 'c11664f8134b71a780cf',

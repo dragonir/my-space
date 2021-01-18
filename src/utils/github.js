@@ -36,7 +36,7 @@ export const getIssue = async num => {
 }
 
 export const getUser = async id => {
-  return await axios.get(`https://api.github.com/${_config.userType}/${id}`, {
+  return await axios.get(`https://api.github.com/user/${id}`, {
     params
   })
 }

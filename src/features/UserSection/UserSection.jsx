@@ -36,7 +36,7 @@ export default class extends Component {
       </SectionItem>
     )
   }
-  async componentWillMount() {
+  async UNSAFE_componentWillMount() {
     let userInfo = (await getUser(_config.userId)).data
     this.setState({
       userInfo

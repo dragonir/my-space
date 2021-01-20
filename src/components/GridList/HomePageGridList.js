@@ -32,9 +32,9 @@ const styles = theme => ({
     color: 'white',
   },
   card: {
-    width: '25%',
-    margin: '1.5em 2em',
-    // boxShadow: 'none'
+    width: '24em',
+    height: '18em',
+    margin: '1em 4em'
   },
   media: {
     height: 150,

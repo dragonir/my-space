@@ -51,7 +51,7 @@ export default class extends Component {
     )
   }
 
-  async componentWillMount() {
+  async UNSAFE_componentWillMount() {
     this.props.changeLoadingState(true)
     try {
       let res = await getIssue(this.props.id)

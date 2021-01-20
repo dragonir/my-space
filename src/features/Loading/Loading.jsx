@@ -33,7 +33,7 @@ export default class extends Component {
     }
   }
 
-  componentWillReceiveProps(targetProps) {
+  UNSAFE_componentWillReceiveProps(targetProps) {
     this.setState(
       {
         status: !this.state.status

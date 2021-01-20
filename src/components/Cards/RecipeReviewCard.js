@@ -16,7 +16,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import paellaImage from '../../assets/images/components/Cards/paella.jpg'
+import paellaImage from '../../assets/images/components/empty.png'
 
 const styles = theme => ({
   card: {

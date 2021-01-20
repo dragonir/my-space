@@ -1,4 +1,4 @@
-import empty from '../../assets/images/components/empty.jpg';
+import empty from '../../assets/images/components/empty.png';
 
 const tileData = [
   {

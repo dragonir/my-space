@@ -39,7 +39,7 @@ export default class extends Component {
       </React.Fragment>
     )
   }
-  async componentWillMount() {
+  async UNSAFE_componentWillMount() {
     let userInfo = (await getUser(_config.userId)).data
     this.setState({
       userInfo

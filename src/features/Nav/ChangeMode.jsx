@@ -21,7 +21,7 @@ export default class ChangeMode extends React.Component {
     )
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.props.changePageColor(_config.pageConfApi.get().isDarkMode)
   }
 }

@@ -111,12 +111,12 @@ export default class extends Component {
     )
   }
 
-  async componentWillMount() {
+  async UNSAFE_componentWillMount() {
     this.props.changeLoadingState(true)
     await this.updateComponent.call(this, this.props)
   }
 
-  async componentWillReceiveProps(props) {
+  async UNSAFE_componentWillReceiveProps(props) {
     if (this.props.page !== props.page || this.props.label !== props.label) {
       this.props.changeLoadingState(true)
       document.documentElement.scrollTop = 0

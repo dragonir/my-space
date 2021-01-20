@@ -18,7 +18,7 @@ class CircularDeterminate extends React.Component {
     this.timer = setInterval(this.progress, 20);
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     clearInterval(this.timer);
   }
 

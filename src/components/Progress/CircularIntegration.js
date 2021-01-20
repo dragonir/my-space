@@ -47,7 +47,7 @@ class CircularIntegration extends React.Component {
     success: false,
   };
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     clearTimeout(this.timer);
   }
 

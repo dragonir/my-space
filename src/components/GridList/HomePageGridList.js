@@ -12,32 +12,34 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = theme => ({
   root: {
+    width: '100%',
+    height: '80%',
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
     overflow: 'hidden',
     backgroundColor: 'transparent',
-    padding: '1em 4em',
+    // padding: '1em 10em',
+    position: 'absolute',
+    top: '10%',
+    bottom: '0',
+    right: '0',
+    left: '0',
+    margin: 'auto',
   },
   gridList: {
-    width: '60%',
-    height: 'calc(100vh - 100px)',
-    transform: 'translateZ(0)',
-  },
-  titleBar: {
-    background: 'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
-    'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
+    width: '100%',
   },
   icon: {
     color: 'white',
   },
   card: {
-    width: '24em',
-    height: '18em',
-    margin: '1em 4em'
+    width: '40%',
+    height: '42%',
+    margin: '1em 0'
   },
   media: {
-    height: 150,
+    height: 140,
   },
   info: {
     padding: 0,
@@ -76,10 +78,8 @@ class HomePageGridList extends React.Component {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions style={{position: 'relative', textAlign: 'right'}}>
-              <Button size="small" color="primary" href={this.props.learnMore} className={classes.btn}>
-                preview
-              </Button>
+            <CardActions style={{position: 'relative', textAlign: 'right', 'height': '32px'}}>
+              <Button size="small" color="primary" href={this.props.learnMore} className={classes.btn}>VISIT</Button>
             </CardActions>
           </Card>
         ))}

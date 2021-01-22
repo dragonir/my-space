@@ -19,7 +19,6 @@ const styles = theme => ({
     justifyContent: 'space-around',
     overflow: 'hidden',
     backgroundColor: 'transparent',
-    // padding: '1em 10em',
     position: 'absolute',
     top: '10%',
     bottom: '0',
@@ -35,7 +34,7 @@ const styles = theme => ({
   },
   card: {
     width: '40%',
-    height: '42%',
+    height: '44%',
     margin: '1em 0'
   },
   media: {

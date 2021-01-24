@@ -15,18 +15,19 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import mediaCardImage from '../../assets/images/home/banner.png'
+import mediaCardImage from '../../assets/images/futurama/futurama_1.png'
 import Resume from '../../components/Resume/index'
 import "./about.styl";
 
 const styles = theme => ({
   card: {
-    maxWidth: 800,
-    margin: "50px auto"
+    maxWidth: 700,
+    margin: "40px auto"
   },
   media: {
     height: 0,
-    paddingTop: '56.25%', // 16:9
+    paddingTop: '92.38%', // 16:9
+    fontFamily: 'air'
   },
   actions: {
     display: 'flex',

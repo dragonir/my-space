@@ -25,15 +25,25 @@ function getSteps() {
   return [
     {
       label: 'INTRODUCTION',
-      content: ['My name is Wangbin, graduated from Sun Yat-Sen University (2014-2018), and majored in computer science. Now I am work as front-end computer programmer in a Chinese LLC.']
+      content: ['My name is Wangbin, graduated from Sun Yat-Sen University (2014-2018), and majored in computer science. Now I am work as a front-end computer programmer in a Chinese LLC.']
     },
     {
       label: 'SKILL',
-      content: ['HTML CSS JavaScript LESS SASS STYLUS Vue React Angular']
+      content: ['HTML CSS JavaScript LESS SASS STYLUS Vue React Angular jQuery Webpack C++ Photoshop etc.']
     },
     {
       label: 'HOBBY',
       content: ['Coding, Painting, Reading, Go hiking, UX design, Photography, Cooking, etc.']
+    },
+    {
+      label: 'FAVORITE POEM',
+      content: [
+        'My name is Ozymandies, king of kings',
+        'Look on my works, ye mighty, and despair',
+        'Nothing beside remains. Round the decay',
+        'Of that colossal wreck, boudless and bare',
+        'The lone and level sands stretch far away',
+      ]
     },
     {
       label: 'CONTACT',

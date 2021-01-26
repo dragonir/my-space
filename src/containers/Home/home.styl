@@ -9,7 +9,7 @@
   &.section_one
     .banner
       display inline-block
-      width 48%
+      width 44%
       height 0
       padding-top 135.01%
       background url("../../assets/images/home/banner.png") no-repeat center
@@ -18,17 +18,23 @@
       top 50%
       left 50%
       transform translate(-50%, -50%)
+      .cycle
+        display inline-block
+        height 0
+        width 18%
+        padding-top 18%
+        background url("../../assets/images/home/cycle.png") no-repeat center
+        background-size 100% 100%
+        position absolute
+        top 49.5%
+        right 15%
+        animation cycle 4.2s infinite
+        animation-fill-mode both
+        animation-timing-function linear
+        cursor pointer
+        &:hover
+          animation-play-state paused
   &.section_two
-    .section_title
-      margin .2em auto 0
-      text-align left
-      letter-spacing: .25em
-      padding 0 5%
-      color #000000
-      text-shadow none
-      width 100%
-      position absolute
-      top 2.4em
     .futurama
       display inline-block
       width 10em
@@ -75,15 +81,17 @@
         box-shadow: 1px 1px 20px rgba(0, 0, 0, .5)
     .copyright
       height 32px
-      width 100%
+      width 388px
       background #FFFFFF
       font-size 12px
       color #000000
       position absolute
       bottom 0
-      left 0
+      left 50%
+      margin-left -194px
       line-height 32px
       z-index 1
+      border-radius 4px
       a
         text-decoration none
         color #000000
@@ -97,14 +105,11 @@
 .fp-section
   text-align center
 
-@import './star.styl'
-
 @media only screen and (max-width: 800px)
   .section
-    &.section_two
-      .section_title
-        font-size 1.2rem
-        top 4em
+    &.section_one
+      .banner
+        width 60%
     &.section_three
       .section_title
         font-size 2.4em
@@ -112,3 +117,11 @@
         width 56%
         padding 1em 1.2em
         font-size 1em
+
+@import './star.styl'
+
+@keyframes cycle
+  from
+    transform rotate(0deg)
+  to
+    transform rotate(360deg)

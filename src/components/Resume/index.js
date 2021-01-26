@@ -5,27 +5,20 @@ import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import './resume.styl';
 
-const styles = theme => ({
+const styles = () => ({
   resume: {
-    width: '100%',
+    width: '100%'
   },
-  button: {
-    marginTop: theme.spacing.unit * 1,
-    marginRight: theme.spacing.unit * 1,
-  },
-  actionsContainer: {
-    marginBottom: theme.spacing.unit * 2,
-  },
-  resetContainer: {
-    padding: theme.spacing.unit * 3,
-  },
+  steper: {
+    padding: '4px'
+  }
 });
 
 function getSteps() {
   return [
     {
       label: 'INTRODUCTION',
-      content: ['My name is Wangbin, graduated from Sun Yat-Sen University (2014-2018), and majored in computer science. Now I am work as a front-end computer programmer in a Chinese LLC.']
+      content: ['My name is Wangbin, graduated from Sun Yat-Sen University (2014-2018), and majored in computer science. Now I am work as a front-end computer programmer in a China LLC.']
     },
     {
       label: 'SKILL',
@@ -36,24 +29,23 @@ function getSteps() {
       content: ['Coding, Painting, Reading, Go hiking, UX design, Photography, Cooking, etc.']
     },
     {
-      label: 'FAVORITE POEM',
-      content: [
-        'My name is Ozymandies, king of kings',
-        'Look on my works, ye mighty, and despair',
-        'Nothing beside remains. Round the decay',
-        'Of that colossal wreck, boudless and bare',
-        'The lone and level sands stretch far away',
-      ]
-    },
-    {
       label: 'CONTACT',
       content: [
+        'email: dragonirxo@outlook.com',
         'github: https://github.com/dragonir',
         'leetcode: https://leetcode-cn.com/u/tricell/',
         'cnblogs: https://www.cnblogs.com/dragonir',
+        'wechat: unlexx',
         'weibo: @量子破碎',
-        'onmyoji: 量子破碎'
+        'onmyoji: 量子破碎',
+        'facebook: ░░░░░░░',
+        'twitter: ░░░░░░░',
+        'instagram: ░░░░░░░'
       ]
+    },
+    {
+      label: 'OTHER',
+      content: ['...']
     }
   ];
 }
@@ -64,7 +56,7 @@ function Resume(props) {
   const steps = getSteps();
   return (
     <div className={classes.resume}>
-      <Stepper orientation="vertical" activeStep={activeStep}>
+      <Stepper orientation="vertical" activeStep={activeStep} className={classes.steper}>
         {steps.map((step, index) => (
           <Step key={index}>
             <StepLabel>

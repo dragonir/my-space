@@ -25,9 +25,10 @@ const styles = theme => ({
     margin: "40px auto"
   },
   media: {
+    width: '100%',
     height: 0,
-    paddingTop: '92.38%', // 16:9
-    fontFamily: 'air'
+    paddingTop: '59.125%',
+    backgroundColor: '#FFCB00',
   },
   actions: {
     display: 'flex',
@@ -64,8 +65,7 @@ class About extends React.Component {
                     <MoreVertIcon />
                   </IconButton>
                 }
-                title="About"
-                subheader="Recent Update: January 22, 2021"
+                subheader="Recent Update: January 26, 2021"
               />
               <CardMedia
                 className={classes.media}
@@ -74,7 +74,7 @@ class About extends React.Component {
               />
               <CardContent>
               <Typography component="p">
-                Learn more about me here!
+                Click the unfold button and learn more about me!
               </Typography>
               </CardContent>
               <CardActions className={classes.actions} disableActionSpacing>

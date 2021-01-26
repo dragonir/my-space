@@ -1,9 +1,7 @@
 import './home.styl';
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
-// import HomePageGridList from '../../components/GridList/HomePageGridList';
-import Code from '../../components/Code/index';
-
+import Poem from '../../components/Poem/index';
 import { Link } from '@material-ui/core';
 
 class SectionOne extends React.Component {
@@ -13,7 +11,9 @@ class SectionOne extends React.Component {
         <div id='stars'></div>
         <div id='stars2'></div>
         <div id='stars3'></div>
-        <i className="banner"></i>
+        <i className="banner">
+          <i className="cycle"></i>
+        </i>
       </div>
     )
   }
@@ -22,9 +22,7 @@ class SectionTwo extends React.Component {
   render() {
     return (
       <div className="section section_two">
-        <h3 className="section_title">CODING</h3>
-        <Code />
-        {/* <i className="futurama"></i> */}
+        <Poem />
       </div>
     )
   }

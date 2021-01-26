@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.js": "/static/js/main.7998ba15.chunk.js",
+    "main.js": "/static/js/main.d41811bb.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.7dd25574.js",
     "static/css/2.88fce4c2.chunk.css": "/static/css/2.88fce4c2.chunk.css",
-    "static/js/2.3e3e5991.chunk.js": "/static/js/2.3e3e5991.chunk.js",
+    "static/js/2.351b33b5.chunk.js": "/static/js/2.351b33b5.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.937e8247a73ad150e8fef57d4f7d16aa.js": "/precache-manifest.937e8247a73ad150e8fef57d4f7d16aa.js",
+    "precache-manifest.8fd97068f344e78c8d813073845972bd.js": "/precache-manifest.8fd97068f344e78c8d813073845972bd.js",
     "service-worker.js": "/service-worker.js",
-    "static/js/2.3e3e5991.chunk.js.LICENSE.txt": "/static/js/2.3e3e5991.chunk.js.LICENSE.txt",
+    "static/js/2.351b33b5.chunk.js.LICENSE.txt": "/static/js/2.351b33b5.chunk.js.LICENSE.txt",
     "static/media/404.svg": "/static/media/404.5dfa8de4.svg",
     "static/media/DS-DIGI.TTF": "/static/media/DS-DIGI.63f874d1.TTF",
     "static/media/air.ttf": "/static/media/air.1243ed34.ttf",
-    "static/media/banner.png": "/static/media/banner.fe8275bc.png",
+    "static/media/banner.png": "/static/media/banner.1ba728f8.png",
     "static/media/bg.png": "/static/media/bg.01514b4c.png",
+    "static/media/cycle.png": "/static/media/cycle.6f9976e9.png",
     "static/media/empty.png": "/static/media/empty.02b29fb8.png",
     "static/media/futurama_1.png": "/static/media/futurama_1.f506ed69.png",
     "static/media/futurama_2.png": "/static/media/futurama_2.b9a32147.png",
@@ -23,13 +24,13 @@
     "static/media/icons-20.ttf": "/static/media/icons-20.51ec31f3.ttf",
     "static/media/icons-20.woff": "/static/media/icons-20.cef8cdbb.woff",
     "static/media/logo.png": "/static/media/logo.5eaab751.png",
-    "static/media/put-down.svg": "/static/media/put-down.04b04e32.svg",
+    "static/media/put-down.svg": "/static/media/put-down.88c191bd.svg",
     "static/media/treasure.png": "/static/media/treasure.e6b276ae.png"
   },
   "entrypoints": [
     "static/js/runtime-main.7dd25574.js",
     "static/css/2.88fce4c2.chunk.css",
-    "static/js/2.3e3e5991.chunk.js",
-    "static/js/main.7998ba15.chunk.js"
+    "static/js/2.351b33b5.chunk.js",
+    "static/js/main.d41811bb.chunk.js"
   ]
 }

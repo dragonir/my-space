@@ -1,8 +1,8 @@
-import './home.styl';
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Poem from '../../components/Poem/index';
 import { Link } from '@material-ui/core';
+import './home.styl';
 
 class SectionOne extends React.Component {
   render() {

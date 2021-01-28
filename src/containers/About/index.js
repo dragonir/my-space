@@ -10,16 +10,17 @@ import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import red from '@material-ui/core/colors/red';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import mediaCardImage from '../../assets/images/futurama/futurama_1.png'
 import Resume from '../../components/Resume/index'
-import "./about.styl";
 
 const styles = theme => ({
+  about: {
+    paddingTop: '80px'
+  },
   card: {
     maxWidth: 700,
     margin: "40px auto"
@@ -43,9 +44,10 @@ const styles = theme => ({
   expandOpen: {
     transform: 'rotate(180deg)',
   },
-  avatar: {
-    backgroundColor: red[500],
-  },
+  subtitle: {
+    fontSize: '14px',
+    textAlign: 'right'
+  }
 });
 
 class About extends React.Component {
@@ -56,7 +58,7 @@ class About extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className="about">
+      <div className={classes.about}>
         <div className="resume">
           <Card className={classes.card}>
               <CardHeader
@@ -67,15 +69,11 @@ class About extends React.Component {
                 }
                 subheader="Recent Update: January 26, 2021"
               />
-              <CardMedia
-                className={classes.media}
-                image={mediaCardImage}
-                title="About"
-              />
+              <CardMedia className={classes.media} image={mediaCardImage} title="About" />
               <CardContent>
-              <Typography component="p">
-                Click the unfold button and learn more about me!
-              </Typography>
+                <Typography component="p" className={classes.subtitle}>
+                  Click the unfold button and learn more about me!
+                </Typography>
               </CardContent>
               <CardActions className={classes.actions} disableActionSpacing>
               <IconButton aria-label="Add to favorites">

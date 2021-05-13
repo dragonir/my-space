@@ -25,6 +25,7 @@ const config = {
   // 请申请一个clientID
   clientID: 'c11664f8134b71a780cf',
   clientSecret: 'b16bff925f6d3c42a265d0bfb95f65fe31240291',
+  Authorization: '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',
   /**
    * 在本博客显示的其他issue创建者
    * 项目所有者（组织仓库的话为所有组织成员）及COLLABORATOR默认会显示
@@ -58,8 +59,9 @@ const config = {
       icon: 'doughnut-chart'
     }, {
       name: 'BLOG',
-      url: '/#/post',
-      icon: 'social-media'
+      url: 'https://www.cnblogs.com/dragonir/',
+      icon: 'social-media',
+      target: '_blank'
     }, {
       name: 'ABOUT',
       url: '/#/about',

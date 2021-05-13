@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.d41811bb.chunk.js",
+    "main.js": "/static/js/main.2410c3b7.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.7dd25574.js",
     "static/css/2.88fce4c2.chunk.css": "/static/css/2.88fce4c2.chunk.css",
-    "static/js/2.351b33b5.chunk.js": "/static/js/2.351b33b5.chunk.js",
+    "static/js/2.1fa17ff8.chunk.js": "/static/js/2.1fa17ff8.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.8fd97068f344e78c8d813073845972bd.js": "/precache-manifest.8fd97068f344e78c8d813073845972bd.js",
+    "precache-manifest.91b833bc4e1d77256332439b555b4ae2.js": "/precache-manifest.91b833bc4e1d77256332439b555b4ae2.js",
     "service-worker.js": "/service-worker.js",
-    "static/js/2.351b33b5.chunk.js.LICENSE.txt": "/static/js/2.351b33b5.chunk.js.LICENSE.txt",
+    "static/js/2.1fa17ff8.chunk.js.LICENSE.txt": "/static/js/2.1fa17ff8.chunk.js.LICENSE.txt",
     "static/media/404.svg": "/static/media/404.5dfa8de4.svg",
     "static/media/DS-DIGI.TTF": "/static/media/DS-DIGI.63f874d1.TTF",
     "static/media/air.ttf": "/static/media/air.1243ed34.ttf",
@@ -30,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.7dd25574.js",
     "static/css/2.88fce4c2.chunk.css",
-    "static/js/2.351b33b5.chunk.js",
-    "static/js/main.d41811bb.chunk.js"
+    "static/js/2.1fa17ff8.chunk.js",
+    "static/js/main.2410c3b7.chunk.js"
   ]
 }

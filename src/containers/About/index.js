@@ -67,7 +67,7 @@ class About extends React.Component {
                     <MoreVertIcon />
                   </IconButton>
                 }
-                subheader="Recent Update: January 26, 2021"
+                subheader="Recent Update: June 1, 2021"
               />
               <CardMedia className={classes.media} image={mediaCardImage} title="About" />
               <CardContent>

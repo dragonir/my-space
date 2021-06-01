@@ -4,8 +4,6 @@ import { Home, About, Work } from '../containers/index'
 import { AppBar, Avatars, Badges, ExpansionPanels, Table, Tabs, Snackbar, Dialogs, Buttons, Cards, Chips, Dividers, Lists, Progress, SelectionControls, Autocomplete, GridList } from '../components/index';
 import BottomNavigation from '../components/BottomNavigation';
 import Material from '../containers/Material';
-import Blog from '../containers/Blog';
-import BlogDetail from '../containers/Blog/BlogDetail';
 import homeRoute from '../routes/home'
 import articleRoute from '../routes/article'
 import notFoundRoute from '../routes/notFound'
@@ -22,8 +20,6 @@ export default (
     <Route component={ About } path="/about" />
     <Route component={ Work } path="/work" />
     <Route component={ Material } path="/material" />
-    <Route component={ Blog } path="/blog" />
-    <Route component={ BlogDetail } path="/blogdetail/:id" />
     <Route component={ AppBar } path="/appbar" />
     <Route component={ Autocomplete } path="/autocomplete" />
     <Route component={ Avatars } path="/avatars" />

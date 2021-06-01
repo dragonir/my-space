@@ -25,6 +25,10 @@ function getSteps() {
       content: ['HTML CSS JavaScript LESS SASS STYLUS Vue React Angular jQuery Webpack C++ Photoshop etc.']
     },
     {
+      label: 'LANGUAGES',
+      content: ['Chinese, English, Japanese']
+    },
+    {
       label: 'HOBBY',
       content: ['Coding, Painting, Reading, Go hiking, UX designing, Photographing, Cooking, etc.']
     },

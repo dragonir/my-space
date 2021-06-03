@@ -25,6 +25,7 @@ const config = {
   // 请申请一个clientID
   clientID: 'c11664f8134b71a780cf',
   clientSecret: 'b16bff925f6d3c42a265d0bfb95f65fe31240291',
+  Authorization: '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',
   /**
    * 在本博客显示的其他issue创建者
    * 项目所有者（组织仓库的话为所有组织成员）及COLLABORATOR默认会显示
@@ -52,18 +53,22 @@ const config = {
    * 链接有两种属性，一种是url，一种是to
    * 前者对应直接刷新跳转链接，后者对应react-router的Link标签链接（不会触发页面刷新，不能指向其他域名）
    */
-  navItem: [{
+  navItem: [
+    {
       name: 'HOME',
       url: '/#/',
       icon: 'doughnut-chart'
-    }, {
-      name: 'BLOG',
-      url: '/#/post',
-      icon: 'social-media'
-    }, {
-      name: 'ABOUT',
+    },
+    {
+      name: 'ME!',
       url: '/#/about',
-      icon: 'selection'
+      icon: 'social-media',
+    },
+    {
+      name: 'BLOG',
+      url: 'https://www.cnblogs.com/dragonir/',
+      icon: 'selection',
+      target: '_blank'
     }
   ],
   /**
@@ -82,10 +87,7 @@ const config = {
    * 请勿插入危险的标签
    */
   blankSections: [''],
-  footers: [
-    // '本博客系统由 <a href="http://www.reactjs.org">React.js</a> 驱动',
-    // '本博客评论系统由 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 驱动'
-  ],
+  footers: [],
   /**
    * 是否使用serviceWorker缓存文件
    * 如果你的文件将会经常变动，或者是在同一域名下有其它项目在运行，请填false

@@ -18,15 +18,19 @@ function getSteps() {
   return [
     {
       label: 'INTRODUCTION',
-      content: ['My name is Wangbin, graduated from Sun Yat-Sen University (2014-2018), and majored in computer science. Now I am work as a front-end computer programmer in a China LLC.']
+      content: ['My name is Wangbin, graduated from Sun Yat-Sen University (2014-2018), and majored in computer science. Now I am working as a front-end computer programmer in a China LLC.']
     },
     {
       label: 'SKILL',
       content: ['HTML CSS JavaScript LESS SASS STYLUS Vue React Angular jQuery Webpack C++ Photoshop etc.']
     },
     {
+      label: 'LANGUAGES',
+      content: ['Chinese, English, Japanese']
+    },
+    {
       label: 'HOBBY',
-      content: ['Coding, Painting, Reading, Go hiking, UX design, Photography, Cooking, etc.']
+      content: ['Coding, Painting, Reading, Go hiking, UX designing, Photographing, Cooking, etc.']
     },
     {
       label: 'CONTACT',

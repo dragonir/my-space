@@ -34,7 +34,7 @@ export default class extends Component {
                 navItem.map((el, index) => {
                   if (el.url) {
                     return (
-                      <a href={el.url} key={index}>
+                      <a href={el.url} key={index} target={el.target === '_blank' ? '_blank' : ''}>
                         <Button
                           onClick={this.hideNav}
                           className="bp3-minimal"

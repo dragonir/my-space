@@ -14,9 +14,7 @@ export default class ChangeMode extends React.Component {
 
     return (
       <Button {...darkModeButtonConfig}>
-        {' '}
         {isDark ? 'Light' : 'Dark'}
-        {' '}Mode
       </Button>
     )
   }

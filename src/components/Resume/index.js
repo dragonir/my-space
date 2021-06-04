@@ -26,11 +26,11 @@ function getSteps() {
     },
     {
       label: 'LANGUAGES',
-      content: ['Chinese, English, Japanese']
+      content: ['中文, English, 日本語']
     },
     {
       label: 'HOBBY',
-      content: ['Coding, Painting, Reading, Go hiking, UX designing, Photographing, Cooking, etc.']
+      content: ['Coding, Painting, Reading, Go hiking, UX Designing, Photographing, Cooking, Creating etc.']
     },
     {
       label: 'CONTACT',

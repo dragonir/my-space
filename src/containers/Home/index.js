@@ -31,7 +31,6 @@ class SectionThree extends React.Component {
   render () {
     return (
       <div className="section section_three">
-        <h3 className="section_title section_three_title"></h3>
         <Link className="resume_btn" href="#about">View My Resume!</Link>
         <p className="copyright">Powered by <a href="https://github.com/dragonir">WANGBIN &copy; 2021</a></p>
         <div className="counter_zone">

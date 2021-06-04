@@ -7,6 +7,16 @@
   padding 0
   transition background .25s ease
 
+::-moz-selection {
+  background: #03C03C !important;
+  color: #EFEFEF !important;
+}
+
+::selection {
+  background: #03C03C !important;
+  color: #EFEFEF !important;
+}
+
 body
   margin 0
   padding 0
@@ -32,11 +42,6 @@ code
   font-family: air;
   src: url("./assets/fonts/air/air.ttf");
 }
-@font-face {
-  font-family: digital;
-  src: url("./assets/fonts/DS/DS-DIGI.TTF");
-}
-
 .App {
   text-align: center;
   .App-header {

@@ -28,8 +28,7 @@ const styles = theme => ({
   media: {
     width: '100%',
     height: 0,
-    paddingTop: '59.125%',
-    backgroundColor: '#FFCB00',
+    paddingTop: '59.125%'
   },
   actions: {
     display: 'flex',

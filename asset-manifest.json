@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.js": "/static/js/main.6a1012f6.chunk.js",
+    "main.js": "/static/js/main.04fd21a4.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.7dd25574.js",
     "static/css/2.88fce4c2.chunk.css": "/static/css/2.88fce4c2.chunk.css",
-    "static/js/2.d2b8fb3a.chunk.js": "/static/js/2.d2b8fb3a.chunk.js",
+    "static/js/2.bf717b1d.chunk.js": "/static/js/2.bf717b1d.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.8b053b561d4192da1825cde372cab05e.js": "/precache-manifest.8b053b561d4192da1825cde372cab05e.js",
+    "precache-manifest.cc29bfeb02f5d56cd1dd8dc58714e784.js": "/precache-manifest.cc29bfeb02f5d56cd1dd8dc58714e784.js",
     "service-worker.js": "/service-worker.js",
-    "static/js/2.d2b8fb3a.chunk.js.LICENSE.txt": "/static/js/2.d2b8fb3a.chunk.js.LICENSE.txt",
+    "static/js/2.bf717b1d.chunk.js.LICENSE.txt": "/static/js/2.bf717b1d.chunk.js.LICENSE.txt",
     "static/media/404.svg": "/static/media/404.5dfa8de4.svg",
-    "static/media/DS-DIGI.TTF": "/static/media/DS-DIGI.63f874d1.TTF",
     "static/media/air.ttf": "/static/media/air.1243ed34.ttf",
-    "static/media/banner.png": "/static/media/banner.1ba728f8.png",
-    "static/media/bg.png": "/static/media/bg.1b189389.png",
-    "static/media/cycle.png": "/static/media/cycle.6f9976e9.png",
+    "static/media/banner.png": "/static/media/banner.c49690f1.png",
+    "static/media/bg.png": "/static/media/bg.da0c6e22.png",
     "static/media/empty.png": "/static/media/empty.02b29fb8.png",
     "static/media/futurama_1.png": "/static/media/futurama_1.f506ed69.png",
     "static/media/futurama_2.png": "/static/media/futurama_2.b9a32147.png",
@@ -24,13 +22,13 @@
     "static/media/icons-20.ttf": "/static/media/icons-20.51ec31f3.ttf",
     "static/media/icons-20.woff": "/static/media/icons-20.cef8cdbb.woff",
     "static/media/logo.png": "/static/media/logo.5eaab751.png",
-    "static/media/put-down.svg": "/static/media/put-down.88c191bd.svg",
+    "static/media/put-down.svg": "/static/media/put-down.76f38ec4.svg",
     "static/media/treasure.png": "/static/media/treasure.e6b276ae.png"
   },
   "entrypoints": [
     "static/js/runtime-main.7dd25574.js",
     "static/css/2.88fce4c2.chunk.css",
-    "static/js/2.d2b8fb3a.chunk.js",
-    "static/js/main.6a1012f6.chunk.js"
+    "static/js/2.bf717b1d.chunk.js",
+    "static/js/main.04fd21a4.chunk.js"
   ]
 }

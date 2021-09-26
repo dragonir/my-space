@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Poem from '../../components/Poem/index';
+import Kas from '../../components/3D/kas';
 import { Link } from '@material-ui/core';
 import './home.styl';
 
@@ -17,7 +18,7 @@ class SectionOne extends React.Component {
       </div>
     )
   }
-} 
+}
 class SectionTwo extends React.Component {
   render() {
     return (
@@ -40,9 +41,18 @@ class SectionThree extends React.Component {
     )
   }
 }
+class Section3D extends React.Component {
+  render() {
+    return (
+      <div className="section section_modal">
+        <Kas />
+      </div>
+    )
+  }
+}
 
 function Home(props) {
-  const anchors = ["firstPage", "secondPage", "thirdPage"];
+  const anchors = ["3DPage", "firstPage", "secondPage", "thirdPage"];
   return (
     <ReactFullpage
     navigation
@@ -52,6 +62,7 @@ function Home(props) {
     render={({ state, fullpageApi }) => {
       return (
         <div>
+          <Section3D />
           <SectionOne />
           <SectionTwo />
           <SectionThree />

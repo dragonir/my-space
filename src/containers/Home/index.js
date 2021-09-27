@@ -52,7 +52,7 @@ class Section3D extends React.Component {
 }
 
 function Home(props) {
-  const anchors = ["3DPage", "firstPage", "secondPage", "thirdPage"];
+  const anchors = ["", "", "", ""];
   return (
     <ReactFullpage
     navigation

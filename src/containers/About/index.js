@@ -66,12 +66,12 @@ class About extends React.Component {
                     <MoreVertIcon />
                   </IconButton>
                 }
-                subheader="Recent Update: June 1, 2021"
+                subheader="Recent Update: September 29, 2021"
               />
               <CardMedia className={classes.media} image={mediaCardImage} title="About" />
               <CardContent>
                 <Typography component="p" className={classes.subtitle}>
-                  Click the unfold button and learn more about me!
+                  Click the unfold button and learn more about me.
                 </Typography>
               </CardContent>
               <CardActions className={classes.actions} disableActionSpacing>

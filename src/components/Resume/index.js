@@ -37,8 +37,10 @@ function getSteps() {
       content: [
         'email: dragonirxo@outlook.com',
         'github: https://github.com/dragonir',
-        'leetcode: https://leetcode-cn.com/u/tricell/',
+        'leetcode: https://leetcode-cn.com/u/tricell',
         'cnblogs: https://www.cnblogs.com/dragonir',
+        'juejin: https://juejin.cn/user/2295436008498765',
+        'segmentfault：https://segmentfault.com/u/dragonir',
         'wechat: unlexx',
         'weibo: @量子破碎',
         'onmyoji: 量子破碎',

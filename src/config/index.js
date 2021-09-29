@@ -38,7 +38,8 @@ const config = {
    * 因版权限制，许多歌都用不成，这个没有好的解决办法
    * 不会自动播放，这样影响用户体验
    */
-  netEaseMusicID: '1472921626',
+  // netEaseMusicID: '1472921626',
+  netEaseMusicID: '1431866827',
   /**
    * Gitalk 配置项
    * 请不要填写 owner，repo，clientID，clientSecret 字段

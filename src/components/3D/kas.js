@@ -1,9 +1,8 @@
 /* eslint-disable */
 import React from 'react';
 import './kas.styl'
-var model = require('../../assets/models/kas.gltf');
 var container, stats, controls;
-var camera, scene, renderer, light, model;
+var camera, scene, renderer, light;
 
 class Kas extends React.Component {
 
@@ -23,7 +22,7 @@ class Kas extends React.Component {
     function init () {
       container = document.getElementById('kas');
       scene = new THREE.Scene();
-      // scene.background = new THREE.Color(0x03C03C);
+      // scene.background = new THREE.Color(0x000000);
       scene.fog = new THREE.Fog(0xa0a0a0, 200, 1000);
       // 透视相机：视场、长宽比、近面、远面
       camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -68,7 +67,7 @@ class Kas extends React.Component {
 
       // 加载gltf模型
       var loader = new THREE.GLTFLoader();
-      loader.load(model, function (object) {
+      loader.load(require('../../assets/models/kas.gltf'), function (object) {
         object.scene.traverse(function (child) {
           if (child.isMesh) {
             child.castShadow = true;
@@ -78,19 +77,20 @@ class Kas extends React.Component {
         object.scene.rotation.y = Math.PI / 2;
         object.scene.position.set(0, -240, 0);
         object.scene.scale.set(0.33, 0.33, 0.33);
-        model = object.scene;
         scene.add(object.scene);
       });
-
       renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
       renderer.setPixelRatio(window.devicePixelRatio);
       renderer.setSize(window.innerWidth, window.innerHeight);
       renderer.setClearAlpha(0);
       renderer.shadowMap.enabled = true;
       container.appendChild(renderer.domElement);
-      // controls = new THREE.OrbitControls(camera, renderer.domElement);
-      // controls.target.set(0, 0, 0);
-      // controls.update();
+      // 控制器
+      controls = new THREE.OrbitControls(camera, renderer.domElement);
+      // 禁用缩放（因为和fullpage插件的鼠标滚轮事件冲突）
+      controls.enableZoom = false;
+      controls.target.set(0, 0, 0);
+      controls.update();
       window.addEventListener('resize', () => {
         camera.aspect = window.innerWidth / window.innerHeight;
         camera.updateProjectionMatrix();
@@ -108,6 +108,22 @@ class Kas extends React.Component {
       renderer.render(scene, camera);
       stats.update();
     }
+    // 增加点击事件
+    //声明raycaster和mouse变量
+    var raycaster = new THREE.Raycaster();
+    var mouse = new THREE.Vector2();
+    function onMouseClick(event) {
+      // 通过鼠标点击的位置计算出raycaster所需要的点的位置，以屏幕中心为原点，值的范围为-1到1.
+      mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+      mouse.y = - (event.clientY / window.innerHeight) * 2 + 1;
+      // 通过鼠标点的位置和当前相机的矩阵计算出raycaster
+      raycaster.setFromCamera(mouse, camera);
+      // 获取raycaster直线和所有模型相交的数组集合
+      console.log(scene.children)
+      var intersects = raycaster.intersectObjects(scene.children);
+      console.log(intersects);
+    }
+    window.addEventListener('click', onMouseClick, false);
   }
 }
 

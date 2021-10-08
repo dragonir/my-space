@@ -22,11 +22,11 @@ function getSteps() {
     },
     {
       label: 'SKILL',
-      content: ['HTML CSS JavaScript LESS SASS STYLUS Vue React Angular jQuery Webpack C++ Photoshop etc.']
+      content: ['HTML, CSS, JavaScript, LESS, SASS, STYLUS, Vue, React, Angular, jQuery, Webpack, C++, Photoshop, etc.']
     },
     {
       label: 'LANGUAGES',
-      content: ['中文, English, 日本語']
+      content: ['汉语普通话, English, 日本語']
     },
     {
       label: 'HOBBY',
@@ -36,17 +36,19 @@ function getSteps() {
       label: 'CONTACT',
       content: [
         'email: dragonirxo@outlook.com',
-        'github: https://github.com/dragonir',
-        'leetcode: https://leetcode-cn.com/u/tricell',
-        'cnblogs: https://www.cnblogs.com/dragonir',
-        'juejin: https://juejin.cn/user/2295436008498765',
-        'segmentfault：https://segmentfault.com/u/dragonir',
         'wechat: unlexx',
         'weibo: @量子破碎',
         'onmyoji: 量子破碎',
-        'facebook: ░░░░░░░',
-        'twitter: ░░░░░░░',
-        'instagram: ░░░░░░░'
+        'github: https://github.com/dragonir',
+        'leetcode: https://leetcode-cn.com/u/tricell'
+      ]
+    },
+    {
+      label: 'BLOG',
+      content: [
+        'cnblogs: https://www.cnblogs.com/dragonir',
+        'juejin: https://juejin.cn/user/2295436008498765',
+        'segmentfault：https://segmentfault.com/u/dragonir'
       ]
     },
     {

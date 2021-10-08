@@ -14,7 +14,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import mediaCardImage from '../../assets/images/futurama/futurama_1.png'
+import mediaCardImage from '../../assets/images/about/me.png'
 import Resume from '../../components/Resume/index'
 
 const styles = theme => ({
@@ -28,7 +28,7 @@ const styles = theme => ({
   media: {
     width: '100%',
     height: 0,
-    paddingTop: '59.125%'
+    paddingTop: '78%'
   },
   actions: {
     display: 'flex',
@@ -66,12 +66,12 @@ class About extends React.Component {
                     <MoreVertIcon />
                   </IconButton>
                 }
-                subheader="Recent Update: September 29, 2021"
+                subheader="Recent Update: October 8th, 2021"
               />
               <CardMedia className={classes.media} image={mediaCardImage} title="About" />
               <CardContent>
                 <Typography component="p" className={classes.subtitle}>
-                  Click the unfold button and learn more about me.
+                  Click here and learn me more.
                 </Typography>
               </CardContent>
               <CardActions className={classes.actions} disableActionSpacing>

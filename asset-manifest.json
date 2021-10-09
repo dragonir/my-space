@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/static/js/main.c75c11d9.chunk.js",
+    "main.js": "/static/js/main.a6e4747b.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.7dd25574.js",
     "static/css/2.88fce4c2.chunk.css": "/static/css/2.88fce4c2.chunk.css",
     "static/js/2.6e047838.chunk.js": "/static/js/2.6e047838.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.b21a2a8cd5da47d67619f6c81389e318.js": "/precache-manifest.b21a2a8cd5da47d67619f6c81389e318.js",
+    "precache-manifest.e4784f1d5a99ca33866451fb36a6b6d5.js": "/precache-manifest.e4784f1d5a99ca33866451fb36a6b6d5.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.6e047838.chunk.js.LICENSE.txt": "/static/js/2.6e047838.chunk.js.LICENSE.txt",
     "static/media/404.svg": "/static/media/404.5dfa8de4.svg",
     "static/media/acid_bg.png": "/static/media/acid_bg.46458323.png",
     "static/media/air.ttf": "/static/media/air.1243ed34.ttf",
     "static/media/banner.png": "/static/media/banner.c49690f1.png",
-    "static/media/bg.png": "/static/media/bg.da0c6e22.png",
+    "static/media/cover.png": "/static/media/cover.4e4de3bc.png",
     "static/media/dragonir.png": "/static/media/dragonir.5e8835fb.png",
     "static/media/empty.png": "/static/media/empty.02b29fb8.png",
     "static/media/futurama_2.png": "/static/media/futurama_2.b9a32147.png",
@@ -32,6 +32,6 @@
     "static/js/runtime-main.7dd25574.js",
     "static/css/2.88fce4c2.chunk.css",
     "static/js/2.6e047838.chunk.js",
-    "static/js/main.c75c11d9.chunk.js"
+    "static/js/main.a6e4747b.chunk.js"
   ]
 }

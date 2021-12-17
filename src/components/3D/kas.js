@@ -3,6 +3,7 @@ import React from 'react';
 import './kas.styl'
 var container, stats, controls;
 var camera, scene, renderer, light;
+var meshes = [];
 
 class Kas extends React.Component {
 
@@ -22,8 +23,8 @@ class Kas extends React.Component {
     function init () {
       container = document.getElementById('kas');
       scene = new THREE.Scene();
-      // scene.background = new THREE.Color(0x000000);
-      scene.fog = new THREE.Fog(0xa0a0a0, 200, 1000);
+      // 雾化效果
+      scene.fog = new THREE.Fog(0xefefef, 360, 1000);
       // 透视相机：视场、长宽比、近面、远面
       camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.1, 1000);
       camera.position.set(600, 20, -200);
@@ -37,41 +38,25 @@ class Kas extends React.Component {
       light.castShadow = true;
       scene.add(light);
       // 环境光
-      var ambiColor = '#0C0C0C';
-      var ambientLight = new THREE.AmbientLight(ambiColor);
+      var ambientLight = new THREE.AmbientLight(0x0c0c0c);
       scene.add(ambientLight);
       // 网格
-      var grid = new THREE.GridHelper(1000, 100, 0x000000, 0x000000);
+      var grid = new THREE.GridHelper(1000, 100, 0x333333, 0x333333);
       grid.material.opacity = 0.1;
       grid.material.transparent = true;
       grid.position.set(0, -240, 0);
       scene.add(grid);
-
-      // 加载obj或fbx模型
-      // var loader = new THREE.FBXLoader();
-      // var loader = new THREE.OBJLoader();
-      // loader.load(model, function (object) {
-      //   object.traverse(function (child) {
-      //     if (child.isMesh) {
-      //       child.castShadow = true;
-      //       child.receiveShadow = true;
-      //     }
-      //   });
-      //   object.rotation.y = Math.PI / 2;
-      //   object.position.set(0, -200, 0);
-      //   console.log('position', object.position);
-      //   object.scale.set(0.32, 0.32, 0.32);
-      //   model = object;
-      //   scene.add(object);
-      // });
-
       // 加载gltf模型
       var loader = new THREE.GLTFLoader();
-      loader.load(require('../../assets/models/kas.gltf'), function (object) {
-        object.scene.traverse(function (child) {
+      loader.load(require('../../assets/models/kas.gltf'), object => {
+        object.scene.traverse(child => {
           if (child.isMesh) {
             child.castShadow = true;
             child.receiveShadow = true;
+            child.material.metalness = 0.5;
+            child.material.roughness = 0;
+            child.material.color = new THREE.Color(0xffffff);
+            meshes.push(child);
           }
         });
         object.scene.rotation.y = Math.PI / 2;
@@ -106,10 +91,10 @@ class Kas extends React.Component {
       var delta = clock.getDelta();
       scene.rotation.y -= 0.015;
       renderer.render(scene, camera);
-      stats.update();
+      stats.update(delta);
     }
     // 增加点击事件
-    //声明raycaster和mouse变量
+    // 声明raycaster和mouse变量
     var raycaster = new THREE.Raycaster();
     var mouse = new THREE.Vector2();
     function onMouseClick(event) {
@@ -119,9 +104,14 @@ class Kas extends React.Component {
       // 通过鼠标点的位置和当前相机的矩阵计算出raycaster
       raycaster.setFromCamera(mouse, camera);
       // 获取raycaster直线和所有模型相交的数组集合
-      console.log(scene.children)
-      var intersects = raycaster.intersectObjects(scene.children);
-      console.log(intersects);
+      var intersects = raycaster.intersectObjects(meshes);
+      if (intersects.length > 0) {
+        console.log(intersects[0].object);
+        let selectedObj = intersects[0].object;
+        selectedObj.material.color = new THREE.Color(`#${Math.random().toString(16).slice(-6)}`);
+        selectedObj.material.metalness = Math.random();
+        selectedObj.material.roughness = Math.random();
+      }
     }
     window.addEventListener('click', onMouseClick, false);
   }

@@ -66,6 +66,12 @@ const config = {
       icon: 'social-media',
     },
     {
+      name: 'WORK',
+      url: 'https://dragonir.github.io/3d/',
+      icon: 'endorsed',
+      target: '_blank'
+    },
+    {
       name: 'BLOG',
       url: 'https://www.cnblogs.com/dragonir/',
       icon: 'selection',

@@ -33,7 +33,7 @@ class SectionThree extends React.Component {
     return (
       <div className="section section_three">
         <Link className="resume_btn" href="#about">View My Resume!</Link>
-        <p className="copyright">Powered by <a href="https://github.com/dragonir">WANGBIN &copy; 2021</a></p>
+        <p className="copyright">Powered by <a href="https://github.com/dragonir">WANGBIN &copy; 2022</a></p>
         <div className="counter_zone">
           <a href="https://info.flagcounter.com/Ym1k"><img src="https://s05.flagcounter.com/count2/Ym1k/bg_FFFFFF/txt_000000/border_FFFFFF/columns_4/maxflags_16/viewers_3/labels_1/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0" /></a>
         </div>

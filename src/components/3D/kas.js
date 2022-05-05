@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from 'react';
 import './kas.styl'
-var container, stats, controls;
+var container, controls;
 var camera, scene, renderer, light;
 var meshes = [];
 
@@ -26,8 +26,8 @@ class Kas extends React.Component {
       // 雾化效果
       scene.fog = new THREE.Fog(0xefefef, 360, 1000);
       // 透视相机：视场、长宽比、近面、远面
-      camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.1, 1000);
-      camera.position.set(600, 20, -200);
+      camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 0.1, 1000);
+      camera.position.set(600, 40, -200);
       camera.lookAt(new THREE.Vector3(0, 0, 0));
       // 半球光源：创建室外效果更加自然的光源
       light = new THREE.HemisphereLight(0xffffff, 0x444444);
@@ -38,41 +38,30 @@ class Kas extends React.Component {
       light.castShadow = true;
       scene.add(light);
       // 环境光
-      var ambientLight = new THREE.AmbientLight(0x0c0c0c);
+      var ambientLight = new THREE.AmbientLight(0xffffff, .2);
       scene.add(ambientLight);
-      // 网格
-      var grid = new THREE.GridHelper(1000, 100, 0x333333, 0x333333);
-      grid.material.opacity = 0.1;
-      grid.material.transparent = true;
-      grid.position.set(0, -240, 0);
-      scene.add(grid);
       // 加载gltf模型
       var loader = new THREE.GLTFLoader();
-      loader.load(require('../../assets/models/kas.gltf'), object => {
+      loader.load(require('../../assets/models/kas.glb'), object => {
         object.scene.traverse(child => {
           if (child.isMesh) {
-            child.castShadow = true;
-            child.receiveShadow = true;
             child.material.metalness = 0.5;
-            child.material.roughness = 0;
-            child.material.color = new THREE.Color(0xffffff);
+            child.material.roughness = 0.2;
             meshes.push(child);
           }
         });
         object.scene.rotation.y = Math.PI / 2;
-        object.scene.position.set(0, -240, 0);
-        object.scene.scale.set(0.33, 0.33, 0.33);
+        object.scene.position.set(0, -300, 0);
+        object.scene.scale.set(3, 3, 3);
         scene.add(object.scene);
       });
       renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
       renderer.setPixelRatio(window.devicePixelRatio);
       renderer.setSize(window.innerWidth, window.innerHeight);
       renderer.setClearAlpha(0);
-      renderer.shadowMap.enabled = true;
       container.appendChild(renderer.domElement);
       // 控制器
       controls = new THREE.OrbitControls(camera, renderer.domElement);
-      // 禁用缩放（因为和fullpage插件的鼠标滚轮事件冲突）
       controls.enableZoom = false;
       controls.target.set(0, 0, 0);
       controls.update();
@@ -81,17 +70,11 @@ class Kas extends React.Component {
         camera.updateProjectionMatrix();
         renderer.setSize(window.innerWidth, window.innerHeight);
       }, false);
-      // stats：初始化性能插件
-      stats = new Stats();
-      container.appendChild(stats.dom);
     }
     function animate () {
-      var clock = new THREE.Clock()
       requestAnimationFrame(animate);
-      var delta = clock.getDelta();
       scene.rotation.y -= 0.015;
       renderer.render(scene, camera);
-      stats.update(delta);
     }
     // 增加点击事件
     // 声明raycaster和mouse变量
